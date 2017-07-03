@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>唯品会-我的购物袋</title>
+    <link href="css/shoppingcar.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/shooping.js">
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+                <ul class="header_first">
+                    <li class="hello">你好，<span>三牛</span>先生</li>
+                    <li class="header_second"><a href="#"><img src="img/cellphone.png"/></a></li>
+                    <li><a href="#"><img src="img/kefu.png"/></a></li>
+                    <li><a href="#"><img src="img/huiyuan.png"/></a></li>
+                </ul>
+            <p><img src="img/header.png"></p>
+        </div>
+        <div class="title">
+            <p><span>购物袋|</span>
+                <span id="timeNowLast">
+                    <script>
+                        var x = 30,interval;
+                        window.onload = function() {
+                            var d = new Date("1111/1/1,0:" + x + ":0");
+                            interval = setInterval(function() {
+                                var m = d.getMinutes();
+                                var s = d.getSeconds();
+                                m = m < 10 ? "0" + m : m;
+                                s = s < 10 ? "0" + s : s;
+                                timeNowLast.innerHTML = m + ":" + s;
+                                timeNowL.innerHTML = m + ":" + s;
+                                if (m == 0 && s == 0) {
+                                    clearInterval(interval);
+                                    return;
+                                }
+                                d.setSeconds(s - 1);
+                            }, 1000);
+                        }
+                    </script>
+                </span>
+                <span>下单后你有30分钟支付时间,请尽快完成结算</span><span><img src="img/bangzhu.png"></span></p>
+        </div>
+        <div class="body">
+            <p class="nav"><img src="img/nav.png"></p>
+            <div class="page cleaarfixed" id="allitem">
+                <div class="item1 cleaarfixed">
+                    <ul>
+                        <li><img src="img/p1.png"><span style="color: deeppink">海伦凯尔眼睛，值得你购买 </span></li>
+                        <li>$<span id="item_1perprice">19.50</span></li>
+                        <li><button onclick="sub1(this)">-</button><input type="text" id="num1" value="0"/><button onclick="add1(this)">+</button></li>
+                        <li>$<span style="margin-top: -2px;margin-left: 0px" id="item_1money">0.00</span></li>
+                        <li><button onclick="del_1(this),delall()">刪除</button></li>
+                    </ul>
+                </div>
+                <div class="item2 cleaarfixed">
+                    <ul>
+                        <li><img src="img/p2.png"><span style="color: deeppink">&nbsp;伊索手表，将美展示到底</span></li>
+                        <li>$<span id="item_2perprice">28.50</span></li>
+                        <li><button onclick="sub2(this)">-</button><input type="text" value="0" id="num2"/><button onclick="add2(this)">+</button></li>
+                        <li>$<span style="margin-top: -2px;margin-left: 0px" id="item_2money">0.00</span></li>
+                        <li><button onclick="del_2(this),delall()">刪除</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="last">
+                <p><span>共 </span><span id="thingCount" style="color: deeppink;font-size: 20px">0</span><span> 件商品 </span></p>
+                <p><span>总金额：</span><span id="allMoney" style="color: deeppink;font-size: 20px">0.00</span><span>元</span></p>
+            </div>
+            <div class="zhufu">
+                <span style="margin-right: 5%;color: grey;font-size: 15px" id="jiesuan">请在指定时间内完成结算</span><button id="goBuy"><span >立即结算</span>
+                <span id="timeNowL" style="margin-left: 5px">
+                 <script>
+                    var x = 30,
+                            interval;
+                    window.onload = function() {
+                        var d = new Date("1111/1/1,0:" + x + ":0");
+                        interval = setInterval(function() {
+                            var m = d.getMinutes();
+                            var s = d.getSeconds();
+                            m = m < 10 ? "0" + m : m;
+                            s = s < 10 ? "0" + s : s;
+                            timeNowLast.innerHTML = m + ":" + s;
+                            timeNowL.innerHTML = m + ":" + s;
+                            if (m == 0 && s == 0) {
+                                clearInterval(interval);
+                                return;
+                            }
+                            d.setSeconds(s - 1);
+                        }, 1000);
+                    }
+                    </script>
+                </span></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

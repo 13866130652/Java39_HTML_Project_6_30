@@ -1,0 +1,15 @@
+$(function(){
+    $(".s-div2-div1-div1-a").css({"background":"white","color":"blue"});
+    $(".s-div2-div1-div1-a").click(
+        function(){
+            $(".s-div2-div1-div1-a").css({"background":"white","color":"blue"});
+            $(".s-div2-div1-div2-a").css({"background":"blue","color":"white"});
+        }
+    );
+    $(".s-div2-div1-div2-a").click(
+        function(){
+            $(".s-div2-div1-div2-a").css({"background":"white","color":"blue"});
+            $(".s-div2-div1-div1-a").css({"background":"blue","color":"white"});
+        }
+    )
+})

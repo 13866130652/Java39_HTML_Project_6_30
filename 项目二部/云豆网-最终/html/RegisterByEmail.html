@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/registerByEmail.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/registerByEmail.js"></script>
+</head>
+<body>
+<div class="div1">
+     <form action="#" method="post" id="form" >
+        <div class="div1-div1">
+            <input id="email" onblur="checkEmial()" type="email" name="email" placeholder="请输入您的常用邮箱"/>
+            <span id="sp1">请输入您的常用邮箱</span>
+        </div>
+        <div class="div1-div2"><input onblur="checkName()" id="name" type="text" name="name" placeholder="请输入昵称">
+        <span id="sp2">4-12位字符、英文、数字或者中文均可</span>
+        </div>
+        <div class="div1-div3">
+            <input id="pass" onblur="checkPass()" type="password" name="password" placeholder="请输入密码"/>
+            <span id="sp3">6-16位字符或数字、字母,区分大小写</span>
+        </div>
+        <div class="div1-div4" >
+            <input id="repass" onblur="checkRepass();" type="password" name="password" placeholder="请再次输入密码"/>
+            <span id="sp4"></span>
+        </div>
+        <div class="div1-div5">
+            <input id="yanzhenma" type="text" onblur="checkCd()" name="yanzheng" placeholder="请输入右侧验证码"/>
+            <div id="p1"><a href="#"></a></div><span id="sp6" onclick="getCode()">不区分大小写，点击文字可更换</span>
+        </div>
+
+        <div class="div1-div6"><input type="radio" name="radio"/><span class="sp2">同意</span><a class="a1" href="#">用户服务条款</a></div>
+        <div><input type="submit" name="submit" value="注册"></div>
+    </form>
+</div>
+</body>
+</html>

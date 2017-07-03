@@ -1,0 +1,253 @@
+@charset "utf-8";
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+.cleaarfixed:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box{
+    width: 1258px;
+}
+/*div{
+    border: 1px solid black;
+}*/
+.header{
+    margin-top: 10px;
+    width: 82%;
+    background: url("../img/logo.png") no-repeat;
+    background-position: left;
+    height: 80px;
+}
+.header_first{
+    margin-left: 37%;
+}
+.header p {
+    float: right;
+}
+.hello{
+    margin-top: 0.7%;
+}
+.header_second{
+    padding-left: 5%;
+}
+.hello span{
+    color: deeppink;
+}
+.header  ul li{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-left: 1%;
+    color: gray;
+    float: left;
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.header ul li a img{
+    width: 80%;
+    height: 80%;
+}
+.title{
+    margin-top: 25px;
+}
+.title p span:nth-child(1){
+    margin-left: 10%;
+    font-size: 20px;
+}
+.title p span:nth-child(3){
+    margin-left: 2%;
+    color: gray;
+}
+.title p span:nth-child(2){
+    margin-left: 1%;
+    color: gray;
+}
+.title p span:nth-child(4){
+    vertical-align: middle;
+}
+.title p span:nth-child(4) img{
+    margin-top: 5px;
+    width: 30px;
+}
+#timeNowLast{
+    font-size: 20px;
+    color: deeppink;
+}
+.body{
+    width: 84%;
+}
+.nav img{
+    width: 100%;
+}
+.page{
+    width: 100%;
+}
+.page1{
+    background: url("../img/buycarbg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 280px;
+}
+.item1{
+    width: 100%;
+}
+.item1 ul li{
+    height: 100px;
+    list-style: none;
+    float: left;
+}
+.item1 ul{
+    margin-top: 20px;
+}
+.item1 ul li img {
+    height: 90px;
+}
+.item1 ul li:nth-child(1){
+    width: 40%;
+}
+.item1 ul li:nth-child(2) span{
+    margin-top: -1px;
+}
+.item1 ul li:nth-child(2){
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3%;
+    margin-left: 6%;
+    width: 10%;
+}
+.item1 ul li:nth-child(4){
+    text-align: center;
+    padding-top: 3%;
+    vertical-align: middle;
+    margin-left: 5.6%;
+    width: 10%;
+}
+.item1 ul li:nth-child(5){
+    text-align: center;
+    padding-top: 3%;
+    vertical-align: middle;
+    margin-left: 3.8%;
+    width: 6%;
+}
+.item1 ul li:nth-child(3){
+    padding-top: 3%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 7%;
+    width: 10%;
+}
+.item1 ul li:nth-child(3) input[type="text"]{
+    text-align: center;
+    width: 40%;
+    height: 30%;
+    border: 1px solid gray;
+    padding-top: 1%;
+}
+.item1 ul li:nth-child(3) button{
+    height: 30%;
+    width: 20%;
+}
+.item1 ul li span{
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: -80px;
+    vertical-align: middle;
+    text-align: center;
+}
+.last{
+    margin-top: 3%;
+    text-align: right;
+}
+.item2{
+    width: 100%;
+}
+.item2 ul li{
+    height: 100px;
+    list-style: none;
+    float: left;
+}
+.item2 ul{
+    margin-top: 20px;
+}
+.item2 ul li img {
+    height: 90px;
+}
+.item2 ul li:nth-child(1){
+    width: 40%;
+}
+.item2 ul li:nth-child(2) span{
+    margin-top: -1px;
+}
+.item2 ul li:nth-child(2){
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3%;
+    margin-left: 6%;
+    width: 10%;
+}
+.item2 ul li:nth-child(4){
+    text-align: center;
+    padding-top: 3%;
+    vertical-align: middle;
+    margin-left: 5.6%;
+    width: 10%;
+}
+.item2 ul li:nth-child(5){
+    text-align: center;
+    padding-top: 3%;
+    vertical-align: middle;
+    margin-left: 3.8%;
+    width: 6%;
+}
+.item2 ul li:nth-child(3){
+    padding-top: 3%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 7%;
+    width: 10%;
+}
+.item2 ul li:nth-child(3) input[type="text"]{
+    text-align: center;
+    width: 40%;
+    height: 30%;
+    border: 1px solid gray;
+    padding-top: 1%;
+}
+.item2 ul li:nth-child(3) button{
+    height: 30%;
+    width: 20%;
+}
+.item2 ul li span{
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: -80px;
+    vertical-align: middle;
+    text-align: center;
+}
+.last p{
+    padding-right: 20%;
+    text-align: center;
+    text-align: right;
+    width: 100%;
+}
+.zhufu{
+    position: relative;
+    margin-top: 3%;
+    text-align: right;
+}
+.zhufu button{
+    border-color: deeppink;
+    border-radius: 5px;
+    margin-right: 10%;
+    height: 40px;
+    width: 20%;
+    color: white;
+    font-size: 20px;
+    background-color: deeppink;
+}

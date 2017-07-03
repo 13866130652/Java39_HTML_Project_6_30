@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>游戏学院</title>
+		<link rel="stylesheet" href="css/css01.css" type="text/css"/>
+		<link rel="stylesheet" href="css/css02.css" type="text/css"/>
+		<link rel="stylesheet" href="css/css03.css" type="text/css"/>
+		<script src="js/shouYe.js"></script>
+		<script src="js/zhuCe.js"></script>
+		
+ 
+<script type="text/javascript">  
+//主函数  
+var s=function(){  
+	var interv=2000; //切换间隔时间  
+	var interv2=10; //切换速度  
+	var opac1=80; //文字背景的透明度  
+	var source="show" //焦点轮换图片容器的id名称  
+	//获取对象  
+	function getTag(tag,obj){  
+		if(obj==null){  
+			return document.getElementsByTagName(tag);  
+		}else{  
+			return obj.getElementsByTagName(tag);  
+		}  
+	}  
+	function getid(id){  
+		return document.getElementById(id);  
+	};  
+	var opac=0,j=0,t=63,num,scton=0,timer,timer2,timer3;  
+	var id=getid(source);  
+	id.removeChild(getTag("div",id)[0]);  
+	var li=getTag("li",id);  
+	var div=document.createElement("div");  
+	var title=document.createElement("div");  
+	var span=document.createElement("span");  
+	var button=document.createElement("div");  
+	button.className="button";  
+	for(var i=0;i<li.length;i++){  
+		var a=document.createElement("a");  
+		a.innerHTML=i+1;  
+		a.onclick=function(){  
+			clearTimeout(timer);  
+			clearTimeout(timer2);  
+			clearTimeout(timer3);  
+			j=parseInt(this.innerHTML)-1;  
+			scton=0;  
+			t=63;  
+			opac=0;  
+			fadeon();  
+		};  
+		a.className="b1";  
+		a.onmouseover=function(){  
+			this.className="b2";  
+		};  
+		a.onmouseout=function(){  
+			this.className="b1";sc(j);  
+		};  
+		button.appendChild(a);  
+	}  
+	//控制图层透明度  
+	function alpha(obj,n){  
+		if(document.all){  
+			obj.style.filter="alpha(opacity="+n+")";  
+		}else{  
+			obj.style.opacity=(n/100);  
+		}  
+	}  
+	//控制焦点按钮  
+	function sc(n){  
+		for(var i=0;i<li.length;i++){  
+			button.childNodes[i].className="b1";  
+		};  
+		button.childNodes[n].className="b2";  
+	}  
+	title.className="num_list";  
+	title.appendChild(span);  
+	alpha(title,opac1);  
+	id.className="d1";  
+	div.className="d2";  
+	id.appendChild(div);  
+	id.appendChild(title);  
+	id.appendChild(button);  
+	//渐显  
+	var fadeon=function(){  
+		opac+=5;  
+		div.innerHTML=li[j].innerHTML;  
+		span.innerHTML=getTag("img",li[j])[0].alt;  
+		alpha(div,opac);  
+		if(scton==0){  
+			sc(j);  
+			num=-2;  
+			scrolltxt();  
+			scton=1;  
+		};  
+		if(opac<100){  
+			timer=setTimeout(fadeon,interv2);  
+		}else{  
+			timer2=setTimeout(fadeout,interv);  
+		}  
+	};  
+	//渐隐  
+	var fadeout=function(){  
+		opac-=5;  
+		div.innerHTML=li[j].innerHTML;  
+		alpha(div,opac);  
+		if(scton==0){  
+			num=2;  
+			scrolltxt();  
+			scton=1;  
+		}  
+		if(opac>0){  
+			timer=setTimeout(fadeout,interv2);  
+		}else{  
+			if(j<li.length-1){  
+				j++;  
+			}else{  
+			j=0;  
+			}  
+			fadeon();  
+		}  
+	};  
+	//滚动文字  
+	var scrolltxt=function(){  
+		t+=num;  
+		span.style.marginTop=t+"px";  
+		if(num<0 && t>3){  
+			timer3=setTimeout(scrolltxt,interv2);  
+		}else if(num>0 && t<62){  
+			timer3=setTimeout(scrolltxt,interv2);  
+		}else{  
+			scton=0  
+		}  
+	};  
+	fadeon();  
+}  
+//初始化  
+window.onload=s;  
+</script>
+	</head>
+	<body>
+	<!--头部-->
+	<div id="div1" class="div99">
+			<div class="div34">
+				<a id="a1" href="#" class="a2" onclick="QQdengLu()">QQ登陆</a><a id="a2" href="#" class="a3" onclick="weiXinDengLu()">微信登陆</a>
+				<p class="p21" onclick="guanBi()">
+					<img id="img1" class="img29" src="img/shouYe/QQ截图20170626201629.png"/>
+					<img id="img2" class="img30" src="img/shouYe/QQ截图20170626201618.png" />
+				</p>
+				<div id="div2" class="div35">
+				<img class="img28" src="img/shouYe/QQ截图20170626155730.png" />
+				</div>
+				<form id="form1" class="form2" action="#" method="get" onsubmit="return ch()">
+					<div class="div33">
+						
+						<h2 class="h26">账号密码登陆</h2>
+						<input id="input1" class="input3" name="user" type="text" placeholder="支持QQ号/手机号/QQ邮箱" value="" onblur="checkUser()" onfocus="qingChu1()"/><span id="span1"></span>
+						<br />
+						<input id="input2" class="input3" name="pass" type="password" placeholder="请输入密码" value="" onblur="checkPass()"  onfocus="qingChu2()"/><span id="span2"></span>
+						<br />
+						<input class="input4" type="submit" value="登   陆" />
+						<p class="p20">
+							<a href="#">忘了密码？</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="html/zhuCe.html" target="_blank">注册新账号</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">意见反馈</a>
+						</p>
+					</div>
+			</div>
+			</form>
+		</div>
+	<div class="div100">
+		<header>
+				<div class="div1">
+					<a href="#"><img class="img1" src="img/shouYe/logo.png" /></a>
+					<ul class="ul1">
+						<li class="li1">
+							<div class="div5"></div>
+							<a class="a100" href="html/shouYe.html" target="_blank"></a>
+						</li>
+						<li class="li2">
+							<div class="div2"></div>
+							<a class="a101" href="tx1/index.html" target="_blank"></a>
+							
+						</li>
+						<li class="li3">
+							<div class="div3"></div>
+							<a class="a102" href="tx3/index.html" target="_blank"></a>
+							
+						</li>
+						<li class="li4">
+							<div class="div4"></div>
+							<a class="a103" href="web/Marketing.html" target="_blank"></a>
+							
+						</li>
+						<li class="li5">
+							<!--<div class="div5"></div>-->
+							<a class="a104" href="http://www.baidu.com"></a>
+						
+						</li>
+					</ul>
+					<img class="img2" src="img/shouYe/search_hover.png" onclick="tupian()" />
+					<!--<img class="img4" src="../img/shouYe/QQ截图20170611234749.png" />-->
+					<div class="div6" id="div6">
+						<img class="img5" src="img/shouYe/QQ截图20170611224850.png" />
+						<form action="#" method="get" class="form1">
+							<input class="input1" type="search" name="souSuo" placeholder="马化腾演讲" />
+							<input class="input2" type="submit" value="搜索" />
+						</form>
+					</div>
+
+					<a class="a1" href="#">
+						<img class="img3" src="img/shouYe/qq.png" /><br />
+						<span class="span1" onclick="daKai()">登陆</span>
+					</a>
+
+				</div>
+			</header>
+			
+		</div>
+	
+	<div id="show" class="d1" style="width: 1350px; height: 240px;">  
+	<div class="loading">Loading...<br /><img src="img/655.png" width="1346" height="357" /></div>  
+	<ul>  
+		<li><a href="http://www.17sucai.com/"><img src="img/655.png" width="1346" height="300" alt="脱口秀专场" /></a></li>  
+		<li><a href="http://www.17sucai.com/"><img src="img/655.png" width="1346" height="300" alt="" /></a></li>  
+		<li><a href="http://www.17sucai.com/"><img src="img/655.png" width="1346" height="300" alt="" /></a></li>  
+		<li><a href="http://www.17sucai.com/"><img src="img/655.png" width="1346" height="300" alt="" /></a></li>  
+	</ul>  
+</div>  
+	
+	
+	
+	
+	
+	
+	<br /><br />
+		<!--社区交流-->
+		
+		<div class="bg2">
+			<div class="wrap">
+				<div class="u-title">
+					<h2>社区交流</h2>
+					<i class="brd">
+						
+					</i>
+				</div>
+				<div class="clearfix">
+					<div class="place1 fl">
+						<h3 class="u-title2">最新阅读</h3>
+						<ul class="cont">
+							<li>
+								<h4>
+									<span>
+										<a href="#" title="揭秘音乐..">揭秘音乐游戏鼻祖《动感小子》的诞生新闻</a>
+									</span>
+								</h4>
+								<h5>
+									说起音乐游戏，相信大家都不会陌生，从早期的《DDR》、《太鼓达人》到乐舞类的《劲舞团》再到如今的《LoveLive!》、《偶像大师》、《BanG!》等，音乐类游戏已经走过了数十个年头了。音乐类游戏究竟起源于何处？这一游戏类型诞生的背后又有何故事？前不久，automaton对独立游戏公司七音社社长松浦...
+								</h5>
+								<div class="u-author">
+									<span><i class="u-ico2 ico1"></i>1111</span>
+									<span><i class="u-ico2 ico2"></i>2</span>
+									<span class="fr">2017-05-31</span>
+								</div>
+							</li>
+							<li>
+								<h4>
+									<span>
+										<a href="#" title="创梦天地..">创梦天地将承办Game Jam向全球征集独立游戏</a>
+									</span>
+								</h4>
+								<h5>
+									2017年6月16日至18日，由CiGA中国独立游戏联盟主办、创梦天地承办的CiGA Game Jam 2017游戏创作节深圳站（下文简称CGJ）将在深圳南山区侨城东路99号梦空间举行，预计100位独立游戏开发者将参与此次活动。作为华人圈最大的game jam，CGJ迄今已举办7届，覆盖国内7-9个...
+								</h5>
+								<div class="u-author">
+									<span><i class="u-ico2 ico1"></i>2222</span>
+									<span><i class="u-ico2 ico2"></i>0</span>
+									<span class="fr">2017-05-30</span>
+								</div>
+							</li>
+							<li>
+								<h4>
+									<span>
+										<a href="#" title="风口下..">风口下的"狼人杀":游戏行业知识产权新隐忧</a>
+									</span>
+								</h4>
+								<h5>
+									你怎么都不会想到，几年前和朋友聚会时的休闲游戏——狼人杀，在2017年上半年会成为整个游戏界的标杆。它迅速的完成了从线下到线上的逆袭，成为创业与投资的新风口。一时间，各种各样“狼人杀”瞬间冒了出来，有手机游戏、有线下联赛、还有综艺节目、直播等等，以狼人文化为背景的杀人游戏的井喷，成为了中国游戏产业迅...
+								</h5>
+								<div class="u-author">
+									<span><i class="u-ico2 ico1"></i>3333</span>
+									<span><i class="u-ico2 ico2"></i>4</span>
+									<span class="fr">2017-05-29</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="place2 fl">
+						<h3 class="u-title2">热门回答</h3>
+						<div class="box">
+							<a href="#" target="_blank" class="problem">
+								<h4>
+									<span>游戏的音效BGM对于整个游戏的体验有多重要？</span>
+								</h4>
+							</a>
+							<ul class="cont">
+								<li>
+									<img class="fl" width="45" height="45" src="img/SheQu/666.png"/>
+									<p><a href="#" target="_blank" title="来自合肥白水坝的网友">来自合肥的网友</a></p>
+									<span>2017-06-23 回答了该问题</span>
+									<h5><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仙剑的音乐真的是很经典耐听的.</a></h5>
+								</li>
+								<li>
+									<img class="fl" width="45" height="45" src="img/SheQu/777.png"/>
+									<p><a href="#" target="_blank" title="来自芜湖的网友">来自芜湖的网友</a></p>
+									<span>2017-06-25 回答了该问题</span>
+									<h5><a href="#">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冒险岛这个游戏真的是游戏中的经典.</a></h5>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="place3 fr">
+						<h3 class="u-title2">精彩推荐</h3>
+						<a href="#" target="_blank" class="cont clearfix">
+							<img src="img/SheQu/123.png" width="305" height="216" alt="好莱坞电影制作" title="好莱坞电影制作"/>
+							<h5>论道|好莱坞电影CG角色表情的制作</h5>
+						</a>
+					</div>
+				</div>
+				<div class="bbs-ico" clearfix>
+					<a href="#" target="_blank">
+						<i class="u-ico ico1 fl"></i>
+						<span>程序</span>
+					</a>
+					<a href="#" target="_blank">
+						<i class="u-ico ico2 fl"></i>
+						<span>策划</span>
+					</a>
+					<a href="#" target="_blank">
+						<i class="u-ico ico3 fl"></i>
+						<span>美术</span>
+					</a>
+					<a href="#" target="_blank">
+						<i class="u-ico ico4 fl"></i>
+						<span>VR</span>
+					</a>
+					<a href="#" target="_blank">
+						<i class="u-ico ico5 fl"></i>
+						<span>测试</span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--视频分享-->
+		<div class="bg3">
+			<div class="wrap">
+				<div class="u-title">
+					
+					<h2>视频分享</h2>
+					
+				</div>
+				<div class="u-tab clearfix tc" id="j-tab">
+					<em class="nice nic">策划</em>
+					<span>/</span>
+					<em class="nice">程序</em>
+					<span>/</span>
+					<em class="nice">美术</em>
+					<span>/</span>
+					<em class="nice">VR</em>
+					
+				</div>
+				<div>
+					
+						<li><img src="img/SheQu/214.png" /></li>
+					
+					
+				</div>
+				<div class="adver clearfix">
+					<a href="http://gad.qq.com/">
+						<img src="img/SheQu/808.png" width="955" height="173" title="Gad平台系列丛书-"/>
+					</a>
+					<a href="http://gad.qq.com/">
+						<img src="img/SheQu/452.png" width="306" height="173" title="开发者平台"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--优秀获奖作品-->
+		<div class="bg2 mp">
+			<div class="wrap clearfix">
+				<div class="u-title">
+					<h2>优秀获奖作品</h2>
+					<i class="brd">
+						
+					</i>
+				</div>
+				<ul class="cont clearfix">
+					<li>
+						<a href="#"><img src="img/SheQu/555.png" width="119" height="119" title="影子里的我">
+							<h4><strong>我的影子</strong></h4>
+							<p></p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="img/SheQu/444.png" width="119" height="119" title="说剑">
+							<h4><strong>说剑</strong></h4>
+							<p></p>
+							</a>
+					</li>
+					<li>
+						<a href="#"><img src="img/SheQu/555.png" width="119" height="119" title="影子里的我">
+							<h4><strong>我的影子</strong></h4>
+							<p></p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="img/SheQu/444.png" width="119" height="119" title="说剑">
+							<h4><strong>说剑</strong></h4>
+							<p></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/SheQu/555.png" width="119" height="119" title="影子里的我">
+							<h4><strong>我的影子</strong></h4>
+							<p></p>
+						</a>
+					</li>
+					
+				</ul>
+				<div class="process fl">
+					<a href="http://gad.qq.com/">
+						<img src="img/SheQu/447.png" alt="Gad-腾讯游戏开发者平台" title="Gad-腾讯游戏开发者平台"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--合作机构  友情链接-->
+		<div class="wrap pb0">
+			<div class="m-coo">
+				<h4 class="u-title2"><strong>合作机构</strong></h4>
+				<div class="coop-logo">
+					<br />
+					<a href="#"><img src="img/SheQu/619.png" title="合作机构"/></a>
+				</div>
+			</div>
+			<div class="u-friendLink">
+			<h4 class="u-title2 mb22">友情链接</h4>
+			<div class="list">
+				<em>媒体网站</em>
+				<div class="box clearfix">
+					<a href="#">游戏头条</a>
+					<a href="#">4399小游戏</a>
+					<a href="#">VR186</a>
+					<a href="#">VR资源网</a>
+					<a href="#">迷你Game</a>
+					<a href="#">cut开发社区</a>
+					<a href="#">游戏坛子</a>
+					<a href="#">星辰计划</a>
+					<a href="#">UCCVR</a>
+					<a href="#">iidc信息交互网</a>
+					<a href="#">中国Game论坛</a>
+					<a href="#">白鲸社区</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		
+		<!--导航栏-->
+		
+		
+		<!--底部-->
+		<div class="copyright">
+			<p>
+				<a href="#">服务协议</a>
+				丨
+				        
+				        <a href="#">隐私政策</a>
+				丨
+				        
+				        <a href="#">版权保护投诉指引</a>
+				丨
+				        
+			</p>
+			<p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
+			<p>腾讯公司 版权所有</p>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

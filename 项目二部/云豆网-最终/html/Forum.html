@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学员论坛</title>
+		<link rel="stylesheet" type="text/css" href="../css/forum.css" />
+		<script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+		<script src="../js/forum.js" type="text/javascript"></script>
+	</head>
+	<body onload="showpic()">
+		<header>
+			<!--头部,设置,登录-->
+			<div class="firstLine">
+				<p class="homeAge">
+					<a  title="设置首页" id="sethomepage" href="#tubiao">设为首页</a>
+					<a  title="收藏本站" id="addThis" href="javascript:void(0);">收藏本站</a>
+				</p>
+				<p class="entry">
+					<a href="Login.html" title="">登录</a>
+					<span>丨</span>
+					<a href="Register.html" title="">注册</a>
+				</p>
+			</div>
+		</header>
+		<div id="search">
+			<!--form表单搜索框-->
+			<p class="searimg">
+				<img src="../images/logo-yds.gif" />
+			</p>
+			<form>
+				<img src="../images/search.png" />
+				<input type="search" value="请输入搜索内容" id="uSearch"/>
+				<select >
+					<option value="post" ><a class="selects" href="#">帖子</a></option>
+					<option value="user" ><a class="selects" href="#">用户</a></option>
+				</select>
+				<input type="image" name="imgButton" id="imgButton" value="sear" src="../images/h_btn_srch.gif" />
+			</form>
+		</div>
+		<nav class="nav">
+			<!--导航栏-->
+			<ul class="nav_ul">
+				<li id="mn_portal" class="b c" ><a href="Homepage.html" target="_blank" title="Portal"  >首   页</a></li>
+				<li id="mn_Nd20f" class="b"><a href="http://www.kgc.cn/"  target="_blank"  >课工场</a></li>
+				<li id="mn_forum" class="a b"  ><a href="Forum.html"  title="BBS" target="_blank" >学员论坛</a></li>
+				<li id="mn_N1b30" class="b"><a href="Campus.html"  target="_blank" >活跃校区</a></li>
+				<li id="mn_N7524" class="b"><a href="Interview.html"  target="_blank"  >面试第一站</a></li>
+				<li id="mn_N7b6a" class="b"><a href="http://ask.bdqn.cn"  target="_blank" >互动问答</a></li>
+				<li id="mn_home"  class="b"><a href="Schoolmate.html"  title="Space" target="_blank" >同学圈子</a></li>
+				<li id="mn_N2d63" class="b"><a href="Download.html" target="_blank">客户端下载</a></li>
+				<li id="mn_N5057" class="b"><a href="HelpCenter.html"  target="_blank">帮助中心</a></li>
+			</ul>
+		</nav>
+		<section>
+			<p class="sectionFirst">
+				<a href="Homepage.html" >
+					<img src="../images/小屋1.png" />
+				</a>
+				<a href="Forum.html" class="xue">学员论坛</a>
+			</p>
+			<div class="second">
+			<p class="sectionSecond">
+				<img src="../images/二.png" />
+				<span class="en1">今日:</span>
+				<span class="en2">166</span>
+				<span class="en1">丨  昨日:</span>
+				<span class="en2">366</span>
+				<span class="en1">丨  帖子:</span>
+				<span class="en2">568928</span>
+				<span class="en1">丨  欢迎新会员:</span>
+				<span class="en3"><a href="http://home.bdqn.cn/space-uid-8125149.html">Abigale</a></span>
+			</p>
+			<div class="answer">
+				<a href="http://home.bdqn.cn/forum.php?mod=guide&view=new">最新回复</a>
+			</div>
+			<p class="clear"></p>
+			</div>
+			
+			<!--迎新楼-->
+			<div class="welcome same">
+				<!--first11第一个的第一行-->
+				<p class="first11 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">迎新楼</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小青豆
+						</a>
+					</span>
+					<p id="jian1" class="jian" onclick="jian1()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia1" class="jia" onclick="jia1()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first12">
+					<ul class="ul">
+						<li class="tu11 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/10.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c11 zi">
+								<a href="#" class="xin">新手上路
+								<span class="xinNum">(8)</span>
+								</a>
+								<p class="zhuti">主题:2896,帖数:1万</p>
+								<a href="#" class="zuihou">最后发表:8小时前</a>
+							</div>
+						</li>
+						<li class="tu12 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/12.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c12 zi">
+								<a href="#" class="xin">认识青鸟
+								</a>
+								<p class="zhuti">主题:28,帖数:722</p>
+								<a href="#" class="zuihou">最后发表:2017-6-9 09:18</a>
+							</div>
+						</li>
+						<li class="tu13 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/13.png"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c13 zi">
+								<a href="#" class="xin">青粉朋友圈
+								</a>
+								<p class="zhuti">主题:3088,帖数:682</p>
+								<a href="#" class="zuihou">最后发表:两天前</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--实验室-->
+			<div class="experiment same">
+				<p class="first21 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">实验室</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小青豆
+						</a>
+					</span>
+					<p id="jian2"  class="jian" onclick="jian2()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia2"  class="jia" onclick="jia2()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first22">
+					<ul class="ul">
+						<li class="tu21 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/21.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c21 zi">
+								<a href="#" class="xin">资料库
+								<span class="xinNum">(6)</span>
+								</a>
+								<p class="zhuti">主题:3296,帖数:4万</p>
+								<a href="#" class="zuihou">最后发表:8分钟前</a>
+							</div>
+						</li>
+						<li class="tu22 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/22.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c22 zi">
+								<a href="#" class="xin">软件库
+									<span class="xinNum">(8)</span>
+								</a>
+								<p class="zhuti">主题:1867,帖数:4万</p>
+								<a href="#" class="zuihou">最后发表:4小时前</a>
+							</div>
+						</li>
+						<li class="tu23 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/23.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c23 zi">
+								<a href="#" class="xin">代码库
+								</a>
+								<p class="zhuti">主题:5412,帖数:1万</p>
+								<a href="#" class="zuihou">最后发表:两天前 21:20</a>
+							</div>
+						</li>
+						<hr />
+						<li class="tu24 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/24.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c24 zi">
+								<a href="#" class="xin">习题库
+									<span class="xinNum">(12)</span>
+								</a>
+								<p class="zhuti">主题:2024,帖数:2万</p>
+								<a href="#" class="zuihou">最后发表:2小时前</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--教学楼-->
+			<div class="teaching same">
+				
+				<p class="first31 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">教学楼</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小青豆
+						</a>
+					</span>
+					<p id="jian3"  class="jian" onclick="jian3()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia3" class="jia"  onclick="jia3()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first32">
+					<ul class="ul">
+						<li class="tu31 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/31.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c31 zi">
+								<a href="#" class="xin">Java软件开发
+								<span class="xinNum">(9)</span>
+								</a>
+								<p class="zhuti">主题:8686,帖数:4万</p>
+								<a href="#" class="zuihou">最后发表:2分钟前</a>
+							</div>
+						</li>
+						<li class="tu32 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/22.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c32 zi">
+								<a href="#" class="xin">.NET软件开发
+									<span class="xinNum"></span>
+								</a>
+								<p class="zhuti">主题:3867,帖数:1万</p>
+								<a href="#" class="zuihou">最后发表:昨天 19:20</a>
+							</div>
+						</li>
+						<li class="tu33 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/33.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c33 zi">
+								<a href="#" class="xin">Android应用开发
+									
+								</a>
+								<p class="zhuti">主题:4154,帖数:7878</p>
+								<a href="#" class="zuihou">最后发表:2017-6-8 17:50</a>
+							</div>
+						</li>
+						
+						<hr />
+						<li class="tu34 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/23.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c34 zi">
+								<a href="#" class="xin">网络营销专家
+									<span class="xinNum">(8)</span>
+								</a>
+								<p class="zhuti">主题:5412,帖数:1万</p>
+								<a href="#" class="zuihou">最后发表:3小时前</a>
+							</div>
+						</li>
+						<li class="tu35 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/35.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c35 zi">
+								<a href="#" class="xin">数据库
+								</a>
+								<p class="zhuti">主题:2024,帖数:5007</p>
+								<a href="#" class="zuihou">最后发表:3天前</a>
+							</div>
+						</li>
+						<li class="tu36 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/36.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c36 zi">
+								<a href="#" class="xin">网络技术
+									<span class="xinNum">(2)</span>
+								</a>
+								<p class="zhuti">主题:2516,帖数:5086</p>
+								<a href="#" class="zuihou">最后发表:2小时前</a>
+							</div>
+						</li>
+						<hr />
+						<li class="tu37 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/37.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c37 zi">
+								<a href="#" class="xin">软件测试
+								</a>
+								<p class="zhuti">主题:1814,帖数:4879</p>
+								<a href="#" class="zuihou">最后发表:前天 21:12</a>
+							</div>
+						</li>
+						<li class="tu38 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/38.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c38 zi">
+								<a href="#" class="xin">移动应用开发
+								</a>
+								<p class="zhuti">主题:592,帖数:1492</p>
+								<a href="#" class="zuihou">最后发表:2小时前</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--训练营-->
+			<div class="training same">
+				<!--first11第四个的第一行-->
+				<p class="first41 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">训练营</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小青豆
+						</a>
+					</span>
+					<p id="jian4" class="jian"  onclick="jian4()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia4"  class="jia" onclick="jia4()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first42">
+					<ul class="ul">
+						<li class="tu41 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/41.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c11 zi">
+								<a href="#" class="xin">行业情报
+								<span class="xinNum">(2)</span>
+								</a>
+								<p class="zhuti">主题:1284,帖数:2996</p>
+								<a href="#" class="zuihou">最后发表:3小时前</a>
+							</div>
+						</li>
+						<li class="tu22 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/22.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c12 zi">
+								<a href="#" class="xin">面试技巧
+								</a>
+								<p class="zhuti">主题:728,帖数:3087</p>
+								<a href="#" class="zuihou">最后发表:2天前</a>
+							</div>
+						</li>
+						<li class="tu23 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/43.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c13 zi">
+								<a href="#" class="xin">职场攻略
+								</a>
+								<p class="zhuti">主题:2332,帖数:5455</p>
+								<a href="#" class="zuihou">最后发表:昨天 13:34</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--三角地-->
+			<div class="training same">
+				<!--first51第五个的第一行-->
+				<p class="first51 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">三角地</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小镜子
+						</a>
+					</span>
+					<p id="jian5" class="jian"  onclick="jian5()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia5"  class="jia" onclick="jia5()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first52">
+					<ul class="ul">
+						<li class="tu51 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/51.gif"/>
+							</a>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c51 zi">
+								<a href="#" class="xin">休闲一刻
+								<span class="xinNum">(2)</span>
+								</a>
+								<p class="zhuti">主题:3084,帖数:1万</p>
+								<a href="#" class="zuihou">最后发表:3小时前</a>
+							</div>
+						</li>
+						<li class="tu52 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/52.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c52 zi">
+								<a href="#" class="xin">学员生活
+								</a>
+								<p class="zhuti">主题:1644,帖数:9186</p>
+								<a href="#" class="zuihou">最后发表:昨天 15:05</a>
+							</div>
+						</li>
+						<li class="tu53 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/53.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c53 zi">
+								<a href="#" class="xin">贴图专区
+								</a>
+								<p class="zhuti">主题:380,帖数:3466</p>
+								<a href="#" class="zuihou">最后发表:2017-6-9 13:34</a>
+							</div>
+						</li>
+						<hr />
+						<li class="tu54 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/54.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c54 zi">
+								<a href="#" class="xin">全国IT精英挑战赛
+								</a>
+								<p class="zhuti">主题:260,帖数:1968</p>
+								<a href="#" class="zuihou">最后发表:2017-6-10 18:34</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--行政楼-->
+			<div class="training same">
+				<!--first61第六个的第一行-->
+				<p class="first61 sameSpan">
+					<a class="f1" href="http://home.bdqn.cn/forum.php?gid=166" target="_blank">行政楼</a>
+					<span class="fen">分区版主:
+						<a class="qingdou" href="http://home.bdqn.cn/space-uid-36223.html" target="_blank">
+						小镜子
+						</a>
+					</span>
+					<p id="jian6" class="jian"  onclick="jian6()">
+						<img src="../images/减号.gif" />
+					</p>
+					<p id="jia6"  class="jia" onclick="jia6()">
+						<img src="../images/加号.gif" />
+					</p>
+				</p>
+				<div id="first62">
+					<ul class="ul">
+						<li class="tu61 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/61.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c61 zi">
+								<a href="#" class="xin">咨询投诉
+								<span class="xinNum">(2)</span>
+								</a>
+								<p class="zhuti">主题:239,帖数:729</p>
+								<a href="#" class="zuihou">最后发表:昨天 10:32</a>
+							</div>
+						</li>
+						<li class="tu62 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/62.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c62 zi">
+								<a href="#" class="xin">反馈建议
+								</a>
+								<p class="zhuti">主题:2371,帖数:6818</p>
+								<a href="#" class="zuihou">最后发表:昨天 19:35</a>
+							</div>
+						</li>
+						<li class="tu63 tu">
+							<!--图-->
+							<a href="#">
+							<img src="../images/63.gif"/>
+							</a>
+							<!--图的右侧一块,进行浮动-->
+							<div class="c53 zi">
+								<a href="#" class="xin">站务管理
+								</a>
+								<p class="zhuti">主题:531,帖数:6879</p>
+								<a href="#" class="zuihou">最后发表:2017-6-7 19:39</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--固定定位返回顶部-->
+			<p id="show" class="sho" >
+			<a href="#">
+				<img src="../images/scrolltop.png" class="pic" />
+			</a>
+			</p>
+			<!--<p id="disappear" >
+				<a name="tubiao">
+				<img src="../images/ding2.png"/>
+				</a>
+			</p>-->
+		<footer>
+			 <div class="f-div1">
+        		<a href="forum.php?mobile=yes" >手机版社区</a> &nbsp;|&nbsp; <a href="HelpCenter.html" >帮助中心</a> &nbsp;|&nbsp; <a href="mailto:YL003@bdqn.cn" >联系我们</a> &nbsp;|&nbsp; <a href="http://www.bdqn.cn/sitemap" target="_blank" >网站地图</a> &nbsp;| &nbsp;<a title="" href="http://www.bdqn.cn" target="_blank"> 北大青鸟官方网站</a>
+   			 </div>
+		    <div class="f-div2">
+		        <p>Copyright 1999-2017 Beijing Aptech Beida Jade Bird Information Technology Co.,Ltd</p>
+		
+		        <p>北大青鸟IT教育 北京阿博泰克北大青鸟信息技术有限公司 版权所有</p>
+		
+		        <p class="last_line">
+		            <span><a href="http://www.miibeian.gov.cn" target="_blank">京ICP备11045574号-3  京公网安备11010802013845号</a></span>
+		            <a target="_blank" class="offset5"
+		               href="https://search.szfw.org/cert/l/CX20120920001700001750"
+		               id="___szfw_logo___">
+		                <img src="../images/footer_img.png"/>
+		            </a>
+		        </p>
+		
+		    </div>
+
+		</footer>
+	</body>
+</html>

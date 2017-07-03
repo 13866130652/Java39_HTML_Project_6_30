@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度音乐-听到极致</title>
+    <link href="../css/music.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/playm.js" type="text/javascript"></script>
+    <script src="../js/login.js" type="text/javascript"></script>
+    <link href="../css/login.css" type="text/css" rel="stylesheet"/>
+    <script>
+        function chge(){
+            var page = 1;
+            var pageIndex = 0;
+            var mboxEntryList = document.getElementById('list');
+            var an=document.getElementById("left");
+            an.style.borderColor="#F8F8F8";
+            document.getElementById('left').onclick = function(){
+                var width = parseInt( document.getElementById('list-wrapper').offsetWidth);
+                pageIndex = (pageIndex>0)?(pageIndex-1):page;
+                mboxEntryList.style.marginLeft = '-' + (pageIndex*width) + 'px';
+            };
+            document.getElementById('right').onclick = function(){
+                var width = parseInt( document.getElementById('list-wrapper').offsetWidth);
+                pageIndex = (pageIndex<page)?(pageIndex+1):0;
+                mboxEntryList.style.marginLeft = '-' + (pageIndex*width) + 'px';
+            }
+        }
+
+
+        //图片的序号
+        var i =1;
+        //获得对应的tu，同时设置其背景颜色
+        function getel(){
+            var arr=document.getElementsByName("tu");
+            for(var j=0;j<arr.length;j++){
+                var a=document.getElementById("a"+i);
+                if(i==j+1){
+                    arr[j].style.backgroundColor="red";
+                }else{
+                    arr[j].style.backgroundColor="gray";
+                }
+            }
+        }
+        //实现图片的轮播效果
+        function change() {
+            if(i==9){
+                i=1;
+            }
+            var img = document.getElementById("image");
+            img.src="../img4/"+"t"+i+".jpg";
+            getel();
+            i++;
+        }
+
+        //循环调用某函数执行循环操作
+        var num=0;
+        function  ch(){
+            num = setInterval("change()",1000);
+        }
+        ch();
+
+        //当鼠标移入到tu是，显示对应的图片，同时改变其背景颜色
+        function  stop(n){
+            //停止自定义的循环操作
+            clearInterval(num);
+            var img = document.getElementById("image");
+            img.src="../img4/"+"t"+n+".jpg";
+            var arr=document.getElementsByName("tu");
+            for(var j=0;j<arr.length;j++){
+                var a=document.getElementById("a"+i);
+                if(n==j+1){
+                    arr[j].style.backgroundColor="red";
+                }else{
+                    arr[j].style.backgroundColor="gray";
+                }
+            }
+            i=n;
+        }
+
+        function on(){
+           var mouse= document.getElementById("bd");
+            mouse.style.display="inline";
+        }
+
+        function out(){
+            var mouse= document.getElementById("bd");
+            mouse.style.display="none";
+        }
+
+         //图片的序号
+         var w =1;
+         //获得对应的tup，同时设置其背景颜色
+         function geter(){
+             var ar=document.getElementsByName("tup");
+             for(var z=0;z<ar.length;z++){
+                 var a=document.getElementById("d"+w);
+                 if(w==z+1){
+                     ar[z].style.backgroundColor="red";
+                 }else{
+                     ar[z].style.backgroundColor="gray";
+                 }
+             }
+         }
+         //实现图片的轮播效果
+         function gai() {
+             if(w==4){
+                 w=1;
+             }
+             var img = document.getElementById("imgs");
+             img.src="../img4/"+"k"+w+".jpg";
+             geter();
+             w++;
+         }
+
+         //循环调用某函数执行循环操作
+         var shu=0;
+         function  zou(){
+             shu = setInterval("gai()",1000);
+         }
+         zou();
+
+         //当鼠标移入到tup是，显示对应的图片，同时改变其背景颜色
+         function  ding(n){
+             //停止自定义的循环操作
+             clearInterval(shu);
+             var img = document.getElementById("imgs");
+             img.src="../img4/"+"k"+n+".jpg";
+             var ar=document.getElementsByName("tup");
+             for(var z=0;z<ar.length;z++){
+                 var a=document.getElementById("d"+w);
+                 if(n==z+1){
+                     ar[z].style.backgroundColor="red";
+                 }else{
+                     ar[z].style.backgroundColor="gray";
+                 }
+             }
+             w=n;
+         }
+
+
+    </script>
+</head>
+<body>
+<div id="header">
+
+    <div class="topheader">
+        <div class="top"> <ul class="head">
+            <li><a  href="baidu.html" target="_self">网页</a></li>
+            <li><a  href="baiduNews.html" target="_self">新闻</a></li>
+            <li><a  href="baidu-tieba.html" target="_self">贴吧</a></li>
+            <li><a  href="zhidao.html" target="_self">知道</a></li>
+            <li><strong>音乐</strong></li>
+            <li><a  href="picture.html" target="_self">图片</a></li>
+            <li><a  href="baidu-play1.html" target="_self">视频</a></li>
+            <li><a  href="#">地图</a></li>
+            <li><a  href="Documents.html" target="_self">文库</a></li>
+        </ul></div>
+        <div class="tr">  <ul >
+            <li>
+                <a href="baidu.html" target="_self" class="ba">百度首页</a>
+            </li>
+            <li><a href="javascript:void(0)" onclick="loginshow()">登录</a></li>
+            <li><a href="baidu-register.html" target="_blank">注册</a></li>
+            <li class="vip"><a target="_blank" href="/home/vip?pst=home"><span class="z1">开通VIP</span></a></li>
+            <li><a target="_blank" href="http://music.baidu.com/mall?from=pcweb_music_qrcode">音乐商城</a></li>
+        </ul></div>
+    </div>
+
+    <div class="headertop">
+        <div class="headmid">
+            <a class="logo" href="http://music.baidu.com/" title="百度知道"><img src="../img4/music.png"/></a>
+            <form action="#" method="get" name="search"  class="searchform">
+                <input  type="text" class="sou"   value="" placeholder="请输入歌名、歌词、歌手或专辑"/>
+                <button type="submit" class="btn">百度一下</button>
+            </form>
+            <div class="search">
+                <ul class="hot-search">
+                    <li>
+                        <a class="key" href="/search?key=薛之谦">薛之谦</a>
+                    </li>
+
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=李宗盛">李宗盛</a>
+                    </li>
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=五月天">五月天</a>
+                    </li>
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=梁静茹">梁静茹</a>
+                    </li>
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=周杰伦">周杰伦</a>
+                    </li>
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=张杰">张杰</a>
+                    </li>
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=刚好遇见你">刚刚好</a>
+                    </li>
+
+
+
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=林俊杰">林俊杰</a>
+                    </li>
+
+
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=成都">成都</a>
+                    </li>
+
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=三生三世">陈梓潼</a>
+                    </li>
+
+                    <li>
+                        &nbsp;
+                        <a class="key" href="/search?key=女儿情">女儿情</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="nav-wrapper" id="menulist">
+    <div class="clearfix">
+        <ul class="nav">
+            <li>
+                <a href="/" class="home">首页</a>
+            </li>
+            <li>
+                <a href="/songlist" class="songlist">歌单</a>
+            </li>
+            <li>
+                <a href="/dynamic" class="dc">动态<img class="dcg" src="../img4/new.png"/></a>
+            </li>
+            <li>
+                <a href="/artist" class="singer">歌手</a>
+            </li>
+            <li>
+                <a href="/tag" class="music">分类</a>
+            </li>
+            <li>
+                <a href="/top">榜单</a>
+            </li>
+            <li>
+                <a href="/mv">MV</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.showstart.com/event/list" class="show">演出</a>
+            </li>
+        </ul>
+        <div class="search-btns">
+            <ul>
+                <li><a  class="btn" title="随心听" href="http://fm.baidu.com"
+                       target="_blank" ><img src="../img4/icon-fm.png"/>
+                    <span class="text">随心听</span></a>
+                    </li>
+                <li><a class="search-box" title="音乐盒" href="http://play.baidu.com"
+                       target="_blank" ><img src="../img4/icon-mbox.png" class="gs"/>
+                    <span class="text">我的音乐盒</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="mod">
+    <div class="box-icon"></div>
+    <p class="mainTitle">百度随心听</p>
+    <p class="subTitle">不用找歌直接听!</p>
+    <a id="left" type="button" onclick="chge()"></a>
+    <a id="right" type="button" onclick="chge()"></a>
+    <div id="list-wrapper" class="list-wrapper">
+        <ul id="list" class="list" style="margin-left: -640px;">
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_tuijian_suibiantingting">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo9.png" width="32px" height="29px" class="g1"/></span>
+                        <span class="entry-text sing">随便听听</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_scene_28_%E5%9C%A8%E5%AE%B6/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon" ><img src="../img4/logo4.jpg"/></span>
+                        <span class="entry-text">在家</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_scene_29_%E4%B8%8A%E7%BD%91/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo5.jpg"/></span>
+                        <span class="entry-text">上网</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_tag_轻松/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo8.jpg"/></span>
+                        <span class="entry-text">轻松</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_tag_舒缓/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo3.jpg"/></span>
+                        <span class="entry-text">舒缓</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_tag_安静/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo2.jpg"/></span>
+                        <span class="entry-text">安静</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_tuijian_ktv/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo6.jpg"/></span>
+                        <span class="entry-text">KTV</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_scene_12_%E5%B7%A5%E4%BD%9C/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo7.jpg"/></span>
+                        <span class="entry-text">工作</span>
+                    </div>
+                </a>
+            </li>
+            <li class="entry-item">
+                <a target="_blank" href="http://fm.baidu.com/#/channel/public_scene_1_%E8%BF%90%E5%8A%A8/index_page">
+                    <div class="entry-item-btn">
+                        <span class="entry-icon"><img src="../img4/logo1.jpg"/></span>
+                        <span class="entry-text">运动</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="section">
+        <div id="tp">
+            <img src="../img4/t1.jpg" id="image" onclick="show()"/>
+            <a href="" onmouseover="stop(1)" onmouseout="ch()" id="a1" name="tu"></a>
+            <a href="" onmouseover="stop(2)" onmouseout="ch()" id="a2" name="tu"></a>
+            <a href="" onmouseover="stop(3)" onmouseout="ch()" id="a3" name="tu"></a>
+            <a href="" onmouseover="stop(4)" onmouseout="ch()" id="a4" name="tu"></a>
+            <a href="" onmouseover="stop(5)" onmouseout="ch()" id="a5" name="tu"></a>
+            <a href="" onmouseover="stop(6)" onmouseout="ch()" id="a6" name="tu"></a>
+            <a href="" onmouseover="stop(7)" onmouseout="ch()" id="a7" name="tu"></a>
+            <a href="" onmouseover="stop(8)" onmouseout="ch()" id="a8" name="tu"></a>
+        </div>
+
+        <div id="rig">
+            <div id="zuo">
+                <ul>
+                    <li class="clearfix">
+                        <a href="http://music.baidu.com/pc/download/1497800433/BaiduMusic-12345630.exe" target="_blank">
+                            <img src="../img4/com.jpg" alt="百度音乐客户端"/>
+                            <b id="bd" style="display:none;" onmouseover="on()" onmouseout="out()">百度音乐<br/>客户端下载</b>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="http://music.baidu.com/cms/BaiduMusic-musicsybutton.apk" target="_blank">
+                            <img src="../img4/and.jpg" alt="百度音乐Android版"/>
+                            <b style="display: none;">百度音乐<br/>Android版下载</b>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="https://itunes.apple.com/app/apple-store/id468623917?pt=328057&amp;ct=pcweb-homepage&amp;mt=8" target="_blank">
+                            <img src="../img4/ios.jpg" alt="百度音乐iPhone版"/>
+                            <b style="display: none;">百度音乐<br/>iPhone版下载</b>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div id="you">
+               <a href="#" target="_blank"><img src="../img4/f2bgipih.png"/> </a>
+
+            </div>
+        </div>
+      </div>
+
+    <div class="quan">
+            <div class="hd"><h2 class="title">首发</h2>
+                <span class="more">
+                    <span class="split">|</span>
+                    <a href="music.html" target="_blank">更多</a>
+                </span>
+                </div>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x1.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play1"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">现在的你</a></div>
+                        <div class="art"><a href="#" target="_blank">陈一玲</a></div>
+                    </li>
+                    <li> <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../img4/x2.jpg"  alt/></a>
+                        <span><a href="#" target="_blank" class="play2"></a> </span>
+                    </div>
+                        <div class="music"><a href="#" target="_blank">家乡</a></div>
+                        <div class="art"><a href="#" target="_blank">赵雷</a></div>
+                    </li>
+                    <li><div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="../img4/x3.jpg"  alt/></a>
+                        <span><a href="#" target="_blank" class="play3"></a> </span>
+                    </div>
+                        <div class="music"><a href="#" target="_blank">爱情路口</a></div>
+                        <div class="art"><a href="#" target="_blank">李翊君</a></div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x4.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play4"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">​大城小梦</a></div>
+                        <div class="art"><a href="#" target="_blank">宋秉洋</a></div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x5.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play5" onclick="play()"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">Torches</a></div>
+                        <div class="art"><a href="#" target="_blank">张杰/X Ambass..</a></div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x6.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play6"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">现在的你</a></div>
+                        <div class="art"><a href="#" target="_blank">陈一玲</a></div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x7.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play7"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">一路绽放</a></div>
+                        <div class="art"><a href="#" target="_blank">许千千</a></div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="../img4/x8.jpg"  alt/></a>
+                            <span><a href="#" target="_blank" class="play8"></a> </span>
+                        </div>
+                        <div class="music"><a href="#" target="_blank">小小天涯</a></div>
+                        <div class="art"><a href="#" target="_blank">郁可唯</a></div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+<div class="rightsec">
+   <p class="tu"><img src="../img4/musicren.jpg"/></p>
+    <div class="side">
+        <div class="hd">
+         <h2 class="title">音乐分类</h2>
+            <span class="more">
+            <span class="split">|</span> <a target="_blank" href="/tag" class="much">更多</a>
+                </span>
+            </div> <br/>
+         <div class="bs">
+             <ul>
+                 <li><a href="#" target="_self">情歌</a></li>
+                 <li><a href="#" target="_self">红歌</a></li>
+                 <li><a href="#" target="_self">劲爆</a></li>
+                 <li><a href="#" target="_self">天籁</a></li>
+                 <li><a href="#" target="_self">欧美</a></li>
+                 <li><a href="#" target="_self">经典老歌</a></li>
+                 <li><a href="#" target="_self">名歌</a></li>
+                 <li><a href="#" target="_self">80后</a></li>
+                 <li><a href="#" target="_self">儿歌</a></li>
+                 <li><a href="#" target="_self">伤感</a></li>
+                 <li><a href="#" target="_self">网络歌曲</a></li>
+                 <li><a href="#" target="_self">安静</a></li>
+                 <li><a href="#" target="_self">影视</a></li>
+                 <li><a href="#" target="_self">DJ舞曲</a></li>
+                 <li><a href="#" target="_self">怀旧</a></li>
+                 <li><a href="#" target="_self">古典歌曲</a></li>
+                 <li><a href="#" target="_self">激情</a></li>
+                 <li><a href="#" target="_self">治愈</a></li>
+                 <li><a href="#" target="_self">纯音乐</a></li>
+                 <li><a href="#" target="_self">广场舞</a></li>
+                 <li><a href="#" target="_self">轻音乐</a></li>
+                 <li><a href="#" target="_self">中国好声音</a></li>
+                 <li><a href="#" target="_self">对唱</a></li>
+                 <li><a href="#" target="_self">粤语</a></li>
+             </ul>
+             <p id="tu"><img src="../img4/musr.png"/></p>
+             <p id="tu1"><img src="../img4/xian.png"/></p>
+         </div>
+
+         <div class="artist">
+             <div class="hd">
+                 <h2 class="title">华语男歌手</h2>
+             <span class="more">
+                 <span class="split">|</span>
+                 <a href="/artist/cn/male" class="much">更多</a>
+             </span>
+             </div><br/>
+             <div class="bdlist">
+                     <ul>
+                         <li><a href="/artist/2517">薛之谦</a></li>
+                         <li><a href="/artist/245815">祁隆</a></li>
+                         <li><a href="/artist/7994">周杰伦</a></li>
+                         <li><a href="/artist/1117">齐秦</a></li>
+                         <li><a href="/artist/2507">张学友</a></li>
+                         <li><a href="/artist/617453">高安</a></li>
+                         <li><a href="/artist/1383">李健</a></li>
+                         <li><a href="/artist/1077">陈奕迅</a></li>
+                         <li><a href="/artist/1094">任贤齐</a></li>
+                         <li><a href="/artist/1629">冷漠</a></li>
+                     </ul>
+             </div>
+
+             <div class="hd">
+                 <h2 class="title">华语女歌手</h2>
+                 <span class="more">
+                 <span class="split">|</span>
+                 <a href="/artist/cn/female" class="much">更多</a>
+             </span>
+             </div><br/>
+             <div class="bdlist">
+                 <ul >
+                     <li><a href="/artist/1091">邓丽君</a></li>
+                     <li><a href="/artist/7898">G.E.M...</a></li>
+                     <li><a href="/artist/45561">王菲</a></li>
+                     <li><a href="/artist/1376">龙梅子</a></li>
+                     <li><a href="/artist/1174">宋祖英</a></li>
+                     <li><a href="/artist/821050">金兰玲</a></li>
+                     <li><a href="/artist/132632388">刘珂矣</a> </li>
+                     <li><a href="/artist/1067">刘若英</a>  </li>
+                 <li><a href="/artist/1095">梁静茹</a></li>
+                    <li> <a href="/artist/1180">蔡健雅</a></li>
+                 </ul>
+             </div>
+
+             <div class="hd"><h2 class="title">华语组合</h2>
+                 <span class="more"><span class="split">|</span>
+                     <a href="/artist/cn/group" class="much">更多</a></span>
+             </div><br/>
+             <div class="bdlist ">
+                 <ul>
+                 <li><a href="/artist/707709">小蓓蕾</a></li>
+                 <li><a href="/artist/1100">Beyond</a></li>
+                 <li><a href="/artist/1098">羽泉</a></li>
+                 <li><a href="/artist/9295">小虎队</a></li>
+                 <li><a href="/artist/1490">SHE</a></li>
+                 <li><a href="/artist/14674804">TFBOYS</a></li>
+                 <li><a href="/artist/1389">五月天</a></li>
+                 <li><a href="/artist/81381913">SE0</a></li>
+                 <li><a href="/artist/5976">飞轮海</a></li>
+                 <li><a href="/artist/1050">Twins</a></li>
+             </ul>
+
+             </div>
+             <div class="hd"><h2 class="title">原创音乐人</h2>
+                 <span class="more"><span class="split">|</span>
+                     <a href="http://music.baidu.com/musician" class="much">更多</a></span>
+             </div><br/>
+             <div class="bdlist">
+             <ul><li><a href="http://y.baidu.com/liukeyi">刘珂矣</a></li>
+                 <li><a href="http://y.baidu.com/dongzhen">董贞</a></li>
+                 <li><a href="http://y.baidu.com/mymmqm">汪苏泷</a></li>
+                 <li><a href="http://y.baidu.com/zhuangxinyan">庄心妍</a></li>
+                 <li><a href="http://y.baidu.com/liuruiqi">刘瑞琦</a></li>
+                 <li><a href="http://y.baidu.com/zhengbanhetu">河图</a></li>
+                 <li><a href="http://y.baidu.com/artist/100421">杨坤</a></li>
+                 <li><a href="http://y.baidu.com/artist/100027">宋冬野</a></li>
+                 <li><a href="http://y.baidu.com/artist/100542">好妹妹</a></li>
+                 <li><a href="http://y.baidu.com/smog1031">少司命</a></li></ul>
+         </div>
+         </div>
+        <img src="../img4/xian.png"/>
+
+        <div id="rmhd">
+             <p class="tou">热门活动</p>
+             <p class="tuwen">
+                 <a href="#" target="_self" title="突破次元·理想音乐第三季">
+                     <img src="../img4/hd1.jpg"/><br/>突破次元·理想音乐第三季</a>
+             </p>
+              <p class="tuwen1">
+                  <a href="#" target="_self" title="前所未有的快乐男声全国赛">
+                      <img src="../img4/hd2.jpg"/><br/>前所未有的快乐男声全国赛</a>
+              </p>
+              <p class="tuwen2">
+                  <a href="#" target="_self" title="麦克成风2017赛季启动，报名即送VIP">
+                      <img src="../img4/hd3.jpg"/><br/>麦克成风2017赛季启动，报名即送VIP</a>
+              </p>
+        </div>
+    </div>
+</div>
+
+      <div class="gd"><a href="#" target="_self"><img src="../img4/gd.jpg"/></a></div>
+      <div class="singlist">
+          <div id="z">
+                <div class="z">
+                  <p><img src="../img4/s1.png" class="icl"/>
+                <img src="../img4/bimqefti.jpg" class="icr"/></p>
+           <div class="dv">
+               <ul>
+                   <li class="top1">
+                       <div class="index red">01</div>
+                       <div class="song-info">
+                           <a href="#" title="最初的记忆" class="tit">最初的记忆</a>
+                           <span class="author" title="徐佳莹">
+                               <a href="#" target="_self" class="ming">徐佳莹</a>
+                           </span>
+                           <span class="add">
+                               <img src="../img4/n1dv8f9k.png" /></span>
+                           <span class="sp">
+                                <img src="../img4/7mlgjnlu.png" onclick="playm(this)"/>
+                           </span>
+                           <audio src="../audio/徐佳莹 - 最初的记忆.mp3" id="audiom"></audio>
+                       </div>
+                   </li>
+                   <li class="top2">
+                        <div class="index red">02</div>
+                        <div class="song-info">
+                            <a href="#" title="夏至未至" class="tit">夏至未至</a>
+                            <span class="author" title="胡夏">
+                                <a href="#" target="_self" class="ming">胡夏</a>
+                            </span>
+                            <span class="add">
+                                <img src="../img4/n1dv8f9k.png"/></span>
+                            <span class="sp">
+                             <img src="../img4/7mlgjnlu.png" onclick="playm(this)"></span>
+                            <audio src="../audio/胡夏 - 夏至未至.mp3"></audio>
+                           </div>
+                   </li>
+                   <li class="top3">
+                   <div class="index red">03</div>
+                   <div class="song-info">
+                       <a href="#" title="将界" class="tit">将界</a>
+                       <span class="author" title="龚琳娜">
+                           <a href="#" target="_self" class="ming">龚琳娜</a>
+                       </span>
+                       <span class="add">
+                           <img src="../img4/n1dv8f9k.png"/></span>
+                       <span class="sp">
+                        <img src="../img4/7mlgjnlu.png"/></span>
+                      </div>
+                   </li>
+                   <li class="top4">
+                     <div class="index">04</div>
+                     <div class="song-info">
+                         <a href="#" title="桃花诺" class="tit">桃花诺</a>
+                         <span class="author" title="邓紫棋">
+                             <a href="#" target="_self" class="ming">G.E.M.邓...</a>
+                         </span>
+                         <span class="add">
+                             <img src="../img4/n1dv8f9k.png"/></span>
+                         <span class="sp">
+                          <img src="../img4/7mlgjnlu.png"/></span>
+                        </div>
+                   </li>
+                   <li class="top5">
+                     <div class="index">05</div>
+                     <div class="song-info">
+                         <a href="#" title="小小天涯" class="tit">小小天涯</a>
+                         <span class="author" title="郁可唯">
+                             <a href="#" target="_self" class="ming">郁可唯 </a>
+                         </span>
+                         <span class="add">
+                             <img src="../img4/n1dv8f9k.png"/></span>
+                         <span class="sp">
+                          <img src="../img4/7mlgjnlu.png"/></span>
+                        </div>
+                   </li>
+                   <li class="top6">
+                     <div class="index">06</div>
+                     <div class="song-info">
+                         <a href="#" title="心之焰" class="tit">心之焰</a>
+                         <span class="author" title="邓紫棋">
+                             <a href="#" target="_self" class="ming">G.E.M.邓...</a>
+                         </span>
+                         <span class="add">
+                             <img src="../img4/n1dv8f9k.png"/></span>
+                         <span class="sp">
+                          <img src="../img4/7mlgjnlu.png"/></span>
+                        </div>
+
+                   </li>
+                   <li class="top7">
+                    <div class="index">07</div>
+                    <div class="song-info">
+                        <a href="#" title="追光者" class="tit">追光者</a>
+                        <span class="author" title="岑宁儿">
+                            <a href="#" target="_self" class="ming">岑宁儿</a>
+                        </span>
+                        <span class="add">
+                            <img src="../img4/n1dv8f9k.png"/></span>
+                        <span class="sp">
+                         <img src="../img4/7mlgjnlu.png"/></span>
+                       </div>
+                   </li>
+                   <li class="top8">
+                    <div class="index">08</div>
+                    <div class="song-info">
+                        <a href="#" title="Torches" class="tit">Torches</a>
+                        <span class="author" title="张杰">
+                            <a href="#" target="_self" class="ming">张杰/X Am..</a>
+                        </span>
+                        <span class="add">
+                            <img src="../img4/n1dv8f9k.png"/></span>
+                        <span class="sp">
+                         <img src="../img4/7mlgjnlu.png"/></span>
+                       </div>
+                   </li>
+                   <li class="top9">
+                    <div class="index">09</div>
+                    <div class="song-info">
+                        <a href="#" title="家乡" class="tit">家乡</a>
+                        <span class="author" title="赵雷">
+                            <a href="#" target="_self" class="ming">赵雷</a>
+                        </span>
+                        <span class="add">
+                            <img src="../img4/n1dv8f9k.png"/></span>
+                        <span class="sp">
+                         <img src="../img4/7mlgjnlu.png"/></span>
+                       </div>
+                   </li>
+                   <li class="top10">
+                     <div class="index">10</div>
+                     <div class="song-info">
+                         <a href="#" title="一路绽放" class="tit">一路绽放</a>
+                         <span class="author" title="许千千">
+                             <a href="#" target="_self" class="ming">许千千</a>
+                         </span>
+                         <span class="add">
+                             <img src="../img4/n1dv8f9k.png"/></span>
+                         <span class="sp">
+                          <img src="../img4/7mlgjnlu.png"/></span>
+                        </div>
+                   </li>
+               </ul>
+               <span class="dan">
+                   <a href="#" target="_self">完整榜单>></a>
+               </span>
+           </div>
+                 </div>
+          </div>
+           <div id="zh">
+              <div class="zh">
+                <p><img src="../img4/s2.png" class="icl"/>
+              <img src="../img4/bimqefti.jpg" class="icr"/></p>
+               <div class="dv">
+                 <ul>
+                     <li class="top1">
+                         <div class="index red">01</div>
+                         <div class="song-info">
+                             <a href="#" title="刚好遇见你" class="tit">刚好遇见你</a>
+                             <span class="author" title="李玉刚">
+                                 <a href="#" target="_self" class="ming">李玉刚</a>
+                             </span>
+                             <span class="add">
+                                 <img src="../img4/n1dv8f9k.png"/></span>
+                             <span class="sp">
+                              <img src="../img4/7mlgjnlu.png"/></span>
+                            </div>
+                     </li>
+                     <li class="top2">
+                          <div class="index red">02</div>
+                          <div class="song-info">
+                              <a href="#" title="成都" class="tit sing">成都</a>
+                              <span class="author" title="赵雷">
+                                  <a href="#" target="_self" class="ming name">赵雷</a>
+                              </span>
+                              <span class="add">
+                                  <img src="../img4/n1dv8f9k.png"/></span>
+                              <span class="sp">
+                               <img src="../img4/7mlgjnlu.png"/></span>
+                             </div>
+                     </li>
+                     <li class="top3">
+                     <div class="index red">03</div>
+                     <div class="song-info">
+                         <a href="#" title="暧昧" class="tit">暧昧</a>
+                         <span class="author" title="">
+                             <a href="#" target="_self" class="ming">薛之谦</a>
+                         </span>
+                         <span class="add">
+                             <img src="../img4/n1dv8f9k.png"/></span>
+                         <span class="sp">
+                          <img src="../img4/7mlgjnlu.png"/></span>
+                        </div>
+                     </li>
+                     <li class="top4">
+                       <div class="index">04</div>
+                       <div class="song-info">
+                           <a href="#" title="桃花诺" class="tit">桃花诺</a>
+                           <span class="author" title="邓紫棋">
+                               <a href="#" target="_self" class="ming">G.E.M.邓...</a>
+                           </span>
+                           <span class="add">
+                               <img src="../img4/n1dv8f9k.png"/></span>
+                           <span class="sp">
+                            <img src="../img4/7mlgjnlu.png"/></span>
+                          </div>
+                     </li>
+                     <li class="top5">
+                       <div class="index">05</div>
+                       <div class="song-info">
+                           <a href="#" title="你是我今生的.." class="tit sing">你是我今生的..</a>
+                           <span class="author" title="冷漠/杨..">
+                               <a href="#" target="_self" class="ming name">冷漠/杨..</a>
+                           </span>
+                           <span class="add">
+                               <img src="../img4/n1dv8f9k.png"/></span>
+                           <span class="sp">
+                            <img src="../img4/7mlgjnlu.png"/></span>
+                          </div>
+                     </li>
+                     <li class="top6">
+                       <div class="index">06</div>
+                       <div class="song-info">
+                           <a href="#" title="告白气球" class="tit sing">告白气球</a>
+                           <span class="author" title=" 周杰伦">
+                               <a href="#" target="_self" class="ming name"> 周杰伦</a>
+                           </span>
+                           <span class="add">
+                               <img src="../img4/n1dv8f9k.png"/></span>
+                           <span class="sp">
+                            <img src="../img4/7mlgjnlu.png"/></span>
+                          </div>
+
+                     </li>
+                     <li class="top7">
+                      <div class="index">07</div>
+                      <div class="song-info">
+                          <a href="#" title="大王叫我来巡山" class="tit sing">大王叫我来巡山</a>
+                          <span class="author" title="贾乃亮">
+                              <a href="#" target="_self" class="ming name">贾乃亮</a>
+                          </span>
+                          <span class="add">
+                              <img src="../img4/n1dv8f9k.png"/></span>
+                          <span class="sp">
+                           <img src="../img4/7mlgjnlu.png"/></span>
+                         </div>
+                     </li>
+                     <li class="top8">
+                      <div class="index">08</div>
+                      <div class="song-info">
+                          <a href="#" title="Torches" class="tit">Torches</a>
+                          <span class="author" title="张杰">
+                              <a href="#" target="_self" class="ming">张杰/X Am..</a>
+                          </span>
+                          <span class="add">
+                              <img src="../img4/n1dv8f9k.png"/></span>
+                          <span class="sp">
+                           <img src="../img4/7mlgjnlu.png"/></span>
+                         </div>
+                     </li>
+                     <li class="top9">
+                      <div class="index">09</div>
+                      <div class="song-info">
+                          <a href="#" title="你还要我怎样" class="tit sing">你还要我怎样</a>
+                          <span class="author" title="赵雷">
+                              <a href="#" target="_self" class="ming name">薛之谦</a>
+                          </span>
+                          <span class="add">
+                              <img src="../img4/n1dv8f9k.png"/></span>
+                          <span class="sp">
+                           <img src="../img4/7mlgjnlu.png"/></span>
+                         </div>
+                     </li>
+                     <li class="top10">
+                       <div class="index">10</div>
+                       <div class="song-info">
+                           <a href="#" title="怎样遇见你" class="tit sing">怎样遇见你</a>
+                           <span class="author" title="孙露">
+                               <a href="#" target="_self" class="ming name">孙露</a>
+                           </span>
+                           <span class="add">
+                               <img src="../img4/n1dv8f9k.png"/></span>
+                           <span class="sp">
+                            <img src="../img4/7mlgjnlu.png"/></span>
+                          </div>
+                     </li>
+                 </ul>
+                 <span class="dan">
+                     <a href="#" target="_self">完整榜单>></a>
+                 </span>
+               </div>
+              </div>
+           </div>
+          <div id="y">
+                <div class="y">
+                  <p><img src="../img4/s3.png" class="icl"/>
+                    <img src="../img4/bimqefti.jpg" class="icr"/></p>
+                  <div class="dv">
+                    <ul>
+                        <li class="top1">
+                            <div class="index red">01</div>
+                            <div class="song-info">
+                                <a href="#" title="掘金记" class="tit">掘金记</a>
+                                <span class="author" title="独立摇滚">
+                                    <a href="#" target="_self" class="ming n">独立摇滚</a>
+                                </span>
+                                <span class="sp">10万元
+                                 </span>
+                               </div>
+                        </li>
+                        <li class="top2">
+                             <div class="index red">02</div>
+                             <div class="song-info">
+                                 <a href="#" title="脑袋 肩膀 膝.." class="tit s">脑袋 肩膀 膝..</a>
+                                 <span class="author" title="朋克">
+                                     <a href="#" target="_self" class="ming n">朋克</a>
+                                 </span>
+                                 <span class="sp">5万元
+                                  </span>
+                                </div>
+                        </li>
+                          <li class="top3">
+                            <div class="index red">03</div>
+                            <div class="song-info">
+                                <a href="#" title="Ricochet" class="tit s">Ricochet</a>
+                                <span class="author" title="独立流行">
+                                    <a href="#" target="_self" class="ming n">独立流行</a>
+                                </span>
+                                <span class="sp">2万元
+                             </span>
+                               </div>
+                          </li>
+                        <li class="top4">
+                        <div class="index">04</div>
+                        <div class="song-info">
+                            <a href="#" title="红尘恋歌" class="tit s"> 红尘恋歌</a>
+                            <span class="author" title="独立民谣">
+                                <a href="#" target="_self" class="ming n">独立民谣</a>
+                            </span>
+                            <span class="sp">5,000元
+                            </span>
+                           </div>
+                        </li>
+                        <li class="top5">
+                          <div class="index">05</div>
+                          <div class="song-info">
+                              <a href="#" title="出云之月" class="tit s">出云之月</a>
+                              <span class="author" title="国语流行">
+                                  <a href="#" target="_self" class="ming">国语流行</a>
+                              </span>
+                              <span class="sp"> 5,000元
+                            </span>
+                             </div>
+                        </li>
+                        <li class="top6">
+                          <div class="index">06</div>
+                          <div class="song-info">
+                              <a href="#" title="哑巴酒馆" class="tit s">哑巴酒馆</a>
+                              <span class="author" title="独立流行">
+                                  <a href="#" target="_self" class="ming n">独立流行</a>
+                              </span>
+                              <span class="sp"> 5,000元
+                             </span>
+                             </div>
+
+                        </li>
+                        <li class="top7">
+                         <div class="index">07</div>
+                         <div class="song-info">
+                             <a href="#" title="分组可见" class="tit s">分组可见</a>
+                             <span class="author" title="">
+                                 <a href="#" target="_self" class="ming"></a>
+                             </span>
+                             <span class="sp">5,000元
+                              </span>
+                            </div>
+                        </li>
+                        <li class="top8">
+                         <div class="index">08</div>
+                         <div class="song-info">
+                             <a href="#" title="涂鸦Graffiti" class="tit s"> 涂鸦Graffiti</a>
+                             <span class="author" title="独立摇滚">
+                                 <a href="#" target="_self" class="ming n">独立摇滚</a>
+                             </span>
+                             <span class="sp">5,000元
+                             </span>
+                            </div>
+                        </li>
+                        <li class="top9">
+                         <div class="index">09</div>
+                         <div class="song-info">
+                             <a href="#" title="人类动物园" class="tit s">人类动物园</a>
+                             <span class="author" title="">
+                                 <a href="#" target="_self" class="ming"></a>
+                             </span>
+                             <span class="sp">5,000元
+                             </span>
+                            </div>
+                        </li>
+                        <li class="top10">
+                          <div class="index">10</div>
+                          <div class="song-info">
+                              <a href="#" title="青蛙作曲家" class="tit s">青蛙作曲家</a>
+                              <span class="author" title="国语流行">
+                                  <a href="#" target="_self" class="ming n">国语流行</a>
+                              </span>
+                              <span class="sp">5,000元
+                              </span>
+                             </div>
+                        </li>
+                    </ul>
+                    <span class="dan">
+                        <a href="#" target="_self">完整榜单>></a>
+                    </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          </div>
+      </div>
+
+  <div id="mv">
+     <div class="hd">
+      <h2 class="title mv">MV</h2>
+         <span class="more">
+         <span class="split">|</span> <a target="_blank" href="/tag" class="much">更多</a>
+             </span>
+         </div> <br/>
+      <div class="secmv">
+            <table>
+                <tr class="ts">
+                    <td><a href="#" target="_self" title="李艺彤MV"><img src="../img4/MV1.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p1"></a> </span> </td>
+                    <td><a href="#" target="_self" title="朱莉叶MV"><img src="../img4/MV2.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p2"></a> </span> </td>
+                    <td><a href="#" target="_self" title="龚琳娜MV"><img src="../img4/MV3.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p3"></a> </span> </td>
+                    <td><a href="#" target="_self" title="果味VCMV"><img src="../img4/MV4.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p4"></a> </span> </td>
+                </tr>
+                <tr class="sc">
+                    <td><a href="#" target="_self">巧克力与橙果粒</a></td>
+                    <td><a href="#" target="_self">游梦记</a></td>
+                    <td><a href="#" target="_self">将界</a></td>
+                    <td><a href="#" target="_self">躁不完的青春</a></td>
+                </tr>
+                <tr class="cs">
+                    <td><a href="#" target="_self">李艺彤</a></td>
+                     <td><a href="#" target="_self">朱莉叶</a></td>
+                     <td><a href="#" target="_self">龚琳娜</a></td>
+                     <td><a href="#" target="_self">果味VC</a></td>
+                </tr>
+                  <tr>
+                      <td><a href="#" target="_self" title="刘瑞琦MV"><img src="../img4/MV5.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p5"></a></span></td>
+                      <td><a href="#" target="_self" title="许飞MV"><img src="../img4/MV6.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p6"></a></span></td>
+                      <td><a href="#" target="_self" title="岑宁儿MV"><img src="../img4/MV7.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p7"></a></span></td>
+                      <td><a href="#" target="_self" title="朱莉叶MV"><img src="../img4/MV8.jpg" width="170px" height="100px"/></a><span><a href="#" target="_blank" class="p8"></a></span></td>
+                  </tr>
+                  <tr class="sc">
+                      <td><a href="#" target="_self">来不及</a></td>
+                      <td><a href="#" target="_self">父亲写的散文诗</a></td>
+                      <td><a href="#" target="_self">追光者（电视剧《夏至..</a></td>
+                      <td><a href="#" target="_self">Ayio</a></td>
+                  </tr>
+                  <tr class="cs">
+                      <td><a href="#" target="_self">刘瑞琦</a></td>
+                       <td><a href="#" target="_self">许飞</a></td>
+                       <td><a href="#" target="_self">岑宁儿</a></td>
+                       <td><a href="#" target="_self">朱莉叶</a></td>
+                  </tr>
+            </table>
+      </div>
+  </div>
+
+       <div id="middle">
+           <div class="midhad">
+               <span class="fc"><img src="../img4/sujynhm4.png"/></span>
+               <span class="sn">
+                   <a href="#" target="_self">音乐心情</a><span class="split">|</span>
+                    <a href="#" target="_self">情感实录</a><span class="split">|</span>
+                   <a href="#" target="_self">精彩脱口秀</a><span class="split">|</span>
+                   <a href="#" target="_self">综艺娱乐</a><span class="split">|</span>
+                   <a href="#" target="_self">笑话段子</a>
+               </span>
+           </div>
+           <div class="dt">
+           <table class="ta">
+               <tr  class="rt">
+                   <td><a href="#" target="_self" title="有待咖啡"><img src="../img4/bai1.jpg" width="290px" /></a><br/>
+                       <a href="#" target="_self">有待咖啡</a>
+                   </td>
+                   <td><a href="#" target="_self" title="中国嘻哈榜"><img src="../img4/bai2.jpg" width="290px"/></a><br/>
+                   <a href="#" target="_self">中国嘻哈榜</a></td>
+                   <td><a href="#" target="_self" title="SNH48团员们的私房歌单"><img src="../img4/bai3.jpg" width="290px"/></a>
+                   <br/><a href="#" target="_self">SNH48团员们的私房歌单</a></td>
+                   <td><a href="#" target="_self" title="有待咖啡"><img src="../img4/bai4.jpg" width="290px"/></a><br/>
+                   <a href="#" target="_self">有待咖啡</a></td>
+               </tr>
+           </table>
+           </div>
+       </div>
+
+
+      <div class="bottom">
+         <div class="midhad">
+             <span class="fc bang">King榜</span>
+             <strong class="ns">
+                 <a href="#" target="_self">实时榜单</a><span class="split">|</span>
+                  <a href="#" target="_self">往期榜单</a><span class="split">|</span>
+                 <a href="#" target="_self">精选合辑</a>
+             </strong>
+         </div>
+
+          <div id="dpd">
+              <img src="../img4/k1.jpg" id="imgs" onclick="showe()" height="448px"/>
+              <a href="" onmouseover="ding(1)" onmouseout="zou()" id="d1" name="tup"></a>
+              <a href="" onmouseover="ding(2)" onmouseout="zou()" id="d2" name="tup"></a>
+              <a href="" onmouseover="ding(3)" onmouseout="zou()" id="d3" name="tup"></a>
+          </div>
+
+          <div id="btr">
+              <img src="../img4/v1.jpg" width="300px" height="260px"/>   <img src="../img4/v2.jpg" width="300px" height="260px"/>
+              <div class="bto">
+                  <ul>
+                      <li><a href="#" target="_self" class="cv">上海LOCKING</a><br/>
+                      <a href="#" target="_self" class="sl">十二星宿风之少年 </a><br/>
+                          <img src="../img4/v3.jpg" width="100px" height="100px"/>
+                          <span><a href="#" target="_blank" class="cps1"></a></span>
+                      </li>
+                      <li> <a href="#" target="_self" class="cv">拿不走的记忆</a><br/>
+                         <a href="#" target="_self" class="sl">迪玛希</a><br/>
+                         <img src="../img4/v4.jpg" width="100px" height="100px"/>
+                          <span><a href="#" target="_blank" class="cps2"></a></span>
+                      </li>
+                      <li><a href="#" target="_self" class="cv">骄傲的少年</a><br/>
+                          <a href="#" target="_self" class="sl">王俊凯 </a><br/>
+                          <img src="../img4/v5.jpg" width="100px" height="100px"/>
+                          <span><a href="#" target="_blank" class="cps3"></a></span>
+
+                      </li>
+                      <li><a href="#" target="_self" class="cv">不一样的美男子</a><br/>
+                          <a href="#" target="_self" class="sl">冯建宇 </a><br/>
+                          <img src="../img4/v6.jpg" width="100px" height="100px"/>
+                          <span><a href="#" target="_blank" class="cps4"></a></span>
+                      </li>
+                  </ul>
+              </div>
+               <img src="../img4/king.png" class="king" width="280px" height="450px"/>
+          </div>
+      </div>
+
+           <div id="footer">
+               <table>
+                  <tr>
+                      <td><a href="#" target="_self"><img src="../img4/b1.jpg"/></a></td>
+                      <td><a href="#" target="_self"><img src="../img4/b2.jpg"/></a></td>
+                      <td><a href="#" target="_self"><img src="../img4/b3.jpg"/></a></td>
+                      <td><a href="#" target="_self"><img src="../img4/b4.jpg"/></a></td>
+                      <td><a href="#" target="_self"><img src="../img4/b5.jpg"/></a></td>
+                  </tr>
+               </table>
+                <div class="da">
+                    <div><ul>
+                        <li><a href="#" target="_self">音乐</a></li>
+                        <li><a href="#" target="_self">音乐推荐</a></li>
+                        <li><a href="#" target="_self">权威榜单 </a></li>
+                        <li><a href="#" target="_self">精彩歌单 </a></li>
+                    </ul></div>
+                    <div>
+                        <ul>
+                            <li><a href="#" target="_self">情感</a> </li>
+                             <li><a href="#" target="_self">治愈系</a></li>
+                             <li><a href="#" target="_self">两性</a></li>
+                             <li><a href="#" target="_self">星座 </a></li>
+                        </ul>
+                    </div>
+                    <div>
+                       <ul>
+                            <li><a href="#" target="_self">综艺娱乐</a></li>
+                            <li><a href="#" target="_self">娱乐八卦</a></li>
+                            <li><a href="#" target="_self">明星访谈</a></li>
+                            <li><a href="#" target="_self">聊电影</a></li>
+                    </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#" target="_self">笑话&脱口秀</a></li>
+                            <li><a href="#" target="_self">笑话段子</a></li>
+                            <li><a href="#" target="_self">脱口秀</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#" target="_self">生活</a></li>
+                            <li><a href="#" target="_self">美食</a></li>
+                            <li><a href="#" target="_self">旅行</a></li>
+                            <li><a href="#" target="_self">汽车</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <ul>
+                             <li><a href="#" target="_self">母婴儿童</a></li>
+                             <li><a href="#" target="_self">亲子育儿</a></li>
+                             <li><a href="#" target="_self">儿童故事</a></li>
+                             <li><a href="#" target="_self">儿歌</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#" target="_self">社会文化</a></li>
+                            <li><a href="#" target="_self">人文历史</a></li>
+                            <li><a href="#" target="_self">文化</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                      <ul>
+                           <li><a href="#" target="_self">相声曲艺</a></li>
+                           <li><a href="#" target="_self">相声</a></li>
+                           <li><a href="#" target="_self">小品</a></li>
+                           <li><a href="#" target="_self">评书</a></li>
+                      </ul>
+                    </div>
+                </div>
+           </div>
+<a href="#" target="_self"><img src="../img4/footer.jpg" class="ft"/></a>
+  <p class="pcs"><a href="#" target="_self">意见反馈</a> | <a href="#" target="_self">联系我们</a> | <a href="#" target="_self">帮助中心</a> | <a href="#" target="_self">资源合作开放平台</a> | <a href="#" target="_self">原创音乐人</a> |<span>©2017 Baidu</span>&nbsp;&nbsp;<a href="#" target="_self">使用百度前必读</a>&nbsp;&nbsp; <span>文网文[2010]197号</span> <span class="biao">战略合作：<img class="ig" src="../img4/yun.png"/></span></p>
+<div class="login" id="loginid">
+    <div class="login2">
+        <div class="login-top">
+            <img src="../img1/baidu_logo_48.png" height="30px" width="30px"/>
+            <span>登录百度账号</span>
+            <div class="cityClose loginClose" onclick="javascript:document.getElementById('loginid').style.display='none';"></div>
+        </div>
+        <form action="#" method="get" class="loginfrom" id="form1">
+            <div class="login1-from">
+                <p class="form-p1"><img src="../img1/login-phone.jpg"/><a href="javascript:void(0);" onclick="phoneLogin()">手机快捷登录</a></p>
+                <p class="form-p2">
+                    <label for="user1" id="userabel"></label>
+                    <input type="text" name="userName" value="" placeholder="手机/邮箱/用户名" id="user1" onfocus="userlables()" onblur="userlablesn
+()"/>
+                </p>
+                <p class="form-p2 form-p3">
+                    <label for="passw" id="passlabel"></label>
+                    <input type="password" name="password" value="" placeholder="密码" id="passw" onfocus="passlables()" onblur="passlablen()"/>
+                </p>
+                <p class="form-p4 form-p2">
+                    <input type="text" name="yzm" value="" placeholder="验证码"/>
+                    <img src="../img1/genimage.png"/>
+                    <a href="javascript:void(0)">换一张</a>
+                </p>
+                <p class="form-p5">
+                    <input type="checkbox" name="autologin" value="autol" checked id="auto"/>
+                    <label for="auto">下次自动登录</label>
+                    <a href="#" target="_blank">登录遇到问题</a>
+                </p>
+                <p class="form-p6">
+                    <input type="submit" name="submit" value="登录"/>
+                </p>
+                <p class="form-p7 form-p1">
+                    <a href="baidu-register.html" target="_blank">立即注册</a>
+                </p>
+            </div>
+        </form>
+        <form action="#" method="get" class="loginfrom" id="form3">
+            <div class="login2-form">
+                <p><span>手机扫描，安全登录</span></p>
+                <p><img src="../img1/qrcode.png" width="134px" height="134px"/></p>
+                <p>请使用<a href="#" target="_self">手机百度app</a>扫描登录</p>
+            </div>
+        </form>
+        <form action="#" method="get" class="loginfrom" id="form2">
+            <div class="login3-from">
+                <p>短信登录</p>
+                <p>验证即登录，未注册将自动创建百度账号</p>
+                <p class="form-p2 login3-p2">
+                    <label for="tel" id="tels"></label>
+                    <input type="tel" name="telName" value="" placeholder="请输入手机号" id="tel" onfocus="tellabels()" onblur="tellabeln"/>
+                </p>
+                <p class="form-p4 form-p2 login3-p3">
+                    <input type="text" name="yzm" value="" placeholder="验证码"/>
+                    <a href="javascript:void(0)">发送动态密码</a>
+                </p>
+                <p class="form-p6">
+                    <input type="submit" name="submit" value="登录"/>
+                </p>
+                <p>
+                    <span>阅读并接受</span>
+                    <a href="#" target="_blank">《百度用户协议》</a>
+                    <a href="javascript:void(0)" onclick="account()">账号密码登录</a>
+                </p>
+            </div>
+        </form>
+        <p class="cutlogin"><a href="javascript:void(0);" onclick="loginqh(this)"></a></p>
+    </div>
+</div>
+</body>
+<script>
+    window.onscroll=function(){
+        var t=document.documentElement.scrollTop||document.body.scrollTop;
+        var d=document.getElementById("menulist");
+        if(t>=147){
+            d.style.position="fixed";
+            d.style.zIndex="99999";
+            d.style.top="0";
+            d.style.width="100%"
+        }else{
+            d.style.position="";
+            d.style.zIndex="";
+            d.style.top="";
+            d.style.width="";
+        }
+    }
+</script>
+</html>

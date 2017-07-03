@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link href="../css/zhuCe.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="../js/zhuCe.js" ></script>
+	</head>
+
+	<body>
+		<div class="div1">
+			<div class="div4">
+				<header>
+					<p class="p1">简体中文|
+						<a class="a1" href="#">繁體中文|English</a>
+					</p>
+					<p class="p2">
+						<a class="a2" href="#">意见反馈</a>
+					</p>
+				</header>
+			</div>
+			<section>
+				<div class="div2">
+					<img class="img1" src="../img/zhuCe/QQ截图20170624101304.png" />
+					<p class="p3">
+						</span>注册账号</p>
+
+					<form action="#" method="get" onsubmit="return ch()">
+						<table class="table1"  cellspacing="10">
+							<tr>
+								<td>昵称</td>
+								<td><input class="input1"  type="text" placeholder="请输入昵称" onfocus="clearRemind1()" onblur="remindName(this)" /></td>
+								<td id="td1"></td>
+							</tr>
+							<tr>
+								<td>密码</td>
+								<td><input id="pass" class="input1" type="password" placeholder="密码长度为6-16位字符" onfocus="clearRemain2()" onblur="remainMima()" /></td>
+								<td id="td2"></td>
+							</tr>
+							<tr>
+								<td>确认密码</td>
+								<td><input class="input1"  type="password" placeholder="确认密码" onfocus="clearRemind3()" onblur="remindAffirm(this)" /></td>
+								<td id="td3"></td>
+							</tr>
+							<tr>
+								<td>性别</td>
+								<td class="td1">
+									<input name="sex" type="radio" checked="checked" />男
+									<input name="sex" type="radio" />女
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>手机号码</td>
+								<td><input class="input1"  type="text"placeholder="请输入手机号" onfocus="clearRemind4()" onblur="remindNumber(this)" / ></td>
+								<td id="td4"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><p class="p4">可通过该手机号码快速找回密码</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td3" id="td6">
+									<input class="input2" type="text" placeholder="验证码" onfocus="clearRemind5()" onblur="remindId(this)" />
+									<input id="input3" class="input3" type="button" value="获取短信验证码" onclick="faSong()"/>
+									<p id="p1" class="p22">重新发送（<span id="span3" class="span6">60</span>）</p>
+								</td>
+								<td id="td5"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input class="input4" type="submit" value="立即注册"/>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td2">
+									<input type="checkbox" checked="checked" />
+									<p class="p5">同时开通QQ空间</p>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td2">
+									<input type="checkbox" checked="checked" />
+									<p class="p5">我已阅读并同意相关服务条款和隐私政策</p>
+								</td>
+								<td></td>
+							</tr>
+
+						</table>
+					</form>
+
+				</div>
+			</section>
+			<footer>
+				<p class="p6">Copyright © 1998-2016 Tencent All Rights Reserved 腾讯公司 版权所有</p>
+			</footer>
+		</div>
+	</body>
+
+</html>

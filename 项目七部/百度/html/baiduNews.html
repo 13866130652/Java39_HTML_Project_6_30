@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度新闻收索—全球最大的中文新闻平台</title>
+    <link href="../css/news.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/baidunews.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="clearfix">
+    <header>
+        <div class="div1">
+            <ul class="ul2">
+                <li><a href="baidu.html" target="_self" id="here">百度首页</a></li>
+                <li><a href="javascript:void(0);"  onclick="loginshow()">登录</a></li>
+                <li><a href="baidu-register.html" target="_blank">注册</a></li>
+                <li class="ul2-li">
+                    <a href="#" target="_blank">百度新闻客户端
+                        <img src="../img1/news.jpg"/>
+                    </a>
+                </li>
+            </ul>
+            <ul class="ul1">
+                <li><a href="baidu.html" target="_self">网页</a></li>
+                <li><span>新闻</span></li>
+                <li><a href="baidu-tieba.html" target="_self">贴吧</a></li>
+                <li><a href="zhidao.html" target="_self">知道</a></li>
+                <li><a href="music.html" target="_self">音乐</a></li>
+                <li><a href="picture.html" target="_self">图片</a></li>
+                <li><a href="baidu-play1.html" target="_self">视频</a></li>
+                <li><a href="Documents.html" target="_self">文库</a></li>
+                <li><span>|</span></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <form action="#" method="get">
+                <table class="table1">
+                    <tr>
+                        <td class="td1">
+                            <input type="image" src="../img1/logo_new.png" class="img1"/>
+                        </td>
+                        <td class="td2">
+                            <input type="text" name="text1" class="search1" title="搜索内容"/>
+                            <input type="submit" name="submit" value="百度一下" class="search2"/>
+                        </td>
+                        <td>
+                            <a href="#" target="_blank" class="class1">帮助</a>
+                        </td>
+                        <td class="class2">
+                            <a href="#" target="_blank">高级搜索</a>
+                        </td>
+                        <td>
+                            <a href="#" target="_blank" class="class1">设置</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="td3">
+                            <input type="radio" name="ra" value="" id="news" checked/>
+                            <label for="news">新闻全文</label>
+                            <input type="radio" name="ra" value="" id="newTitle"/>
+                            <label for="newTitle">新闻标题</label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="menu-list" id="menulist">
+            <ul class="menu-ul">
+                <li><a href="#" target="blank">首页</a></li>
+                <li><a href="#" target="blank">百家</a></li>
+                <li><a href="#" target="blank">国内</a></li>
+                <li><a href="#" target="blank">国际</a></li>
+                <li><a href="#" target="blank">军事</a></li>
+                <li><a href="#" target="blank">社会</a></li>
+                <li><a href="#" target="blank">财经</a></li>
+                <li><a href="#" target="blank">娱乐</a></li>
+                <li><a href="#" target="blank">体育</a></li>
+                <li id="li1"><a href="#" target="blank">互联网</a></li>
+                <li><a href="#" target="blank">科技</a></li>
+                <li><a href="#" target="blank">游戏</a></li>
+                <li><a href="#" target="blank">时尚</a></li>
+                <li><a href="#" target="blank">女人</a></li>
+                <li><a href="#" target="blank">汽车</a></li>
+                <li id="li2"><a href="#" target="blank">个性推荐</a></li>
+                <li id="li3">
+                    <a href="#" target="blank">更多</a>
+                    <div>
+                        <a href="#" target="blank">房产</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="body-top clerafix">
+            <div class="body-top-left">
+                <div class="div1">
+                    <a href="javascript:" class="body-top-left-a1" onclick="showa1()" id="a1">热点新闻</a>
+                    <a href="javascript:" class="body-top-left-a2" onclick="showa2()" id="a2">个性推荐</a>
+                    <a href="#" target="_blank"></a>
+                </div>
+                <div class="a1-div2" id="a1s">
+                    <ul class="div2-ul1">
+                        <li class="div2-ul1-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">习近平向2017年金砖国家运动会致贺信</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <a href="#" target="_blank">习近平为国足发展指明“踢法”</a>
+                            <a href="#" target="_blank">砥砺奋进的五年</a>
+                        </li>
+                        <li class="div2-ul1-li1">
+                            <span></span>
+                            <a href="#" target="_blank">李克强为打通“信息孤岛”定下时间表</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <a href="#" target="_blank">俞正声会见两岸各界人士</a>
+                            <a href="#" target="_blank">张高丽</a>
+                            <a href="#" target="_blank">国家支持的是“商改租”</a>
+                        </li>
+                        <li class="div2-ul1-li1">
+                            <span></span>
+                            <a href="#" target="_blank">下个月起这样做可以抵扣个税 你能省多少钱？</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <a href="#" target="_blank">7月1日起这个税要降了！</a>
+                            <a href="#" target="_blank">适用对象看看有没有你？</a>
+                        </li>
+                    </ul>
+                    <ul class="div2-ul2">
+                        <li class="div2-ul1-li1 div2-ul2-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">京籍儿童"幼升小"入学登记 登记现场禁止面试</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">如果你的银行卡被盗刷了 请立刻做好这六件事！</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">公安部:近3年斑马线上交通事故共造成3898人死亡</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">牟其中出狱后首次公开亮相：拼老命干这件事(图)</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">食盐添加抗结块剂会灭种?专家:欧美也添加 无害</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">四川缉毒牺牲警察追悼会全屏马赛克:战友还在战斗</a>
+                        </li>
+                    </ul>
+                    <ul class="div2-ul2">
+                        <li class="div2-ul1-li1 div2-ul2-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">
+                                去农村背LV 这些女官员倒在了奢侈品堆中</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">自闭症男孩智商只有52 拿到高校录取通知书</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">中考考点周边酒店哄抬房价？武汉最高罚款300万元</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">西安女子回应将母亲搬到车上住：我妈住车里是享受</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">阿里爸爸、老干爹、六粮液这些商标 都不是山寨的</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">山东有这样一支队义务救援队：只收微笑不收费</a>
+                        </li>
+                    </ul>
+                    <ul class="div2-ul2">
+                        <li class="div2-ul1-li1 div2-ul2-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">
+                                侠客岛：美棒球场枪击案是有政治动机的谋杀</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">伦敦大火中58名失踪者预计已经全部罹难</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">日媒：美军舰与货船同向航行时相撞 邮船公司正调查</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">哥伦比亚一购物中心发生爆炸 1人遇难11人受伤</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">一中国公民被刚果(金)政府非法关押9天 理由未知</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">韩总统力挺首位女外长 国会揪污点：女儿双重国籍</a>
+                        </li>
+                    </ul>
+                    <ul class="div2-ul2">
+                        <li class="div2-ul1-li1 div2-ul2-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">
+                                揭秘网购“特效药”：部分减肥药为售卖者自己配制</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">华裔“神探”李昌钰将参与调查“章莹颖失踪案”</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">"富婆"拿两张百万存单取钱 银行人员看后立马报警</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">北京91岁老人将3儿子告上法院:求赡养 不知儿子住址</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">湖南16岁女子带6名未成年凌辱殴打情敌 全部被抓</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">小伙心脏有恙向家人发割腕视频 警方成功营救</a>
+                        </li>
+                    </ul>
+                    <ul class="div2-ul2">
+                        <li class="div2-ul1-li1 div2-ul2-li1">
+                            <span></span>
+                            <strong><a href="#" target="_blank">
+                                女子银行卡内77万元被盗刷 这样做获银行全额赔偿</a></strong>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">库管员移动摄像头盗货品 欲恢复现场遭抓拍露馅</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">以胖为美的非洲部落 为成为选美冠军每天狂饮牛血</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">男子初中没毕业炒股20年 设立实验账户1万变400万</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">6岁男孩小区内行走 被从天而降1米长衣架插入头部</a>
+                        </li>
+                        <li class="div2-ul1-li2">
+                            <span></span>
+                            <a href="#" target="_blank">线上夹娃娃游戏疑传销 可按加入顺序形成上下线关系</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="a2-div3" id="a2s">
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-1.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">中国铝业再遭美国232调查 业内担忧或将引起全球混战</a>
+                            <p><span>网易头条</span></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-2.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">我国大宗商品期货交易量连续七年位居世界第一</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-3.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">四川缉毒牺牲警察追悼会全屏马赛克:战友还在战斗</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-4.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">洪秀柱公布国民党中央委员推荐名单 洪家军成型</a>
+                            <p><span>凤凰头条</span></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-5.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">首都机场股份总经理:北京新机场维修设施将引入社资</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-6.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">日媒:美军舰和货船同向航行时相撞 邮船公司正在调查</a>
+                            <p><span>网易头条</span></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-7.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">专访酷开李晶:虚拟现实从业者徐坚持自己的初心</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-8.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">男子中了8400000元巨款前熬一夜 次日连忙做了这件事</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-9.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">冯小刚携《芳华》亮相华谊之夜 吴尊高以翔斗帅</a>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-10.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">女子养猫做宠物 月余后发现为世界珍奇动物豹猫</a>
+                            <p><span>网易要闻</span></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item">
+                        <a href="#" target="_blank"><img src="../img1/a2-div3-11.jpg" width="100px" height="66px"/></a>
+                        <div>
+                            <a href="#" target="_blank">招生圈套:花钱买自主招生指标 找黑客改分</a>
+                            <p><span>搜狐要闻</span></p>
+                        </div>
+                    </div>
+                    <div class="feeds-item1">
+                        <a href="#" target="_blank">徐忠:刺激政府常态化是误读了凯恩斯主义</a>
+                        <p>中国人民银行研究局局长徐忠出席并演讲。</p>
+                    </div>
+                    <div class="feeds-item2">
+                        <a href="#" target="_blank">更多个性推荐新闻</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-top-right">
+                <div class="box">
+                    <a href="#" target="-_blank" class="a1 num">1</a>
+                    <a href="#" target="-_blank" class="a2 num">2</a>
+                    <a href="#" target="-_blank" class="a3 num">3</a>
+                    <a href="#" target="-_blank" class="a4 num">4</a>
+                    <a href="#" target="-_blank" class="a5 num">5</a>
+                    <a href="#" target="-_blank" class="a6 num">6</a>
+                    <a href="#" target="-_blank" class="a7 num">7</a>
+                    <a href="#" target="-_blank" class="a8 num">8</a>
+                    <div class="box1 play clearfix">
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-1.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-2.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-3.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-4.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-5.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-6.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-7.jpg"/></a>
+                        <a href="#" target="_blank"><img src="../img1/body-t-r-8.jpg"/></a>
+                        <ul class="list clearfix">
+                            <li><span>《习近平讲故事》出版座谈会举行</span></li>
+                            <li><span>两岸百位新人在厦门举行婚礼</span></li>
+                            <li><span>长颈鹿遭羚羊攻击狼狈逃窜，同伴视而不见</span></li>
+                            <li><span>女子旅行享受免费住宿 靠帮人照顾宠物换取</span></li>
+                            <li><span>俯视所有同龄人：印度八岁男孩身高近2米</span></li>
+                            <li><span>表演者将头伸进鳄鱼口中 鳄鱼突然咬住狂甩</span></li>
+                            <li><span>毁童年：小美人鱼短时间内遭数次蓄意破坏</span></li>
+                            <li><span>难辨真伪！这里所有的女生看起来都特别的美</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr-div2">
+                    <h3>
+                        <a href="#" target="_blank">热搜新闻词</a>
+                        <span>HOT WORDS</span>
+                        <img src="../img1/icon-mark_6324efc.png"/>
+                    </h3>
+                    <ul class="tr-div2-ul clearfix">
+                        <li class="tr-div2-ul-li1">
+                            <a href="#" target="_blank">习近平向金砖国家<br/>运动会致贺信</a>
+                        </li>
+                        <li class="tr-div2-ul-li1">
+                            <a href="#" target="_blank">习近平就科尔逝世致唁电</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">下个月起这样做可以抵扣个税</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">银行卡被盗刷<br/>做好这六件事</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">这些商标<br/>不是山寨的</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">揭秘网购<br/>特效药</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">比特币暴跌<br/>14.5%背后</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">食盐添加抗<br/>结块剂无害</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">这支义务救援队<br/>只收微笑不收费</a>
+                        </li>
+                        <li class="tr-div2-ul-li2">
+                            <a href="#" target="_blank">京籍儿童幼升小<br/>登记现场禁面试</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tr-div3">
+                    <p>
+                        <a href="#" target="_blank">百家号</a>
+                        <span>BAIJIA</span>
+                        <img src="../img1/icon-mark_6324efc.png"/>
+                        <a href="#" target="_blank" class="baijia-a">财经</a>
+                        <a href="#" target="_blank" class="baijia-a">文化</a>
+                        <a href="#" target="_blank" class="baijia-a">娱乐</a>
+                        <a href="#" target="_blank" class="baijia-a">体育</a>
+                        <a href="#" target="_blank" class="addbj">加入百家号</a>
+                        <img src="../img1/icon-more_62ae436.png"/>
+                    </p>
+                    <div class="bj-top">
+                        <div class="bj-top-left">
+                            <div class="btj-1">
+                                <a href="#" target="_blank">
+                                    <img src="../img1/baijia-1.jpg" width="240px" height="160px"/>
+                                </a>
+                                <a href="#" target="_blank">顺丰偷商家客户，朋友圈发个声就没有事了?</a>
+                            </div>
+                            <div class="btj-2">
+                                <a href="#" target="_blank">
+                                    <img src="../img1/baijia-2jpg.jpg" width="115px" height="85px"/>
+                                </a>
+                                <a href="#" target="_blank">散户抄底为啥总是抄在半山腰上?</a>
+                            </div>
+                            <div class="btj-2">
+                                <a href="#" target="_blank">
+                                    <img src="../img1/baijia-3.jpg" width="115px" height="85px"/>
+                                </a>
+                                <a href="#" target="_blank">小鸭子看完《深夜食堂》说：尬尬尬</a>
+                            </div>
+                        </div>
+                        <div class="bj-top-right">
+                            <ul>
+                                <li><a href="#" target="_blank">苹果公司居然为了一个披萨盒申请了专利 ？</a></li>
+                                <li><a href="#" target="_blank">我们凭什么替艺人黄磊批评投资人黄磊</a></li>
+                                <li><a href="#" target="_blank">我想再对住房公积金说几句话</a></li>
+                                <li><a href="#" target="_blank">特斯拉创始人发表了15页的论文来描绘人类将如何殖民火星</a></li>
+                                <li><a href="#" target="_blank">腾讯参与竞购《愤怒的小鸟》开发商Rovio</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" target="_blank">找到适合自己的无线音箱，开始拯救耳朵大作战</a></li>
+                                <li><a href="#" target="_blank">创维净利润下跌四成 电视机真得卖不动了吗？</a></li>
+                                <li><a href="#" target="_blank">摩拜融资6亿美元，为何腾讯坚定领投？</a></li>
+                                <li><a href="#" target="_blank">难为董小姐了！卖出8台手机，如何直面惨淡的多元化之路？</a></li>
+                                <li><a href="#" target="_blank">不可忽视IPO高速发行背后的风险</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr-div4">
+                    <div class="tr-div4-left">
+                        <p>
+                            <a href="#" target="_blank">百家聚焦</a>
+                            <span>BAIJIA FOCUS</span>
+                        </p>
+                        <div class="btj-1">
+                            <a href="#" target="_blank">
+                                <img src="../img1/baijia-4.jpg" width="240px" height="160px"/>
+                            </a>
+                            <a href="#" target="_blank">科技股暴跌：让万元美元市场之争降温未尝</a>
+                        </div>
+                    </div>
+                    <div class="tr-div4-right">
+                        <p>
+                            <a href="#" target="_blank">热门文章</a>
+                            <span>BAIJIA FOCUS</span>
+                        </p>
+                        <div class="bj-phb">
+                            <a href="" class="bj-phb-day" id="bj-phb-days" onmouseover="showDay();">日榜</a>
+                            <a href="" class="bj-phb-week" id="bj-phb-weeks" onmousemove="showWeek();">周榜</a>
+                        </div>
+                        <ol class="ollist1" id="ollist1">
+                            <li>
+                                <span>1.</span>
+                                <a href="#" target="_blank">难为董小姐了！卖出8台手机，如何直面惨淡的多元化之路？</a>
+                                <a href="#" target="_blank">野马财经</a>
+                            </li>
+                            <li>
+                                <span>2.</span>
+                                <a href="#" target="_blank">特斯拉创始人发表了15页的论文来描绘人类将如何殖民火星</a>
+                                <a href="#" target="_blank">玩物主义</a>
+                            </li>
+                            <li>
+                                <span>3.</span>
+                                <a href="#" target="_blank">摩拜融资6亿美元，为何腾讯坚定领投？</a>
+                                <a href="#" target="_blank">马继华</a>
+                            </li>
+                            <li>
+                                <span>4.</span>
+                                <a href="#" target="_blank">创维净利润下跌四成 电视机真得卖不动了吗？</a>
+                                <a href="#" target="_blank">面包财经</a>
+                            </li>
+                            <li>
+                                <span>5.</span>
+                                <a href="#" target="_blank">我们凭什么替艺人黄磊批评投资人黄磊</a>
+                                <a href="#" target="_blank">PingWest品玩</a>
+                            </li>
+                        </ol>
+                        <ol class="ollist2" id="ollist2">
+                            <li>
+                                <span>1.</span>
+                                <a href="#" target="_blank">华为荣耀9发布会闹乌龙，用小米6做头图，网友：小米大仇已报</a>
+                                <a href="#" target="_blank">陈海宁</a>
+                            </li>
+                            <li>
+                                <span>2.</span>
+                                <a href="#" target="_blank">时隔7年，我重新参加高考，交了一张白卷</a>
+                                <a href="#" target="_blank">PingWest品玩</a>
+                            </li>
+                            <li>
+                                <span>3.</span>
+                                <a href="#" target="_blank">为何苹果敢如此嚣张地“雁过拔毛</a>
+                                <a href="#" target="_blank">小刀马</a>
+                            </li>
+                            <li>
+                                <span>4.</span>
+                                <a href="#" target="_blank">小龙虾五步制霸史：它是如何成为夜宵界之王的？</a>
+                                <a href="#" target="_blank">i黑马</a>
+                            </li>
+                            <li>
+                                <span>5.</span>
+                                <a href="#" target="_blank">网友吐槽京东价格不降反升，京东员工神回复:怪你自己</a>
+                                <a href="#" target="_blank">陈海宁</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="local-news">
+            <div class="local-news-top">
+                <a href="#" target="_self" id="local">合肥新闻</a>
+                <span>LOCAL NEWS</span>
+                <img src="../img1/icon-mark_6324efc.png"/>
+                <a href="javascript:" onclick="showCity(this)" id="qhcity">切换城市</a>
+                <a href="#" target="_self">更多</a>
+            </div>
+            <div class="selectCity" id="city">
+                <div class="cityClose" onclick="noneCity();"></div>
+                <div class="city" id="city-f">
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">北京</a>
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">上海</a>
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">天津</a>
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">重庆</a>
+                    <a href="javascript:void(0);" onclick="replaceCity2()">安徽</a>
+                    <a href="javascript:void(0);">福建</a>
+                    <a href="javascript:void(0);">甘肃</a>
+                    <a href="javascript:void(0);">广东</a>
+                    <a href="javascript:void(0);">广西</a>
+                    <a href="javascript:void(0);">贵州</a>
+                    <a href="javascript:">海南</a>
+                    <a href="javascript:">河北</a>
+                    <a href="javascript:">河南</a>
+                    <a href="javascript:">湖北</a>
+                    <a href="javascript:">湖南</a>
+                    <a href="javascript:">吉林</a>
+                    <a href="javascript:">江苏</a>
+                    <a href="javascript:">江西</a>
+                    <a href="javascript:">辽宁</a>
+                    <a href="javascript:">宁夏</a>
+                    <a href="javascript:">青海</a>
+                    <a href="javascript:">山东</a>
+                    <a href="javascript:">山西</a>
+                    <a href="javascript:">陕西</a>
+                    <a href="javascript:">四川</a>
+                    <a href="javascript:">西藏</a>
+                    <a href="javascript:">新疆</a>
+                    <a href="javascript:">云南</a>
+                    <a href="javascript:">浙江</a>
+                    <a href="javascript:">黑龙江</a>
+                    <a href="javascript:">内蒙古</a>
+                    <a href="javascript:">钓鱼岛</a>
+                </div>
+                <div class="city city-c" id="city-ca">
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">安庆</a>
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">蚌埠</a>
+                    <a href="javascript:void(0);" onclick="replaceCity(this)">亳州</a>
+                    <a href="javascript:void(0);" class="ahcity">池州</a>
+                    <a href="javascript:void(0);" class="ahcity">阜阳</a>
+                    <a href="javascript:void(0);" class="ahcity">合肥</a>
+                    <a href="javascript:void(0);" class="ahcity">淮北</a>
+                    <a href="javascript:void(0);" class="ahcity">淮南</a>
+                    <a href="javascript:void(0);" class="ahcity">黄山</a>
+                    <a href="javascript:void(0);" class="ahcity">六安</a>
+                    <a href="javascript:">宿州</a>
+                    <a href="javascript:">铜陵</a>
+                    <a href="javascript:">芜湖</a>
+                    <a href="javascript:">宣城</a>
+                    <a href="javascript:">马鞍山</a>
+                </div>
+                <p>你所选城市新闻不足，将展示省会新闻<a href="javascript:void(0);" id="back" onclick="backCityF(this)">返回</a></p>
+            </div>
+            <div class="clearfix" id="heFei" class="hf">
+                <ul class="div2-ul2 local-news-left">
+                    <li class="div2-ul1-li1 div2-ul2-li1">
+                        <span></span>
+                        <strong><a href="#" target="_blank">
+                            多次在医院盗窃患者"救命钱" 男子被判刑1年1...</a></strong>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">今夏合肥电力供需基本保持平衡</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">安徽合肥：排查汽车遥控器干扰</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">2017中考阅卷：合肥英语已出现满分作文</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">合肥市清理6221户"僵尸企业"</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">合肥有了"官方版"水上救援队</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">合肥21日阴转多云 明后天将有雨</a>
+                    </li>
+                    <li class="div2-ul1-li2">
+                        <span></span>
+                        <a href="#" target="_blank">"克隆"出租汽车被查 市民举报每辆可获千元奖励</a>
+                    </li>
+                </ul>
+                <div class="local-news-center">
+                    <h3 class="hd">新闻图片</h3>
+                    <div class="tpnews">
+                        <a href="#" target="_self">
+                            <img src="../img1/local-new1.jpg" height="140px" width="240px"/>
+                        </a>
+                        <a href="#" target="_self" class="tpnewstext">长丰县150万斤鲜桃难寻销路 种植户"望桃兴叹"</a>
+                    </div>
+                </div>
+                <div class="local-news-right">
+                    <h3 class="hd">新闻资讯</h3>
+                    <ul class="local-ul-right">
+                        <li>
+                            <a href="#" target="_blank">合肥将建成遥感监控网络 查处"冒黑烟"机动车</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">合肥市第二届寻找"最美军嫂"活动启动</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">合肥18家物业企业不敬业上"黑榜"</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">肥东县石塘镇：弘扬乡贤文化 共建美丽乡村</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">合肥学院拟筹建合肥大学 38个专业进一本...</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">顶尖人才落户合肥可获200万生活补助</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">主城区仍有5万棵杨树 合肥计划三年内缓解杨絮困扰</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footerwrapper">
+                <div class="footerwrapper-top clearfix">
+                    <div class="foot-left">
+                        <h2><span></span>更多精彩内容</h2>
+                        <div>
+                            <img src="../img1/1014720a_385933c.png" height="95px" width="95px"/>
+                            <a href="#" target="_blank">Android版下载</a>
+                            <a href="#" target="_blank">iPhone版下载</a>
+                        </div>
+                        <span>扫描二维码，收看更多的新闻</span>
+                    </div>
+                    <div class="foot-center">
+                        <h2><span></span>相关功能</h2>
+                        <ul class="foot-center-ul">
+                            <li>
+                                <a href="#" target="_blank">新闻订阅</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">个性化新闻</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">邮件新闻订阅</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">地区新闻</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">历史新闻</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">新闻免费代码</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-right">
+                        <h2><span></span>百度新闻独家出品</h2>
+                        <ol>
+                            <li>1. 新闻由机器选取每5分钟自动更新</li>
+                            <li>2. 百度新闻搜索源于互联网新闻网站和频道，系统自动分类排序</li>
+                            <li>3. 百度不刊登或转载任何完整的新闻内容</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="footerwrapper-bottom">
+                    <p>责任编辑：胡彦BN098 刘石娟BN068 谢建BN085 李芳雨BN091 储信艳BN087 焦碧碧BN084 禤聪BN095 王鑫BN060 崔超BN071
+                        违法和不良信息举报电话：59922822</p>
+                    <div>
+                        <a href="#" target="-_blank">投诉中心</a>
+                        <span>京公网安备11000002000001号</span>
+                        <a href="#" target="_blank">互联网新闻信息服务许可</a>
+                        <span>&copy;2017Baidu</span>
+                        <a href="#" target="_blank">使用百度前必读</a>
+                        <a href="#" target="_blank" class="foot-link1 footlink"></a>
+                        <a href="#" target="_blank" class="foot-link2 footlink"></a>
+                        <a href="#" target="_blank" class="foot-link3 footlink"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="login" id="loginid">
+        <div class="login2">
+            <div class="login-top">
+                <img src="../img1/baidu_logo_48.png" height="30px" width="30px"/>
+                <span>登录百度账号</span>
+                <div class="cityClose loginClose" onclick="javascript:document.getElementById('loginid').style.display='none';"></div>
+            </div>
+            <form action="#" method="get" class="loginfrom" id="form1">
+                <div class="login1-from">
+                    <p class="form-p1"><img src="../img1/login-phone.jpg"/><a href="javascript:void(0);" onclick="phoneLogin()">手机快捷登录</a></p>
+                    <p class="form-p2">
+                        <label for="user" id="userabel"></label>
+                        <input type="text" name="userName" value="" placeholder="手机/邮箱/用户名" id="user" onfocus="userlables()" onblur="userlablesn()"/>
+                    </p>
+                    <p class="form-p2 form-p3">
+                        <label for="passw" id="passlabel"></label>
+                        <input type="password" name="password" value="" placeholder="密码" id="passw" onfocus="passlables()" onblur="passlablen()"/>
+                    </p>
+                    <p class="form-p4 form-p2">
+                        <input type="text" name="yzm" value="" placeholder="验证码"/>
+                        <img src="../img1/genimage.png"/>
+                        <a href="javascript:void(0)">换一张</a>
+                    </p>
+                    <p class="form-p5">
+                        <input type="checkbox" name="autologin" value="autol" checked id="auto"/>
+                        <label for="auto">下次自动登录</label>
+                        <a href="#" target="_blank">登录遇到问题</a>
+                    </p>
+                    <p class="form-p6">
+                        <input type="submit" name="submit" value="登录"/>
+                    </p>
+                    <p class="form-p7 form-p1">
+                        <a href="baidu-register.html" target="_blank">立即注册</a>
+                    </p>
+                </div>
+            </form>
+            <form action="#" method="get" class="loginfrom" id="form3">
+                <div class="login2-form">
+                    <p><span>手机扫描，安全登录</span></p>
+                    <p><img src="../img1/qrcode.png" width="134px" height="134px"/></p>
+                    <p>请使用<a href="#" target="_self">手机百度app</a>扫描登录</p>
+                </div>
+            </form>
+            <form action="#" method="get" class="loginfrom" id="form2">
+                <div class="login3-from">
+                    <p>短信登录</p>
+                    <p>验证即登录，未注册将自动创建百度账号</p>
+                    <p class="form-p2 login3-p2">
+                        <label for="tel" id="tels"></label>
+                        <input type="tel" name="telName" value="" placeholder="请输入手机号" id="tel" onfocus="tellabels()" onblur="tellabeln"/>
+                    </p>
+                    <p class="form-p4 form-p2 login3-p3">
+                        <input type="text" name="yzm" value="" placeholder="验证码"/>
+                        <a href="javascript:void(0)">发送动态密码</a>
+                    </p>
+                    <p class="form-p6">
+                        <input type="submit" name="submit" value="登录"/>
+                    </p>
+                    <p>
+                        <span>阅读并接受</span>
+                        <a href="#" target="_blank">《百度用户协议》</a>
+                        <a href="javascript:void(0)" onclick="account()">账号密码登录</a>
+                    </p>
+                </div>
+            </form>
+            <p class="cutlogin"><a href="javascript:void(0);" onclick="loginqh(this)"></a></p>
+        </div>
+    </div>
+</div>
+<div class="fixed-div" id="fixed-d">
+    <ul class="fixed-div-ul">
+        <li>
+            <a href="#" target="_blank" class="fixed-li1 lia1"></a>
+            <a href="#" target="_blank" class="lia2">举报</a>
+        </li>
+        <li>
+            <a href="#" target="_blank" class="fixed-li2 lia1"></a>
+            <a href="#" target="_blank" class="lia2">二维码</a>
+            <div class="ewm">
+                <div class="evm2">
+                    <p>百度新闻客户端</p>
+                    <p>扫描二维码下载</p>
+                    <p>随时随地收看更多新闻</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#" target="_blank" class="fixed-li3 lia1"></a>
+            <a href="#" target="_blank" class="lia2">收藏本站</a>
+        </li>
+        <li>
+            <a href="#" target="_blank" class="fixed-li5 lia1"></a>
+            <a href="#" target="_blank" class="lia2">传媒</a>
+        </li>
+        <li>
+            <a href="#" target="_blank" class="fixed-li6 lia1"></a>
+            <a href="#" target="_blank" class="lia2">搜索</a>
+        </li>
+        <li>
+            <a href="#" target="_blank" class="fixed-li7 lia1"></a>
+            <a href="#" target="_blank" class="lia2">用户反馈</a>
+        </li>
+        <li>
+            <a href="" class="fixed-li8 lia1"></a>
+            <a class="lia2" onclick="document.getElementById('here').scrollIntoView()">
+                回顶部</a>
+        </li>
+    </ul>
+</div>
+<script>
+    window.onscroll=function(){
+        var t=document.documentElement.scrollTop||document.body.scrollTop;
+        var d=document.getElementById("menulist");
+        var a=document.getElementById("fixed-d");
+        if(t>=147){
+            d.style.position="fixed";
+            d.style.zIndex="99999";
+            d.style.top="0";
+        }else{
+            d.style.position="";
+            d.style.zIndex="";
+            d.style.top="";
+        }
+        if(t>147){
+            a.style.display="block";
+        }else{
+            a.style.display="none";
+        }
+    }
+</script>
+</body>
+</html>

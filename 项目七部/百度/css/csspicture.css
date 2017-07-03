@@ -1,0 +1,269 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div1{
+    background: url("../image/timg.jpg") no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+.nav{
+    height: 35px;
+    width: 100%;
+    font-size: 13px;
+    background-color: rgba(0,0,0,0.1);
+}
+.nav a{
+    line-height: 30px;
+    color: white;
+    margin-right: 15px;
+}
+.div2{
+    float: right;
+    font-weight: 700;
+}
+.pic{
+    text-decoration: none;
+}
+.div3{
+    float: right;
+    line-height: 30px;
+    margin-right: 15px;
+    color: #dedede;
+}
+.div4{
+    float: right;
+    margin-right: 30px;
+}
+.s1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 36px;
+}
+
+.s3{
+    background: url("../image/b.png")no-repeat;
+    width: 210px;
+    height: 80px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 50px;
+}
+.s4{
+    width: 620px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.in1{
+    border: 1px solid #999999;
+    width: 522px;
+    height: 38px;
+    border-right: none;
+    text-indent: 10px;
+}
+.img1{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -30px;
+    left: 480px;
+}
+.a2{
+    display: none;
+}
+.a1:hover ~ .a2{
+    display: block;
+}
+
+.img2{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -50px;
+    left: 480px;
+}
+
+.in2{
+    float: right;
+    width: 98px;
+    height: 38px;
+    background-color: #38f;
+    border: none;
+    font-size: 18px;
+    color: white;
+    line-height: 38px;
+}
+.d1{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.d2{
+    width: 810px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.d2 ul li{
+    float: left;
+    position: relative;
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 135px;
+    overflow: hidden;
+}
+.d2>ul>li>a>img{
+    display: block;
+    width: 150px;
+    height: 135px;
+}
+.d2 ul li a span{
+    font-size: 14px;
+    position: absolute;
+    top: 110px;
+    text-indent: 10px;
+    color: white;
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.d2 ul li a:hover img{
+    transform: scale(1.1);
+    transition: transform 1.2s;
+}
+.d3{
+    background: url("../image/dot_center_circle_e753722.png") 10px 10px no-repeat;
+    position: relative;
+    border: 1px solid white;
+    height: 40px;
+    width: 40px;
+    /*overflow: hidden;*/
+    display: block;
+    margin-top: -400px;
+    margin-left: 120px;
+}
+.d4 a{
+    display: none;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 14px;
+    color: #1e2d40;
+    background-color: #AEBDCC;
+    position: absolute;
+    top: -85px;
+    left: -85px;
+    border:1px solid wheat;
+}
+.d3:hover .d4>a{
+    display: block;
+}
+.foot{
+    width: 100%;
+    height: 40px;
+    margin-top: 365px;
+}
+.foot li{
+    float: left;
+    list-style: none;
+    margin-top: 15px;
+}
+.foot>ul{
+    margin-left: 50px;
+}
+.foot li a{
+    border: 1px solid black;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+}
+.foot>ul>li:nth-of-type(1)>a{
+    background: url("../image/wei.png")no-repeat;
+    background-size: cover;
+}
+.foot>ul>li:nth-of-type(1)>a:hover{
+    background: url("../image/wei1.png")no-repeat;
+    background-size: cover;
+}
+.foot>ul>li:nth-of-type(2)>a{
+    background: url("../image/QQ.png")no-repeat;
+    background-size: cover;
+}
+.foot>ul>li:nth-of-type(2)>a:hover{
+    background: url("../image/QQ1.png")no-repeat;
+    background-size: cover;
+}
+.foot>ul>li:nth-of-type(3)>a{
+    background: url("../image/dou.png")no-repeat;
+    background-size: cover;
+}
+.foot>ul>li:nth-of-type(3)>a:hover{
+    background: url("../image/dou1.png")no-repeat;
+    background-size: cover;
+}
+.b1{
+    margin-top: -25px;
+    margin-left: 180px;
+    color: white;
+}
+.b2{
+    margin-top: -18px;
+    font-size: 14px;
+    margin-left: 100px;
+    color: white;
+}
+.b2 span{
+    margin-left: 40px;
+}
+.b2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.b2 a:hover{
+    text-decoration: underline;
+}
+.end{
+    height: 30px;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 13px;
+    margin-top: -30px;
+    color: white;
+}
+.end p{
+    display: block;
+    margin-top: 12px;
+    float: left;
+    color: white;
+}
+.end a{
+    margin-top: 12px;
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+.end a:hover{
+    text-decoration: underline;
+}
+
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: left;
+    *zoom: 1;
+}

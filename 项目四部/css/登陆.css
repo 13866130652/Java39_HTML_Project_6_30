@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.zong {
+	width: 1350px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+}
+
+.shang {
+	padding-left: 40px;
+	height: 65px;
+	background-color: #EFF4FA;
+}
+
+img[name=dl1] {
+	margin-top: 5px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding-top: 20px;
+	padding-right: 40px;
+	list-style-type: none;
+}
+
+.u1 li {
+	margin-right: 5px;
+	/*color: white;*/
+	float: right;
+	font-size: 13px;
+}
+
+a[name=a1] {
+	/*	display: inline-block;
+	margin-right: 50px;*/
+	color: #1D5494;
+	font-size: 13px;
+	padding-right: 5px;
+}
+
+a[name=a1]:hover {
+	/*border: 1px solid black;*/
+	text-decoration: underline;
+}
+
+.zhong {
+	/*border: 1000px solid red;*/
+	width: 100%;
+	height: 510px;
+}
+
+.zhong1 {
+	/*border: 1px solid red;*/
+	float: left;
+	margin-top: 110px;
+	margin-left: 220px;
+}
+
+h3 {
+	font-size: 23px;
+	color: #6F95C8;
+}
+
+.zhong1 p {
+	margin-top: 5px;
+}
+
+.p1 {
+	font-size: 13px;
+}
+
+.zhong2 {
+	/*border: 1px solid red;*/
+	float: left;
+	margin-top: 100px;
+	margin-left: 20px;
+}
+
+.zhong3 {
+	/*border: 1px solid red;*/
+	margin-top: 70px;
+	margin-right: 225px;
+	float: right;
+	width: 335px;
+	height: 375px;
+	border: 1px solid #A0B1C4;
+	border-radius: 5px;
+}
+
+.zhong-shang {
+	border-bottom: 1px solid #A0B1C4;
+	height: 50px;
+}
+
+span {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 60px;
+}
+
+.zhong-shang a {
+	color: black;
+}
+
+a[name=a2] {
+	color: #999999;
+}
+
+a[name=a2]:hover {
+	color: black;
+}
+
+input[name=zh] {
+	font-size: 15px;
+	padding-left: 5px;
+	border: 1px solid #A0B1C4;
+	margin-top: 40px;
+	margin-left: 28px;
+	height: 40px;
+	width: 285px;
+	border-radius: 5px;
+}
+
+input[name=mm] {
+	font-size: 15px;
+	padding-left: 5px;
+	border: 1px solid #A0B1C4;
+	margin-top: 10px;
+	margin-left: 28px;
+	height: 40px;
+	width: 285px;
+	border-radius: 5px;
+}
+
+input[name=fx] {
+	margin-top: 15px;
+	margin-left: 28px;
+	margin-right: 8px;
+}
+
+a[name=a3] {
+	font-size: 12px;
+	color: black;
+}
+
+input[name=tj] {
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	background-color: #5A98DE;
+	width: 285px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 28px;
+	border-radius: 5px;
+}
+
+.zhong-you ul {
+	margin-left: 10px;
+	margin-top: 50px;
+}
+
+.dibu {
+	margin-top: 20px;
+	height: 40px;
+	background-color: #EFF4FA;
+	padding-right: 300px;
+}
+
+.dibu ul {
+	margin-bottom: 10px;
+}
+
+#sp {
+	margin-left: 10px;
+	height: 25px;
+	/*width:200px;*/
+	display: inline-block;
+	/*border: 1px solid black;*/
+	vertical-align: middle;
+	line-height: 25px;
+}
+#sp1 {
+	margin-left: 10px;
+	height: 25px;
+	/*width:200px;*/
+	display: inline-block;
+	/*border: 1px solid black;*/
+	vertical-align: middle;
+	line-height: 25px;
+}
+
+.cleanfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}

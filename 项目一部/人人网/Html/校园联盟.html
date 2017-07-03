@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校园联盟</title>
+    <link href="../css/校园联盟.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="..\img\favicon-rr.ico" />
+    <script src="../js/xiao.js"></script>
+</head>
+<body>
+<div class="box">
+    <header>
+        <p class="s">
+            <a href="http://www.wandafilm.com/trade/movie_times.jsp" target="_blank">放映时刻</a>
+            <span>|</span>
+            <a href="http://www.wandafilm.com/" target="_blank">万达电影网首页</a>
+        </p>
+    </header>
+    <section>
+        <div>
+            <p class="s2">
+                <img src="../img/banner.jpg" class="img"/>
+                <a href="http://www.wandafilm.com/" target="_self"><img src="../img/logo.png" class="img1"/></a>
+                <a href="http://www.wandafilm.com/active/xylm/index.jsp" target="_self"><img src="../img/logo1.png" class="img2"/></a>
+                <a href="http://www.wandafilm.com/active/xylm/index.jsp" target="_self"><img src="../img/logo2.png" class="img3"/></a>
+                <a href="http://www.wandafilm.com/active/xylm/index.jsp" target="_self"><img src="../img/logo3.png" class="img4"/></a>
+            </p>
+        </div>
+            <div class="s3">
+                <img src="../img/mbg12.jpg" class="img5"/>
+                <div>
+                    <p>
+                        <a href="#" target="_self"><img src="../img/dream.png" id="img6" onclick="show()"/></a>
+                    </p>
+                    <a href="http://www.wandafilm.com/active/xylm/photo.jsp" target="_self"><img src="../img/show.png" class="img7"/></a>
+                    <p>
+                        <a href="#" target="_self"><img src="../img/zjbtn.png" id="img8" onclick="show1()"/></a>
+                    </p>
+                    <p class="spm">
+                        <video src="../video/vedio.mp4" autoplay></video>
+                    </p>
+                    <p id="imga">
+                        <img src="../img/pic2.png"/>
+                        <img src="../img/play2.png"/>
+                    </p>
+                    <p id="imga1">
+                        <img src="../img/pic3.png"/>
+                        <img src="../img/play2.png"/>
+                    </p>
+                    <p class="imag">
+                        <img src="../img/w_btn.png"/>
+                        <img src="../img/h_btn.png"/>
+                    </p>
+                </div>
+                <form action="#" method="post" id="fo">
+                    <div>
+                   <p class="sp">
+                      <span>登录</span>
+                      <a href="#" target="_self" onclick="disappear()">X</a>
+                    </p>
+                     <p>
+                        <span class="sp1">用户名：</span>
+                        <input type="text" name="user" placeholder="请输入手机号"/><br/>
+                        <span class="sp1">密码：</span>
+                        <input type="password" name="pass"/>
+                        <a href="" target="_blank" class="a">找回密码</a><br/>
+                        <span class="sp1">图形验证码：</span>
+                        <input type="text" name="yan"/>
+                        <a href="#" target="_self" class="a1">
+                            <img src="../img/checkcode_key=1498276747928.jpg"/>
+                            <span>看不清</span>
+                        </a><br/>
+                        <span class="sp1 sp2">手机验证码：</span>
+                        <input type="text" name="yan" class="yan"/>
+                        <span>获取验证码</span><br/>
+                        <input type="checkbox" name="che"/>
+                        <span>下次自动登录</span><br/>
+                        <input type="submit" name="submit" value="登录"/>
+                     </p>
+                     <p class="sp3">
+                    <span>使用其他网站账号登录：</span>
+                    <a href="http://api.t.sina.com.cn/oauth/authenticate?oauth_token=c41ce29b10a0261e623d6db9e19b6b6e" target="_self"><img src="../img/sina_checked.png"/></a>
+                    <a href="http://www.wandafilm.com/active/xylm/index.jsp" target="_self"><img src="../img/douban_checked.png"/></a>
+                    <a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D507cc8e67e4a02f319b397e88959f201" target="_self"><img src="../img/alipay.png"/></a>
+                    </p>
+                    </div>
+                </form>
+                <div id="s4">
+                <div class="sp4">
+                <p>
+                    <img src="../img/mdbg.png"/>
+                </p>
+                <p onclick="disappear1()">X</p>
+                <div id="show">
+                    <p class="spn">一等奖</p>
+                    <p class="spn1">
+                        <span>139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                    </p><br/>
+                    <p class="spn">二等奖</p>
+                    <p class="spn1">
+                        <span id="spn2">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn3">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                    </p><br/>
+                     <p class="spn">三等奖</p>
+                    <p class="spn1">
+                        <span id="spn4">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn5">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                         <span id="spn6">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn7">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                    </p>
+                </div>
+                <div id="show1">
+                     <p class="spn">三等奖</p>
+                    <p class="spn1">
+                        <span id="spn8">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn9">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                         <span id="spn10">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn11">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn12">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn13">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                         <span id="spn14">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span id="spn15">139****7293</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                        <span>139****7223</span>
+                        <span>138****8888</span>
+                    </p>
+                    </div>
+                <a href="#" target="_self" onclick="chage()">上一页</a>
+                <a href="#" target="_self" onclick="chage1()">下一页</a>
+            </div>
+            </div>
+            </div>
+        <p class="s7">
+            <img src="../img/left.png" onclick="chang4()"/>
+            <img src="../img/right.png" onclick="chang5()"/>
+        </p>
+        <div class="div1">
+        <ul class="ul">
+            <li>
+                <img src="../img/ww1.jpg" id="image"/>
+                <p><span id="sp">1</span> / 7</p>
+            </li>
+        </ul>
+        </div>
+        <div class="div2">
+            <p class="p1"><img src="../img/mbg_btm.jpg"/></p>
+            <p class="p2"><img src="../img/pic_20.png" onclick="show2()" id="sn"/></p>
+            <div id="div3">
+                <p><img src="../img/drge.png"/></p>
+                <p>
+                    <span onclick="disappear2()">X</span>
+                </p>
+                <p class="p5">
+                    1、您上传的照片会填在“照片墙”上，点赞数最多的照片可有机会赢得奖学金及其他礼品。<br/>
+                    2、本次活动以上传原创照片方式参与，禁止盗用他人图片。模糊不清和ps照片最好不要上传，
+                    怕被直接秒杀，手机相机拍摄照片均可，欢迎大家举报打假。<br/>
+                    3、活动期间，用户可从万达电影网和手机客户端的活动页面参与。<br/>
+                    4、活动结束后，会有来自号码04000095066专人联系幸运用户，需要提供用户名、手机号、地址等信息，
+                    万达电影会在活动结束后进行邮寄。<br/>
+                    5、礼品图片仅供参考，以收到的实物奖品为准。<br/>
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

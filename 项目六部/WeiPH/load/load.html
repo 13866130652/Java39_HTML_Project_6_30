@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="gbk">
+    <title>唯品会登录</title>
+    <link href="css/load.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="js/load.js">
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="img/header.png">
+        </div>
+        <div class="section">
+            <div class="left">
+                <img src="img/left.png">
+            </div>
+            <div class="right">
+                <div class="reg">
+                    <form action="../index.html" method="get" onsubmit="return userData()">
+                         <p><span>欢迎登录</span><span>未注册<a href="../regist/regist.html">立即注册</a></span></p>
+                        <input type="text" class="xinxi" placeholder="请输入手机号码" id="username" onfocus="userF()" onblur="userB()"><span id="cell"></span>
+                        <input type="password" class="xinxi" name="password" placeholder="请输入密码" id="word" onfocus="passF()" onblur="passB()"><span id="pass1"></span>
+                        <p><input type="checkbox" checked>记住用户名</p>
+                        <p><input type="submit" value="立即登录" id="registBt" onclick="userB(),passB(),passBN()"><a href="#" class="youxiang">通过邮箱登录>></a></p>
+                        <p><span>合作网站账号:</span></p>
+                            <span class="img1"><a href="#" title="QQ"><img src="img/qq.png"></a></span>
+                            <span><a href="#" title="支付宝"><img src="img/zhifu.png"></a></span>
+                            <span><a href="#" title="微信"><img src="img/weixin.png"></a></span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2008-2017 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </footer>
+    </div>
+</body>
+</html>

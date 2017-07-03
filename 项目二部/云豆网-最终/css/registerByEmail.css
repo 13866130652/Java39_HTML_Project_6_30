@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*{
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div1{
+    width: 600px;
+    height: 460px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+}
+
+input[type=email]{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    text-indent: 36px;
+    background: url("../images/login-input5.png") no-repeat;
+    background-position: 10px 15px;
+}
+
+input[name=name]{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    text-indent: 36px;
+    background: url("../images/login-input6.png") no-repeat;
+    background-position: 10px 10px;
+}
+
+input[type=password]{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    text-indent: 36px;
+    background: url("../images/login-input3.png") no-repeat;
+    background-position: 10px 10px;
+}
+
+input[name=yanzheng]{
+    width: 150px;
+    height: 40px;
+    border: 1px solid gray;
+    text-indent: 36px;
+    background: url("../images/login-input2.png") no-repeat;
+    background-position: 10px 10px;
+    display: inline-block;
+    float: left;
+}
+
+input[type=radio]{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+input[type=submit]{
+    margin-top: 36px;
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+}
+
+span{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.a1{
+    font-size: 12px;
+    color: skyblue;
+}
+#p1{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    /*border: 1px solid red;*/
+    /*display: inline-block;*/
+    float: left;
+    margin-left: 10px;
+    background-color: lightgray;
+    color: gray;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+}
+#p1 a{
+    text-decoration: none;
+    color: gray;
+}
+
+#sp6{
+    line-height: 40px;
+    margin-left: 10px;
+}
+.div1-div5{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 40px;
+    /*border: 1px solid red;*/
+}

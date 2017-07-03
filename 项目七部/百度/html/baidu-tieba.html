@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度贴吧</title>
+    <link href="../css/Test.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/login.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="father">
+<header>
+    <div id="tou">
+ <div class="aa">
+     <ul>
+         <li><a href="baidu.html" target="_self"> 网页</a></li>
+         <li><a href="baiduNews.html" target="_self">新闻</a></li>
+         <li class="aas"><a href="#"> 贴吧</a></li>
+         <li><a href="zhidao.html" target="_self"> 知道</a></li>
+         <li><a href="music.html" target="_self">音乐</a></li>
+         <li><a href="picture.html" target="_self">图片</a></li>
+         <li><a href="baidu-play1.html" target="_self">视频</a></li>
+         <li><a href="#">地图</a></li>
+         <li><a href="Documents.html" target="_self">文库</a></li>
+         <li class="des">|</li>
+     </ul>
+ </div>
+    <div class="bb">
+    <a href="baidu.html" target="_self">百度首页</a>
+    <a href="javascript:void(0)" onclick="loginshow()">登录</a>
+    <a href="baidu-register.html" target="_blank">注册</a>
+    <a href="#">问题反馈</a>
+        <a href="#">会员</a>
+</div>
+    </div>
+    <hr/>
+</header>
+        <div class="yy">
+        <form action="#" method="post">
+            <div id="bd"><img src="../img3/search_logo_big_73c81f8.png" width="135px" height="45px"/></div>
+            <div> <input type="text" class="bds"/> <a href="#" id="bds"><input type="submit" name="bds" value="进入贴吧"/></a></div>
+            <div class="quan">全吧搜索</div>
+        </form>
+            <div class="bang">
+    <a href="#">高级搜索</a>
+            </div>
+    </div>
+    <div id="mother">
+    <div class="tu">
+        <div class="body-top-right">
+            <div class="box">
+                <a href="#" target="-_blank" class="a1 num"></a>
+                <a href="#" target="-_blank" class="a2 num"></a>
+                <a href="#" target="-_blank" class="a3 num"></a>
+                <a href="#" target="-_blank" class="a4 num"></a>
+                <div class="box1 play clearfix">
+                    <a href="#" target="_blank" class="t1"><img src="../img3/ba1.png"/></a>
+                    <a href="#" target="_blank" class="t2"><img src="../img3/ba2.png"/></a>
+                    <a href="#" target="_blank" class="t3"><img src="../img3/ba22.png"/></a>
+                    <a href="#" target="_blank" class="t4"><img src="../img3/ba3.png"/></a>
+                </div>
+            </div>
+            </div>
+        <div class="tu2" onclick="loginshow()"><img src="../img3/ba.png"/></div>
+        <div class="tus"></div>
+    </div>
+    <div class="sons">
+        <h3>贴吧分类<hr/></h3>
+        <div class="cangs" onmouseout="document.getElementById('as1').style.background = ' url(../img3/a1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as1').style.background = ' url(../img3/a2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as1" style="background: url('../img3/a1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">娱乐明星</a><br/>
+            <a href="#"> 港台东南亚明星</a>
+            <a href="#">内地明星</a><br/>
+            <a href="#">韩国明星</a>
+            <a href="#">日本明星</a>
+            <a href="#">时尚人物</a>
+            <span class="sanjiao"><img src="../img3/sanjiaox.png"/></span>
+        </div>
+        <div onmouseout="document.getElementById('as2').style.background = ' url(../img3/b1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as2').style.background = ' url(../img3/b2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as2" style="background: url('../img3/b1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1"> 爱综艺</a><br/>
+            <a href="#">内地综艺</a>
+            <a href="#">台湾综艺</a>
+            <a href="#">韩国综艺</a><br/>
+            <a href="#"> 时尚·生活服务</a>
+            <a href="#">体育运动·健身</a>
+        </div>
+        <div onmouseout="document.getElementById('as3').style.background = ' url(../img3/c1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as3').style.background = ' url(../img3/c2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as3" style="background: url('../img3/c1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">追剧狂</a><br/>
+            <a href="#">韩国电视剧</a>
+            <a href="#">香港电视剧</a>
+            <a href="#">美剧</a><br/>
+            <a href="#">日本电视剧</a>
+            <a href="#"> 内地电视剧</a>
+        </div>
+        <div onmouseout="document.getElementById('as4').style.background = ' url(../img3/d1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as4').style.background = ' url(../img3/d2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as4" style="background: url('../img3/d1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1"> 看电影</a><br/>
+            <a href="#">香港电影</a>
+            <a href="#"> 欧美电影</a>
+            <a href="#">内地电影</a><br/>
+            <a href="#">韩国电影</a>
+            <a href="#">日本电影</a>
+            <a href="#">台湾电影</a>
+        </div>
+        <div onmouseout="document.getElementById('as5').style.background = ' url(../img3/e1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as5').style.background = ' url(../img3/e2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as5" style="background: url('../img3/e1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">体育</a><br/>
+            <a href="#">足球</a>
+            <a href="#">篮球</a>
+            <a href="#">NBA</a>
+            <a href="#">CBA</a>
+            <a href="#">乒乓球</a><br/>
+            <a href="#">网球</a>
+            <a href="#"> 舞蹈</a>
+            <a href="#"> 健身</a>
+        </div>
+        <div onmouseout="document.getElementById('as6').style.background = ' url(../img3/f1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as6').style.background = ' url(../img3/f2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as6" style="background: url('../img3/f1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">小说</a><br/>
+            <a href="#">奇幻</a>
+            <a href="#">言情</a>
+            <a href="#">灵异</a>
+            <a href="#">穿越</a>
+            <a href="#">连载</a><br/>
+            <a href="#"> 修真</a>
+            <a href="#">历史</a>
+            <a href="#">架空文</a>
+        </div>
+        <div onmouseout="document.getElementById('as7').style.background = ' url(../img3/g1.png) no-repeat 3px 3px';"
+                 onmouseover=" document.getElementById('as7').style.background = ' url(../img3/g2.png) no-repeat 3px 3px';"
+    >
+        <a href="#" id="as7" style="background: url('../img3/g1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+        <a href="#" class="zuo1">生活家</a><br/>
+            <a href="#">小而美</a>
+            <a href="#">DIY</a>
+            <a href="#">美食</a>
+            <a href="#">摄影</a>
+            <a href="#">旅行</a><br/>
+            <a href="#">变美</a>
+            <a href="#">留学移民</a>
+            <a href="#"> 文玩</a>
+        </div>
+        <div onmouseout="document.getElementById('as8').style.background = ' url(../img3/h1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as8').style.background = ' url(../img3/h2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as8" style="background: url('../img3/h1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1"> 闲·趣</a><br/>
+            <a href="#">萌宠</a>
+            <a href="#">萝莉</a>
+            <a href="#">重口味</a>
+            <a href="#">吐槽</a>
+            <a href="#">恐怖</a><br/>
+            <a href="#">星座</a>
+            <a href="#">爆料</a>
+            <a href="#">喵星人</a>
+        </div>
+        <div onmouseout="document.getElementById('as9').style.background = ' url(../img3/i1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as9').style.background = ' url(../img3/i2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as9" style="background: url('../img3/i1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">游戏</a><br/>
+            <a href="#"> 客户端网游</a>
+            <a href="#">桌游</a>
+            <a href="#">游戏角色</a><br/>
+            <a href="#">网页版网游</a>
+            <a href="#">手机游戏</a>
+            <a href="#">小游戏</a>
+        </div>
+        <div onmouseout="document.getElementById('as10').style.background = ' url(../img3/j1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as10').style.background = ' url(../img3/j2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as10" style="background: url('../img3/j1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1">动漫宅</a><br/>
+            <a href="#">日本动漫</a>
+            <a href="#">国产动漫</a>
+            <a href="#"> 欧美动漫</a><br/>
+            <a href="#">搞笑漫画</a>
+            <a href="#"> 热血动漫</a>
+            <a href="#">推理</a>
+            <a href="#">声优</a>
+        </div>
+        <div onmouseout="document.getElementById('as11').style.background = ' url(../img3/k1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as11').style.background = ' url(../img3/k2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as11" style="background: url('../img3/k1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+
+            <a href="#" class="zuo1">高校</a><br/>
+            <a href="#">北京院校</a>
+            <a href="#">山东院校</a>
+            <a href="#">江苏院校</a><br/>
+            <a href="#">四川院校</a>
+            <a href="#"> 湖北院校</a>
+            <a href="#"> 河北院校</a>
+        </div>
+        <div onmouseout="document.getElementById('as12').style.background = ' url(../img3/l1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as12').style.background = ' url(../img3/l2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as12" style="background: url('../img3/l1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+            <a href="#" class="zuo1"> 地区</a><br/>
+            <a href="#">山东</a>
+            <a href="#"> 河北</a>
+            <a href="#">河南</a>
+            <a href="#">山西</a>
+            <a href="#">江苏</a><br/>
+            <a href="#">辽宁</a>
+            <a href="#">四川</a>
+            <a href="#"> 广东</a>
+        </div>
+        <div onmouseout="document.getElementById('as13').style.background = ' url(../img3/m1.png) no-repeat 3px 3px';"
+             onmouseover=" document.getElementById('as13').style.background = ' url(../img3/m2.png) no-repeat 3px 3px';"
+        >
+            <a href="#" id="as13" style="background: url('../img3/m1.png') no-repeat 3px 3px;display: inline-block;width: 25px;height: 20px;"></a>
+
+            <a href="#" class="zuo1"> 人文自然</a><br/>
+            <a href="#">艺术</a>
+            <a href="#">军事</a>
+            <a href="#">历史</a>
+            <a href="#">自然</a>
+            <a href="#">鉴赏收藏</a><br/>
+            <a href="#">民族文化</a>
+            <a href="#"> 语言文化</a>
+        </div>
+        <div class="quanbu">查看全部</div>
+        <div class="cang">
+        <div class="cang1">
+            <a href="#" class="mingxing">娱乐明星</a><br/>
+            <hr/>
+            <a href="#">港台东南亚明星</a>|
+            <a href="#">内地明星</a>|
+            <a href="#">韩国明星</a>|
+            <a href="#">日本明星</a>|
+            <a href="#"> 时尚人物</a>|
+            <a href="#">欧美明星</a>|
+            <a href="#">主持人</a>|
+            <a href="#">其他娱乐明星</a>|<br/>
+            <a href="#">娱乐明星话题</a>|
+            <a href="#">导演</a>|
+            <a href="#">戏曲曲艺明星</a>|
+            <a href="#">2012中国好声音</a>|
+            <a href="#">音乐制作人</a>|
+            <a href="#">其他粉丝组织</a>|
+            <a href="#">明星官方吧</a>|<br/>
+            <a href="#">网络名人</a>|
+        </div>
+        <div class="cang2">
+            <img src="../img3/tuijians.png"/><br/>
+            <a href="#">中国好声音</a>
+            <a href="#">快乐男声</a>
+            <a href="#">李代沫</a>
+            <a href="#">exo</a>
+            <a href="#">陈乔恩</a>
+            <a href="#">姚贝娜</a>
+            <a href="#">鹿晗</a>
+            <a href="#">李宇春</a>
+            <a href="#">刘诗诗</a>
+            <a href="#">吴奇隆</a><br/>
+            <a href="#">滨崎步</a>
+            <a href="#">yuripleskun</a>
+            <a href="#">张根锡</a>
+            <a href="#">林夕</a>
+            <a href="#">exo王道</a>
+            <a href="#">小S</a>
+            <a href="#">男声学院</a>
+        </div>
+        <img src="../img3/mingxing0729.png"/>
+    </div>
+    </div>
+
+    <div class="son1">
+        <div class="sonas1">
+    <div class="sons1">
+        <h4>朵朵奇吧</h4>
+        <div class="zhongs1">
+        <div class="zhong1">
+            <img src="../img3/tu1111.png"/>
+        </div>
+        <div class="zhong2">
+       <span><img src="../img3/jian.png"/></span> <span class="zhong1a">游戏吧</span>
+        <p class="zhong1b">一个属于游戏玩家的大本营</p>
+        <span><img src="../img3/ren.png"/></span> <span class="ps">747551</span>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+        <span><img src="../img3/xin.png"/></span> <span class="ps">9844252</span>
+        </div>
+        </div>
+        <div class="zhong1">
+            <img src="../img3/tu2222.png"/>
+        </div>
+        <div class="zhong2">
+            <span><img src="../img3/jian.png"/></span><span class="zhong1a"> 贴吧美妆吧</span>
+            <p class="zhong1b">关注贴吧美妆吧，做漂亮的自己</p>
+            <span><img src="../img3/ren.png"/></span> <span class="ps">39931</span>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <span><img src="../img3/xin.png"/></span> <span class="ps">123</span>
+        </div>
+    </div>
+    <div class="son2">
+        <h4>妹子团来袭，有你的爱吗？</h4>
+        <div class="box1s">
+            <div class="hezi plays">
+            <a href="#" class="duos"><img src="../img3/a.png"/></a>
+            <a href="#"><img src="../img3/b.png"/></a>
+            <a href="#"><img src="../img3/c.png"/></a>
+            <a href="#"><img src="../img3/d.png"/></a>
+            <a href="#"><img src="../img3/e.png"/></a>
+            <a href="#"><img src="../img3/f.png"/></a>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="daugher">
+            <div class="you">
+                <div class="yous">
+                <div class="you1">
+                    <p>游戏直播</p>
+                    <div class="yous1"><a href="#"><img src="../img3/youxi.png"></a></div>
+                    <div class="boxas23">
+                    <a href="#">LPL夏季赛</a><br/>
+                    <a href="#">英雄联盟</a><br/>
+                    <a href="#"> Dota2</a><br/>
+                    <a href="#"> 炉石传说</a><br/>
+                    <a href="#">单机游戏</a>
+                    </div>
+                </div>
+                <div class="you2">
+                    <p>娱乐中心</p>
+                    <script>
+                    var i=1;
+                    function chances() {
+                        if(i==5){
+                            i=0;
+                        }
+                        var arr= ["../img3/1.png","../img3/2.png","../img3/3.png","../img3/4.png","../img3/5.png"];
+                        var img=document.getElementById("img1");
+                        img.src=arr[i];
+                       if(i==0){
+                        document.getElementById("a1").style.backgroundColor="white";
+                    }else{
+                        document.getElementById("a1").style.backgroundColor="grey";
+                    }
+                    if(i==1){
+                        document.getElementById("a2").style.backgroundColor="white";
+                    }else{
+                        document.getElementById("a2").style.backgroundColor="grey";
+                    }
+                    if(i==2){
+                        document.getElementById("a3").style.backgroundColor="white";
+                    }else{
+                        document.getElementById("a3").style.backgroundColor="grey";
+                    }
+                    if(i==3){
+                        document.getElementById("a4").style.backgroundColor="white";
+                    }else{
+                        document.getElementById("a4").style.backgroundColor="grey";
+                    }
+                    if(i==4){
+                        document.getElementById("a5").style.backgroundColor="white";
+                    }else{
+                        document.getElementById("a5").style.backgroundColor="grey";
+                    }
+                        i++;
+                    }
+                    var num=0;
+                    function  ch(){
+                        num=setInterval("chances()",800);
+                    }
+                    ch();
+                    function stop(n){
+                        clearInterval(num);
+                        var arr= ["../img3/1.png","../img3/2.png","../img3/3.png","../img3/4.png","../img3/5.png"];
+                        var img=document.getElementById("img1");
+                        img.src=arr[n-1];
+                        if(n==1){
+                            document.getElementById("a1").style.backgroundColor="white";
+                        }else{
+                            document.getElementById("a1").style.backgroundColor="grey";
+                        }
+                        if(n==2){
+                            document.getElementById("a2").style.backgroundColor="white";
+                        }else{
+                            document.getElementById("a2").style.backgroundColor="grey";
+                        }
+                        if(n==3){
+                            document.getElementById("a3").style.backgroundColor="white";
+                        }else{
+                            document.getElementById("a3").style.backgroundColor="grey";
+                        }
+                        if(n==4){
+                            document.getElementById("a4").style.backgroundColor="white";
+                        }else{
+                            document.getElementById("a4").style.backgroundColor="grey";
+                        }
+                        if(n==5){
+                            document.getElementById("a5").style.backgroundColor="white";
+                        }else{
+                            document.getElementById("a5").style.backgroundColor="grey";
+                        }
+                    }
+                </script>
+                    <div id="boxas">
+                        <img src="../img3/1.png" id="img1" onclick="show()"/>
+                        <a href="#" onmouseover="stop(1)" onmouseout="ch()" id="a1"></a>
+                        <a href="#" onmouseover="stop(2)" onmouseout="ch()" id="a2"></a>
+                        <a href="#" onmouseover="stop(3)" onmouseout="ch()" id="a3"></a>
+                        <a href="#" onmouseover="stop(4)" onmouseout="ch()" id="a4"></a>
+                        <a href="#" onmouseover="stop(5)" onmouseout="ch()" id="a5"></a>
+                    </div>
+                    <div class="boxas22"><a href="#"><img src="../img3/icon_play_4959bcfb.png"/></a></div>
+                    <div class="boxas11">
+                    <a href="#">食神争霸</a><br/>
+                    <a href="#">斗地主</a><br/>
+                    <a href="#">德州扑克</a><br/>
+                    <a href="#">三国杀</a><br/>
+                    <a href="#">手游评测</a>
+                    </div>
+                </div>
+                </div>
+                <div class="yousw"><span>热门动态</span></div>
+                <div class="you3">
+                   <h3>中华城市吧</h3>
+                    <a href="#">【文化】华夏56种民族服饰，56种风情</a>
+                    <span id="youtu51" onmouseout="document.getElementById('youtu51').style.background = ' url(../img3/tiea1.png) no-repeat 50% 50%';"
+                         onmouseover=" document.getElementById('youtu51').style.background = ' url(../img3/tiehui.png) no-repeat 50% 50%';">
+                    </span>
+                    <p>56个民族，56枝花 经过历史文化的沉淀 每个民族都各有特色 民族服饰更成为 其最大的魅力所在</p>
+                    <img src="../img3/rentu.png"/><a href="#" class="mingzi">秋哿之爱</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img3/zhongtu.png"/><span>今天 13:05</span>
+                </div>
+                <div class="you3">
+                    <h3>吃货吧</h3>
+                    <a href="#">【吃货】一枚爱吃的小可爱</a>
+                    <span id="youtu52" onmouseout="document.getElementById('youtu52').style.background = ' url(../img3/tieb1.png) no-repeat 50% 50%';"
+                          onmouseover=" document.getElementById('youtu52').style.background = ' url(../img3/tiehui.png) no-repeat 50% 50%';">
+                    </span>
+                    <p>哈哈 90后的吃货 想要吃尽各种美食✨我来分享一下之前吃过的 记录以后吃到的美食 先来几个镇楼图</p>
+                    <img src="../img3/rentu.png"/><a href="#" class="mingzi">艺蓉YR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img3/zhongtu.png"/><span>今天 17:28</span>
+                </div>
+                <div class="you5">
+                    <h3> <img src="../img3/wangyou.png" class="yongshi"/>地下城与勇士吧</h3>
+                    <a href="#">【游戏】每周五同步更新DNF动画宿命之门，参与讨论赢豪礼</a>
+                   <span id="youtu53" onmouseout="document.getElementById('youtu53').style.background = ' url(../img3/tiec1.png) no-repeat 50% 50%';"
+                         onmouseover=" document.getElementById('youtu53').style.background = ' url(../img3/tiehui.png) no-repeat 50% 50%';">
+                    </span>
+                    <p>一周一更新的阿拉德 宿命之门又来了，腾讯动漫和贴吧动漫联手合作，热门动漫《阿拉德宿命之门》每周</p>
+                    <img src="../img3/wangyous.png"/><br/>
+                    <img src="../img3/rentu.png"/><span>宿命之门动画</span><img src="../img3/zhongtu.png"/><span> 今天 18:03</span>
+                </div>
+                <div class="you3">
+                    <h3>高考吧</h3>
+                    <a href="#"> 【高三】最后的高中生涯 让我们共进退！</a>
+                    <span id="youtu54" onmouseout="document.getElementById('youtu54').style.background = ' url(../img3/tied1.png) no-repeat 50% 50%';"
+                          onmouseover=" document.getElementById('youtu54').style.background = ' url(../img3/tiehui.png) no-repeat 50% 50%';">
+                    </span>
+                    <p> 我相信我可以！ 文科生变数很大！ 我要最后努力十五天！ 给十几年学习生涯画上圆满句号</p>
+                    <img src="../img3/rentu.png"/><a href="#" class="mingzi">社长大人</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img3/zhongtu.png"/><span> 6月 23日 16:50</span>
+                </div>
+            </div>
+            <div class="zuiyou">
+                <div class="zui1">
+                    <h3>扫二维码下载贴吧客户端</h3>
+                    <span>下载贴吧APP<br/>看高清直播、视频！</span>
+                <img src="../img3/tiema.png"/>
+                </div>
+                <div class="zui2">
+                    <h3>贴吧热议榜<a href="#">查看榜单</a></h3>
+                    <table>
+                        <tr>
+                            <td class="shu1">1</td>
+                            <td><a href="#">稳吗?高考出分数线了</a></td>
+                            <td class="zi">1122307</td>
+                        </tr>
+                        <tr>
+                            <td class="shu1">2</td>
+                            <td><a href="#">修改昵称还有这种操作</a></td>
+                            <td class="zi">820274</td>
+                        </tr>
+                        <tr>
+                            <td class="shu1">3</td>
+                            <td><a href="#">嗨氏狂怼董小飒</a></td>
+                            <td class="zi">727517</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">4</td>
+                            <td><a href="#">读书和找对象哪个更难</a></td>
+                            <td class="zi">724956</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">5</td>
+                            <td><a href="#">王俊凯高考成绩曝光</a></td>
+                            <td class="zi">724121</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">6</td>
+                            <td><a href="#">你最机智的时刻</a></td>
+                            <td class="zi">723307</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">7</td>
+                            <td><a href="#">一击男118汉化</a></td>
+                            <td class="zi">722609</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">8</td>
+                            <td><a href="#">国乒男队退赛后致歉</a></td>
+                            <td class="zi">722603</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">9</td>
+                            <td><a href="#">网瘾需要电一电</a></td>
+                            <td class="zi">722599</td>
+                        </tr>
+                        <tr>
+                            <td  class="shu">10</td>
+                            <td><a href="#">相亲相爱发糖不断的cp</a></td>
+                            <td class="zi">722598</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="zui3">
+                    <h3>贴吧娱乐<a href="#">合作沟通</a></h3>
+                    <div>
+                        <img src="../img3/nansheng.png"/>
+                        <ul>
+                            <li><span>·</span><a href="#">“伊能静向秦昊吐真言“跟你”…</a></li>
+                            <li><span>·</span><a href="#">谢娜这是没忍住吗？说张杰的时候…</a></li>
+                            <li><span>·</span><a href="#">#黄轩吧十周年# 我们在路上…</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zui4">
+                    <h3>公告板</h3>
+                    <div>
+                        <img src="../img3/tuan.png"/>
+                        <ul>
+                            <li><span>·</span>&nbsp;<a href="#">违规贴吧举报反馈通道</a></li>
+                            <li><span>·</span>&nbsp;<a href="#">贴吧志愿者招募</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="weiba">
+        ©2017&nbsp;Baidu<a href="#">使用百度前必读</a><a href="#">贴吧协议</a><a href="#">投诉反馈</a>&nbsp;信息网络传播视听节目许可证 0110516首都网络110报警服务
+   <img src="../img3/weiba.png"/>
+    </div>
+</div>
+
+
+<div class="fixed-div" id="fixed-d">
+    <div id="shang" onclick="document.getElementById('tou').scrollIntoView()" onmouseout="document.getElementById('shang').style.background = ' url(../img3/top1.png) no-repeat 50% 50%';"
+        onmouseover=" document.getElementById('shang').style.background = ' url(../img3/top2.png) no-repeat 50% 50%';">
+    </div>
+</div>
+
+<div class="fixed-divs">
+    <div id="xiang">
+        <img src="../img3/xiang.png"/>
+    </div>
+    <ul class="youty">
+        <li id="youtu1" onmouseout="document.getElementById('youtu1').style.background = ' url(../img3/aa1.png) no-repeat -4px -7px';"
+        onmouseover=" document.getElementById('youtu1').style.background = ' url(../img3/aa2.png) no-repeat 50% 50%';">
+        </li>
+        <li id="youtu2" onmouseout="document.getElementById('youtu2').style.background = ' url(../img3/bb1.png) no-repeat 50% 50%';"
+            onmouseover=" document.getElementById('youtu2').style.background = ' url(../img3/bb2.png) no-repeat 50% 50%';">
+        </li>
+        <li id="youtu3" onmouseout="document.getElementById('youtu3').style.background = ' url(../img3/cc1.png) no-repeat 50% 50%';"
+            onmouseover=" document.getElementById('youtu3').style.background = ' url(../img3/cc2.png) no-repeat 50% 50%';">
+        </li>
+        <li id="youtu4" onmouseout="document.getElementById('youtu4').style.background = ' url(../img3/dd1.png) no-repeat 50% 50%';"
+            onmouseover=" document.getElementById('youtu4').style.background = ' url(../img3/dd2.png) no-repeat 50% 50%';">
+        </li>
+        <li id="youtu5" onmouseout="document.getElementById('youtu5').style.background = ' url(../img3/ff1.png) no-repeat 50% 50%';"
+            onmouseover=" document.getElementById('youtu5').style.background = ' url(../img3/ff2.png) no-repeat 50% 50%';">
+        </li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="login" id="loginid">
+    <div class="login2">
+        <div class="login-top">
+            <img src="../img1/baidu_logo_48.png" height="30px" width="30px"/>
+            <span>登录百度账号</span>
+            <div class="cityClose loginClose" onclick="javascript:document.getElementById('loginid').style.display='none';"></div>
+        </div>
+        <form action="#" method="get" class="loginfrom" id="form1">
+            <div class="login1-from">
+                <p class="form-p1"><img src="../img1/login-phone.jpg"/><a href="javascript:void(0);" onclick="phoneLogin()">手机快捷登录</a></p>
+                <p class="form-p2">
+                    <label for="user1" id="userabel"></label>
+                    <input type="text" name="userName" value="" placeholder="手机/邮箱/用户名" id="user1" onfocus="userlables()" onblur="userlablesn
+()"/>
+                </p>
+                <p class="form-p2 form-p3">
+                    <label for="passw" id="passlabel"></label>
+                    <input type="password" name="password" value="" placeholder="密码" id="passw" onfocus="passlables()" onblur="passlablen()"/>
+                </p>
+                <p class="form-p4 form-p2">
+                    <input type="text" name="yzm" value="" placeholder="验证码"/>
+                    <img src="../img1/genimage.png"/>
+                    <a href="javascript:void(0)">换一张</a>
+                </p>
+                <p class="form-p5">
+                    <input type="checkbox" name="autologin" value="autol" checked id="auto"/>
+                    <label for="auto">下次自动登录</label>
+                    <a href="#" target="_blank">登录遇到问题</a>
+                </p>
+                <p class="form-p6">
+                    <input type="submit" name="submit" value="登录"/>
+                </p>
+                <p class="form-p7 form-p1">
+                    <a href="baidu-register.html" target="_blank">立即注册</a>
+                </p>
+            </div>
+        </form>
+        <form action="#" method="get" class="loginfrom" id="form3">
+            <div class="login2-form">
+                <p><span>手机扫描，安全登录</span></p>
+                <p><img src="../img1/qrcode.png" width="134px" height="134px"/></p>
+                <p>请使用<a href="#" target="_self">手机百度app</a>扫描登录</p>
+            </div>
+        </form>
+        <form action="#" method="get" class="loginfrom" id="form2">
+            <div class="login3-from">
+                <p>短信登录</p>
+                <p>验证即登录，未注册将自动创建百度账号</p>
+                <p class="form-p2 login3-p2">
+                    <label for="tel" id="tels"></label>
+                    <input type="tel" name="telName" value="" placeholder="请输入手机号" id="tel" onfocus="tellabels()" onblur="tellabeln"/>
+                </p>
+                <p class="form-p4 form-p2 login3-p3">
+                    <input type="text" name="yzm" value="" placeholder="验证码"/>
+                    <a href="javascript:void(0)">发送动态密码</a>
+                </p>
+                <p class="form-p6">
+                    <input type="submit" name="submit" value="登录"/>
+                </p>
+                <p>
+                    <span>阅读并接受</span>
+                    <a href="#" target="_blank">《百度用户协议》</a>
+                    <a href="javascript:void(0)" onclick="account()">账号密码登录</a>
+                </p>
+            </div>
+        </form>
+        <p class="cutlogin"><a href="javascript:void(0);" onclick="loginqh(this)"></a></p>
+    </div>
+</div>
+</body>
+<script>
+    window.onscroll=function(){
+        var t=document.documentElement.scrollTop||document.body.scrollTop;
+        var a=document.getElementById("fixed-d");
+        if(t>147){
+            a.style.display="block";
+        }else{
+            a.style.display="none";
+        }
+    }
+</script>
+</html>

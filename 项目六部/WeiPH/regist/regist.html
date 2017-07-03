@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="gbk">
+    <title>唯品会注册</title>
+    <link href="css/regist.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="js/refist.js">
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="img/header.png">
+        </div>
+        <div class="section">
+            <div class="left">
+                <img src="img/left.png">
+            </div>
+            <div class="right">
+                <div class="reg">
+                    <p><span>欢迎注册</span><span>已注册<a href="../load/load.html">直接登录</a></span></p>
+                    <form action="../load/load.html" method="get" onsubmit=" return check()">
+                        <input type="text" class="xinxi" placeholder="请输入手机号码" id="username" onfocus="userF()" onblur="userB()"><span id="cell"></span>
+                        <input type="password" class="xinxi" name="password" placeholder="请输入密码" id="word" onfocus="passF()" onblur="passB()"><span id="pass1"></span>
+                        <input type="password" class="xinxi" name="password" placeholder="请再次输入密码" id="wordNext" onfocus="passFN()" onblur="passBN()"><span id="pass2"></span>
+                        <p><input type="text" class="yanzheng" id="isTrue" placeholder="输入验证码" onblur="checkYan()"><button id="numYan" class="getYan" onclick="getNum()">获取验证码</button><span ><a id = "yan" onclick="getNum(numYan)" href="#numYan" style="text-decoration: none;color: deeppink;margin-left: 10px;font-size: 15px;font-weight: bolder"></a></span></p>
+                        <p><input type="submit" value="立即注册" id="registBt" onclick="userB(),passB(),passBN()"><a href="#" class="youxiang">通过邮箱注册>></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2008-2017 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </footer>
+    </div>
+</body>
+</html>

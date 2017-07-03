@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>人人游戏中心</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			.div {
+				position: fixed;
+			}
+			
+			#div2 {
+				background: url(../images/navBgX.png) repeat-x;
+				width: 100%;
+				overflow: hidden;
+				position: fixed;
+				height: 53px;
+				top: 0;
+				z-index: 1000;
+			}
+			
+			.div3 {
+				overflow: hidden;
+				position: absolute;
+				display: inline-block;
+				top: 65px;
+				left: 200px;
+				width: 980px;
+				height: 457px;
+				/*z-index: -1;*/
+			}
+			
+			.div4 {
+				position: absolute;
+				width: 100%;
+				background: #F3F3F3;
+			}
+			
+			.div8 {
+				overflow: hidden;
+				position: absolute;
+				width: 292px;
+				height: 63px;
+				border-radius: 15px;
+				left: 50px;
+				top: 280px;
+				z-index: 1;
+			}
+			
+			.div9 {
+				overflow: hidden;
+				position: absolute;
+				width: 292px;
+				height: 63px;
+				border-radius: 15px;
+				left: 50px;
+				top: 350px;
+				z-index: 1;
+			}
+			
+			.div10 {
+				margin-left: 400px;
+				position: absolute;
+				width: 600px;
+				height: 460px;
+			}
+			
+			.div11 {
+				-webkit-animation: myfirst 2s linear infinite;
+				animation-delay: 0.1s;
+				overflow: hidden;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 0px;
+				top: 10px;
+			}
+			
+			@-moz-keyframes myfirst {
+				0% {
+					left: 0px;
+					top: 10px;
+				}
+				25% {
+					left: 0px;
+					top: 25px;
+				}
+				50% {
+					left: 0px;
+					top: 10px;
+				}
+				75% {
+					left: 0px;
+					top: 25px;
+				}
+				100% {
+					left: 0px;
+					top: 10px;
+				}
+			}
+			
+			.div12 {
+				-webkit-animation: myfirst1 2s linear infinite;
+				animation-delay: 0.3s;
+				overflow: hidden;
+				position: absolute;
+				left: 400px;
+				top: 30px;
+				width: 125px;
+				height: 130px;
+			}
+			
+			@-moz-keyframes myfirst1 {
+				0% {
+					left: 400px;
+					top: 30px;
+				}
+				25% {
+					left: 400px;
+					top: 10px;
+				}
+				50% {
+					left: 400px;
+					top: 30px;
+				}
+				75% {
+					left: 400px;
+					top: 10px;
+				}
+				100% {
+					left: 400px;
+					top: 30px;
+				}
+			}
+			
+			.div13 {
+				-webkit-animation: myfirst2 2s linear infinite;
+				animation-delay: 0.5s;
+				overflow: hidden;
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				left: 420px;
+				top: 160px;
+				z-index: 1;
+			}
+			
+			@-moz-keyframes myfirst2 {
+				0% {
+					left: 420px;
+					top: 160px;
+				}
+				25% {
+					left: 420px;
+					top: 140px;
+				}
+				50% {
+					left: 420px;
+					top: 160px;
+				}
+				75% {
+					left: 420px;
+					top: 140px;
+				}
+				100% {
+					left: 420px;
+					top: 160px;
+				}
+			}
+			
+			.div14 {
+				-webkit-animation: myfirst3 2s linear infinite;
+				animation-delay: 0.1s;
+				overflow: hidden;
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				left: 360px;
+				top: 330px;
+				z-index: 1;
+			}
+			
+			@-moz-keyframes myfirst3 {
+				0% {
+					left: 360px;
+					top: 330px;
+				}
+				25% {
+					left: 360px;
+					top: 300px;
+				}
+				50% {
+					left: 360px;
+					top: 330px;
+				}
+				75% {
+					left: 360px;
+					top: 300px;
+				}
+				100% {
+					left: 360px;
+					top: 330px;
+				}
+			}
+			
+			.div15 {
+				-webkit-animation: myfirst4 2s linear infinite;
+				animation-delay: 0.3s;
+				overflow: hidden;
+				position: absolute;
+				width: 175px;
+				height: 175px;
+				left: 0px;
+				top: 310px;
+			}
+			
+			@-moz-keyframes myfirst4 {
+				0% {
+					left: 0px;
+					top: 310px;
+				}
+				25% {
+					left: 0px;
+					top: 340px;
+				}
+				50% {
+					left: 0px;
+					top: 310px;
+				}
+				75% {
+					left: 0px;
+					top: 340px;
+				}
+				100% {
+					left: 0px;
+					top: 310px;
+				}
+			}
+			
+			.div16 {
+				-webkit-animation: myfirst5 2s linear infinite;
+				animation-delay: 0.5s;
+				overflow: hidden;
+				position: absolute;
+				width: 450px;
+				height: 400px;
+				left: 63px;
+				top: 60px;
+				z-index: 0;
+			}
+			
+			@-moz-keyframes myfirst5 {
+				0% {
+					left: 63px;
+					top: 60px;
+				}
+				25% {
+					left: 63px;
+					top: 90px;
+				}
+				50% {
+					left: 63px;
+					top: 60px;
+				}
+				75% {
+					left: 63px;
+					top: 90px;
+				}
+				100% {
+					left: 63px;
+					top: 60px;
+				}
+			}
+			
+			.div17 {
+				position: absolute;
+				left: 980px;
+				z-index: 1;
+			}
+			
+			.div18 {
+				position: absolute;
+				left: 1960px;
+				z-index: 1;
+			}
+			
+			.ul {
+				width: 100%;
+				margin-left: 380px;
+				margin-top: 12.5px;
+				list-style: none;
+			}
+			
+			.a {
+				font-size: 15px;
+				color: white;
+				text-decoration: none;
+			}
+			
+			.a:hover {
+				color: #009CFF;
+			}
+			
+			.a1 {
+				margin-left: 220px;
+				font-size: 15px;
+				color: white;
+				text-decoration: none;
+			}
+			
+			li {
+				margin-left: 15px;
+				margin-right: 15px;
+				color: white;
+				float: left;
+			}
+			
+			.img {
+				border-radius: 3px;
+				margin-left: 200px;
+				position: absolute;
+				top: 0px;
+				z-index: 1001;
+			}
+			
+			.img1 {
+				margin-left: 200px;
+				margin-top: 600px;
+			}
+			
+			.img4 {
+				position: absolute;
+				top: -321px;
+				left: 21px;
+			}
+			
+			.img2 {
+				margin-top: -156px;
+				margin-left: -293px;
+			}
+			
+			.img2:hover {
+				margin-top: -156px;
+				margin-left: -468px;
+			}
+			
+			.img3 {
+				margin-top: -156px;
+				margin-left: -381px;
+			}
+			
+			.img3:hover {
+				margin-top: -156px;
+				margin-left: -556px;
+			}
+			
+			.img5 {
+				position: absolute;
+				margin-top: 20px;
+				z-index: 1;
+			}
+			
+			.img7 {
+				margin-top: -63px;
+			}
+			
+			.img6:hover {
+				margin-top: -126px;
+			}
+			
+			.img7:hover {
+				margin-top: -190px;
+			}
+			
+			.img8 {
+				position: absolute;
+				margin-top: 437px;
+				z-index: 3;
+			}
+			
+			.img9 {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+			}
+			
+			.img10 {
+				position: absolute;
+				left: -120px;
+			}
+			
+			.img11 {
+				position: absolute;
+				left: -265px;
+			}
+			
+			.img12 {
+				position: absolute;
+				left: -443.5px;
+			}
+			
+			.img13 {
+				position: absolute;
+				left: -478.5px;
+				top: -290px;
+			}
+			
+			.img14 {
+				position: absolute;
+				left: 10px;
+				top: -220px;
+			}
+			
+			.img15 {
+				position: absolute;
+				-webkit-animation: change1 3s linear infinite;
+				left: 60px;
+				top: -160px;
+				z-index: -1;
+			}
+			
+			@-moz-keyframes change1 {
+				0%,
+				100% {
+					opacity: .5;
+				}
+				50% {
+					opacity: 1;
+				}
+			}
+			
+			.img16 {
+				margin-left: -292px;
+			}
+			
+			.img17 {
+				margin-top: -63px;
+				margin-left: -292px;
+			}
+			
+			.img16:hover {
+				margin-left: -584px;
+			}
+			
+			.img17:hover {
+				margin-top: -63px;
+				margin-left: -584px;
+			}
+			
+			.img18{
+				position: absolute;
+			}
+			
+			#change {
+				position: absolute;
+				right: 200px;
+				-webkit-animation: change 20s linear infinite;
+			}
+			
+			@-moz-keyframes change {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				50% {
+					-webkit-transform: rotate(180deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			
+			.play {
+				animation: ma 3s linear infinite alternate;
+			}
+			
+			@keyframes ma {
+				0%,
+				33% {
+					margin-left: 0;
+				}
+				40%,
+				66% {
+					margin-left: -980px;
+				}
+				70%,
+				100% {
+					margin-left: -1960px;
+				}
+			}
+			
+			.play1 {
+				animation: ma1 3s linear infinite alternate;
+			}
+			
+			@keyframes ma1 {
+				0%,
+				33% {
+					margin-left: 0;
+				}
+				40%,
+				66% {
+					margin-left: -980px;
+				}
+				70%,
+				100% {
+					margin-left: -1960px;
+				}
+			}
+			
+			.play2 {
+				animation: ma2 3s linear infinite alternate;
+			}
+			
+			@keyframes ma2 {
+				0%,
+				33% {
+					margin-left: 0;
+				}
+				40%,
+				66% {
+					margin-left: -980px;
+				}
+				70%,
+				100% {
+					margin-left: -1960px;
+				}
+			}
+		</style>
+		<link rel="shortcut icon" type="image/x-icon" href="..\img\favicon-rr.ico" />
+	</head>
+
+	<body>
+		<header>
+			<div class="div">
+				<div class="div1">
+				</div>
+				<div id="div2" style="z-index: 1000;">
+					<ul class="ul">
+						<li><a class="a" href="http://2014.renren.com/" target="_self">首页</a></li>
+						<li>·</li>
+						<li><a class="a" href="http://2014.renren.com/mobile" target="_self">人人2014</a></li>
+						<li>·</li>
+						<li><a class="a" href="http://2014.renren.com/v7" target="_self">V7新版</a></li>
+						<li>·</li>
+						<li><a class="a" href="http://2014.renren.com/ipad" target="_self">iPad版</a></li>
+						<li>·</li>
+						<li><a class="a" href="游戏中心.html" target="_self">游戏中心</a></li>
+						<li><a class="a1" href="Homepage.html" target="_self">登录</a></li>
+					</ul>
+				</div>
+				<a class="a2" href="http://www.renren.com/" target="_self"><img class="img" src="../images/navBg4.png" /></a>
+			</div>
+		</header>
+		<section>
+			<div class="div3">
+				<div class="div5 play2">
+					<img class="img18" src="../images/guoDong.jpg" />
+					<img class="img5" src="../images/guoDongLogo.png" />
+					<div class="div8">
+						<a href="https://itunes.apple.com/cn/app/id723492391" target="_self">
+							<img class="img6" src="../images/images.png" />
+						</a>
+					</div>
+					<div class="div9">
+						<a href="#" target="_self">
+							<img class="img7" src="../images/images.png" />
+						</a>
+					</div>
+					<img class="img4" id="change" src="../images/rotateCircle.png" />
+					<img class="img8" src="../images/bannerWave.png" />
+					<div class="div10">
+						<img id="change1" class="img15" src="../images/bgStar.png" />
+						<div id="myfirst" class="div11">
+							<img class="img9" src="../images/persona.png" />
+						</div>
+						<div id="myfirst1" class="div12">
+							<img class="img10" src="../images/persona.png" />
+						</div>
+						<div id="myfirst2" class="div13">
+							<img class="img11" src="../images/persona.png" />
+						</div>
+						<div id="myfirst3" class="div14">
+							<img class="img12" src="../images/persona.png" />
+						</div>
+						<div id="myfirst4" class="div15">
+							<img class="img13" src="../images/persona.png" />
+						</div>
+						<div id="myfirst5" class="div16">
+							<img class="img14" src="../images/persona.png" />
+						</div>
+					</div>
+				</div>
+					<div class="div17 play">
+						<img class="img8" src="../images/bannerWave.png" />
+						<img src="../images/douDou.jpg" />
+					</div>
+					<div class="div18 play1">
+						<img class="img8" src="../images/bannerWave.png" />
+						<img src="../images/mengXiao.jpg" />
+						<div class="div8">
+							<a href="https://itunes.apple.com/us/app/meng-meng-xiao/id717083621?l=ko&ls=1&mt=8" target="_self">
+								<img class="img16" src="../images/images.png" />
+							</a>
+						</div>
+						<div class="div9">
+							<a href="#" target="_self">
+								<img class="img17" src="../images/images.png" />
+							</a>
+						</div>
+					</div>
+			</div>
+		</section>
+		<footer>
+			<img class="img1" src="../images/bottom.jpg" />
+		</footer>
+	</body>
+
+</html>

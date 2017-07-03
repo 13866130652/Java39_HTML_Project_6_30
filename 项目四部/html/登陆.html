@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆QQ邮箱</title>
+		<link type="text/css" rel="stylesheet" href="../css/登陆.css" />
+	</head>
+	<body>
+		<div class="zong cleanfix">
+			<div class="shang">
+				<a href="#"><img src="../images/登陆1.png" name="dl1"/> </a>
+				<ul class="u1">		
+					<li><a href="#" name="a1">企业邮箱</a></li>
+					<li><a href="#" name="a1">基本版</a>|</li>
+					<li><a href="#" name="a1">English</a>|</li>
+					<li><a href="#" name="a1">手机版</a>|</li>
+				</ul>
+			</div>
+			<div class="zhong cleanfix">
+				<div class="zhong1">
+					<h3>QQ邮箱，常联系！</h3>
+					<p>到头来，</p>
+					<p>我们记住的，</p>
+					<p>不是敌人的攻击，</p>
+					<p>而是朋友的沉默。</p>
+					<p>——马丁·路德·金</p>
+					<p class="p1">插画来自丑丑(两岁)</p>
+				</div>
+				<div class="zhong2">
+					<img src="../images/登陆2.png" />
+				</div>
+				<div class="zhong3 cleanfix">
+					<div class="zhong-shang">
+						<span><a href="News.html" target="_self" name="a2">快速登录</a></span>
+						<span><a href="#">账号密码登陆</a></span>
+					</div>
+					<div class="zhong-zhong">
+						<form action="#" method="post">							
+							<input type="text" placeholder="支持QQ号/邮箱/手机号登录" name="zh" id="user" onblur="check(this);"/><span id="sp"></span>
+							<input type="text" placeholder="QQ密码" name="mm" id="user1" onblur="check1(this);"/><span id="sp1"></span>
+							<br /> <input type="checkbox" name="fx"/><a href="#" name="a3">下次自动登录</a>
+							<input type="submit" value="登陆"  name="tj"/>
+						</form>
+					</div>
+					<div class="zhong-you">
+						<ul class="u1">		
+							<li><a href="#" name="a1">意见反馈</a></li>
+							<li><a href="#" name="a1">注册新账号</a>|</li>
+							<li><a href="#" name="a1">忘了密码?</a>|</li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="dibu">
+				<ul class="u1">	
+					<li>©1998 - 2017 Tencent Inc. All Rights Reserved.</li>
+					<li><a href="#" name="a1">帮助中心</a>|</li>	
+					<li><a href="#" name="a1">联系我们</a>|</li>	
+					<li><a href="#" name="a1">客服中心</a>|</li>	
+					<li><a href="#" name="a1">服务条款</a>|</li>
+					<li><a href="#" name="a1">关于腾讯</a>|</li>				
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script>
+        function check(t){
+            var v= t.value;
+            var s= document.getElementById("sp");
+            if(v==""){
+                s.innerHTML="用户名不能为空！";
+                s.style.color="red";
+            }else if(v.length<6){
+                s.innerHTML="用户名长度大于6！";
+                s.style.color="red";
+            }else{
+                s.innerHTML="ok";
+                s.style.color="green";
+            }
+            s.style.fontWeight="bold";
+        }
+        function check1(t){
+        	var v= t.value;
+            var s= document.getElementById("sp1");
+            if(v==""){
+                s.innerHTML="用户名不能为空！";
+                s.style.color="red";
+            }/*else if(v.length<6){
+                s.innerHTML="用户名长度大于6！";
+                s.style.color="red";
+            }*/else{
+                s.innerHTML="ok";
+                s.style.color="green";
+            }
+            s.style.fontWeight="bold";
+        }
+    </script>
+</html>

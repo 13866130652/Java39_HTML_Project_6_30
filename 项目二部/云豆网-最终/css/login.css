@@ -1,0 +1,190 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1200px;
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+}
+section{
+    width: 1200px;
+    height: 600px;
+    /*border: 1px solid red;*/
+}
+footer{
+    width: 1200px;
+}
+
+
+/*网页头部div1*/
+.h-div1{
+    float: left;
+    margin-left: 150px;
+}
+
+/*网页头部div2*/
+.h-div2{
+    float: right;
+    margin-right: 150px;
+}
+header a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: 宋体;
+    line-height: 30px;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+.s-div1{
+    width: 1200px;
+    height: 100px;
+    padding-top: 21px;
+    /*border: 1px solid red;*/
+    padding-left: 200px;
+}
+.s-div2{
+    width: 1200px;
+    height: 495px;
+    background: url("../images/b-1.jpg") no-repeat;
+    background-position: -450px;
+    position: relative;
+}
+
+
+#douhao2{
+    position: absolute;
+    display: none;
+    top: 167px;
+    left: 50px;
+}
+#pass2{
+    position: absolute;
+    display: none;
+    top: 221px;
+    left: 50px;
+}
+
+/*网页主体s-div2-div*/
+.s-div2-div{
+    width: 300px;
+    height: 450px;
+    /*border: 1px solid red;*/
+    background: url("../images/icp.gif") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 200px;
+}
+.s-div2-div input[type=text]{
+    width: 200px;
+    height: 36px;
+    margin-left: 50px;
+    margin-top: 150px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.s-div2-div input[type=password]{
+    width: 200px;
+    height: 36px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.s-div2-div input[type=submit]{
+    width: 90px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: skyblue;
+    border-radius: 12px;
+    color: white;
+
+}
+.s-div2-div span {
+    margin-top: 20px;
+    margin-right: 50px;
+    display: inline;
+    font-size: 12px;
+    float: right;
+    line-height: 22px;
+
+}
+
+.s-div2-div span a{
+    text-decoration: none;
+    color: black;
+    font-family: 宋体;
+}
+.s-div2-div span a:hover{
+    text-decoration: underline;
+}
+.s-div2-div-qq{
+    width: 122px;
+    height: 22px;
+    display: block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*网页底部div1*/
+.f-div1{
+    margin: 0 auto;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid red;*/
+    line-height: 50px;
+    /*padding-top: 30px;*/
+    /*margin-top: 30px;*/
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a*/
+
+.f-div1 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a:hover*/
+.f-div1 a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 12px;
+}
+.f-div2{
+    margin: 0 auto;
+    width: 600px;
+    /*height: 50px;*/
+    text-align: center;
+    /*border: 1px solid red;*/
+    /*line-height: 50px;*/
+    color: gray;
+    font-size: 12px;
+}
+
+/*网页底部div1 a*/
+
+.f-div2 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a:hover*/
+.f-div2 a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 12px;
+}

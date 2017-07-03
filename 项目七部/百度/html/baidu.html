@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link href="../css/baidu.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/login.js" type="text/javascript"></script>
+    <script src="../js/baidu.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <ul class="head-ul clearfix">
+                <li>
+                    <a href="#" target="_blank">更多产品</a>
+                    <ul class="more">
+                        <li>
+                            更多产品
+                        </li>
+                        <li>
+                            <a href="#" target="_self">
+                                <img src="../img1/nm.jpg"/>
+                                糯米
+                            </a>
+                        </li>
+                        <li>
+                            <a href="music.html" target="_self">
+                                <img src="../img1/muise.png"/>
+                                音乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture.html" target="_self">
+                                <img src="../img1/book.png"/>
+                                图片
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zhidao.html" target="_self">
+                                <img src="../img1/know.jpg"/>
+                                知道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Documents.html" target="_self">
+                                <img src="../img1/text.jpg"/>
+                                文库
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_self">
+                                <img src="../img1/phb.png"/>
+                                风云榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                全部产品
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li  class="set12">
+                    <a href="#" target="_blank">设置
+                    <ul class="set" id="searchSet">
+                        <li><a href="#" target="_blank">搜索设置</a></li>
+                        <li><a href="#" target="_blank">高级搜索</a></li>
+                        <li><a href="#" target="_blank">关闭预测</a></li>
+                        <li><a href="#" target="_blank">搜索历史</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href="javascript:" onclick="loginshow()">登录</a></li>
+                <li><a href="#" target="_self"><strong>学术</strong></a></li>
+                <li><a href="baidu-tieba.html" target="_self"><strong>贴吧</strong></a></li>
+                <li><a href="baidu-play1.html" target="_self"><strong>视频</strong></a></li>
+                <li><a href="#" target="_self"><strong>地图</strong></a></li>
+                <li><a href="#" target="_self"><strong>hao123</strong></a></li>
+                <li><a href="baiduNews.html" target="_self"><strong>新闻</strong></a></li>
+            </ul>
+
+        </header>
+        <section>
+            <div>
+                <ul class="ul2 clearfix">
+                    <li><img src="../img1/logo_news.png"/></li>
+                    <li class="search">
+                        <form action="#" method="get" enctype="multipart/form-data">
+                            <input type="search" name="search" value="" title="请输入要搜索的内容" id="searchid"/>
+                            <input type="submit" name="submit" value="百度一下"/>
+                            <img src="../img1/5.png" class="picture" onclick="picInt(this)"/>
+                            <div class="search-pic" id="searpic">
+                                <div class="report-pic">
+                                    <img src="" style="max-height: 80px" id="image"/>
+                                </div>
+                                <div class="update-pic">
+                                    <input type="file" name="pic" value="上传图片" class="up-pic" onchange="chage(this)"/>
+                                    <i class="pict"></i>
+                                    <span class="upload-text">本地上传图片</span>
+                                </div>
+                                <a href="javascript:void(0)" class="closepic" onclick="closepic()"></a>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <ul class="foot-ul">
+                    <li>
+                        <img src="../img1/2.png" title="百度客户端二维码"/>
+                    </li>
+                    <li>
+                        <span>手机百度</span>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">把百度设置为主页</a>
+                        <a href="#" target="_blank">关于百度</a>
+                        <a href="#" target="_blank">About Baidu</a>
+                        <a href="#" target="_blank">百度推广</a>
+                    </li>
+                    <li>
+                        <span>&copy;2017&nbsp;Baidu</span>
+                        <a href="#" target="_blank">使用百度前必读</a>
+                        <a href="#" target="_blank">意见反馈</a>
+                        <span>京ICP证030173号</span>
+                        <img src="../img1/3.png"/>
+                        <a href="#" target="_blank">京公网安备11000002000001号</a>
+                        <img src="../img1/4.png"/>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="login" id="loginid">
+            <div class="login2">
+                <div class="login-top">
+                    <img src="../img1/baidu_logo_48.png" height="30px" width="30px"/>
+                    <span>登录百度账号</span>
+                    <div class="cityClose loginClose" onclick="javascript:document.getElementById('loginid').style.display='none';"></div>
+                </div>
+                <form action="#" method="get" class="loginfrom" id="form1">
+                    <div class="login1-from">
+                        <p class="form-p1"><img src="../img1/login-phone.jpg"/><a href="javascript:void(0);" onclick="phoneLogin()">手机快捷登录</a></p>
+                        <p class="form-p2">
+                            <label for="user1" id="userabel"></label>
+                            <input type="text" name="userName" value="" placeholder="手机/邮箱/用户名" id="user1" onfocus="userlables()" onblur="userlablesn
+()"/>
+                        </p>
+                        <p class="form-p2 form-p3">
+                            <label for="passw" id="passlabel"></label>
+                            <input type="password" name="password" value="" placeholder="密码" id="passw" onfocus="passlables()" onblur="passlablen()"/>
+                        </p>
+                        <p class="form-p4 form-p2">
+                            <input type="text" name="yzm" value="" placeholder="验证码"/>
+                            <img src="../img1/genimage.png"/>
+                            <a href="javascript:void(0)">换一张</a>
+                        </p>
+                        <p class="form-p5">
+                            <input type="checkbox" name="autologin" value="autol" checked id="auto"/>
+                            <label for="auto">下次自动登录</label>
+                            <a href="#" target="_blank">登录遇到问题</a>
+                        </p>
+                        <p class="form-p6">
+                            <input type="submit" name="submit" value="登录"/>
+                        </p>
+                        <p class="form-p7 form-p1">
+                            <a href="baidu-register.html" target="_blank">立即注册</a>
+                        </p>
+                    </div>
+                </form>
+                <form action="#" method="get" class="loginfrom" id="form3">
+                    <div class="login2-form">
+                        <p><span>手机扫描，安全登录</span></p>
+                        <p><img src="../img1/qrcode.png" width="134px" height="134px"/></p>
+                        <p>请使用<a href="#" target="_self">手机百度app</a>扫描登录</p>
+                    </div>
+                </form>
+                <form action="#" method="get" class="loginfrom" id="form2">
+                    <div class="login3-from">
+                        <p>短信登录</p>
+                        <p>验证即登录，未注册将自动创建百度账号</p>
+                        <p class="form-p2 login3-p2">
+                            <label for="tel" id="tels"></label>
+                            <input type="tel" name="telName" value="" placeholder="请输入手机号" id="tel" onfocus="tellabels()" onblur="tellabeln"/>
+                        </p>
+                        <p class="form-p4 form-p2 login3-p3">
+                            <input type="text" name="yzm" value="" placeholder="验证码"/>
+                            <a href="javascript:void(0)">发送动态密码</a>
+                        </p>
+                        <p class="form-p6">
+                            <input type="submit" name="submit" value="登录"/>
+                        </p>
+                        <p>
+                            <span>阅读并接受</span>
+                            <a href="#" target="_blank">《百度用户协议》</a>
+                            <a href="javascript:void(0)" onclick="account()">账号密码登录</a>
+                        </p>
+                    </div>
+                </form>
+                <p class="cutlogin"><a href="javascript:void(0);" onclick="loginqh(this)"></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

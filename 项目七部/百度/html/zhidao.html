@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度知道 - 全球最大中文互动问答平台</title>
+    <link href="../css/zhidao.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/zhidao.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <link href="../css/login.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="header">
+
+        <div class="topheader">
+        <div class="top"> <ul class="head">
+            <li><a  href="baidu.html" target="_self">网页</a></li>
+            <li><a  href="baiduNews.html" target="_self">新闻</a></li>
+            <li><a  href="baidu-tieba.html" target="_self">贴吧</a></li>
+            <li><strong>知道</strong></li>
+            <li><a  href="music.html" target="_self">音乐</a></li>
+            <li><a  href="picture.html" target="_self">图片</a></li>
+            <li><a  href="baidu-play1.html" target="_self">视频</a></li>
+            <li><a  href="http://map.baidu.com/">地图</a></li>
+            <li><a  href="Documents.html" TARGET="_self">文库</a></li>
+        </ul></div>
+        <div class="tr">  <ul >
+            <li>
+                <a href="baidu.html" target="_self" class="bs">百度首页</a>
+            </li>
+            <li><a href="javascript:void(0)" onclick="loginshow()">登录</a></li>
+            <li><a href="baidu-register.html" target="_blank">注册</a></li>
+            <li class="shop">
+                <a href="/shop" title="知道商城" >商城</a>
+            </li>
+        </ul></div>
+        </div>
+
+       <div class="headertop">
+           <div class="headmid">
+               <a class="logo" href="/" title="百度知道"><img src="../img4/logo.png"/></a>
+               <form action="#" method="get" name="search"  class="searchform">
+                   <input  type="text" class="sou"   value=""/>
+                   <button type="submit" class="btn">搜索答案</button>
+                   <p><a href="#"  class="ask" id="ask">我要提问</a></p>
+               </form>
+           </div>
+            <div class="ans"><a href="#" target="_blank"><img src="../img4/ans.jpg"/></a></div>
+       </div>
+
+    </div>
+
+
+        <div class="menu section" id="daohang">
+            <ul>
+            <li><a class="menutitle" href="https://zhidao.baidu.com/" target="_blank"> 首页</a></li>
+            <li onmouseover="over1()" onmouseout="out()"><a class="menu-title" href="#" target="_blank">问题</a></li>
+            <li onmouseover="over2()" onmouseout="out()"><a class="menu-title" href="#" target="_blank">专栏</a></li>
+            <li onmouseover="over3()" onmouseout="out()"><a class="menu-title" href="#" target="_blank">用户</a></li>
+            <li onmouseover="over4()" onmouseout="out()"><a class="menu-title" href="#" target="_blank">特色</a></li>
+                <li class="menu-title">
+                    <a href="#" class="menu-title" target="_blank">
+                        手机版
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-title" target="_blank">
+                        我的知道
+                    </a>
+                </li>
+            </ul>
+
+            <div id="xiana">
+                  <div id="allquan">
+                      <div id="dv1" onmouseover="over1()" onmouseout="out()">
+                        <ul>
+                            <li><a href="#" target="_blank">全部问题</a></li>
+                            <li><a href="#" target="_blank">经济金融</a></li>
+                            <li><a href="#" target="_blank">企业管理</a></li>
+                            <li><a href="#" target="_blank">法律法规</a></li>
+                            <li><a href="#" target="_blank">社会民生</a></li>
+                            <li><a href="#" target="_blank">科学教育</a></li>
+                            <li><a href="#" target="_blank">健康生活</a></li>
+                            <li><a href="#" target="_blank">交通安全</a></li>
+                            <li><a href="#" target="_blank">体育运动</a></li>
+                            <li><a href="#" target="_blank">文化艺术</a></li>
+                            <li><a href="#" target="_blank">电子数码</a></li>
+                            <li><a href="#" target="_blank">电脑网络</a></li>
+                            <li><a href="#" target="_blank">娱乐休闲</a></li>
+                            <li><a href="#" target="_blank">心理分析</a></li>
+                            <li><a href="#" target="_blank">行政地区</a></li>
+                            <li><a href="#" target="_blank">医疗卫生</a></li>
+                        </ul>
+                      </div>
+                      <div id="dv2" onmouseover="over2()" onmouseout="out()">
+                        <ul>
+                            <li><a href="#" target="_blank">知道日报</a></li>
+                            <li><a href="#" target="_blank">真相问答机</a></li>
+                            <li><a href="#" target="_blank">知道大数据</a></li>
+                            <li><a href="#" target="_blank">知道多世界</a></li>
+                            <li><a href="#" target="_blank">知道非遗</a></li>
+                            <li><a href="#" target="_blank">交流大讨论</a></li>
+                        </ul>
+
+                      </div>
+                      <div id="dv3" onmouseover="over3()" onmouseout="out()">
+                          <ul>
+                              <li><a href="#" target="_blank">知道芝麻</a></li>
+                              <li><a href="#" target="_blank">知道之星</a></li>
+                              <li><a href="#" target="_blank">芝麻将</a></li>
+                              <li><a href="#" target="_blank">芝麻团</a></li>
+                              <li><a href="#" target="_blank">知道行家</a></li>
+                              <li><a href="#" target="_blank">日报作者</a></li>
+                            </ul>
+                          <div class="dls">-------机构合作-------</div>
+                          <ul>
+                              <li><a href="#" target="_blank">机构行家</a></li>
+                              <li><a href="#" target="_blank">开放平台</a></li>
+                              <li><a href="#" target="_blank">品牌合作</a></li>
+                          </ul>
+                              <div class="dlr">-------知道福利-------</div>
+                          <ul>
+                              <li><a href="#" target="_blank">财富商城</a></li>
+                              <li><a href="#" target="_blank">知道活动</a></li>
+                          </ul>
+                      </div>
+                      <div id="dv4" onmouseover="over4()" onmouseout="out()">
+                          <a href="#" target="_blank"><img src="../img4/tese.png"/></a>
+                          <ul>
+                              <li><a href="#" target="_blank"> 经验</a></li>
+                              <li><a href="#" target="_blank">百度派</a></li>
+                              <li><a href="#" target="_blank">宝宝知道</a></li>
+                              <li><a href="#" target="_blank">作业帮</a></li>
+                              <li><a href="#" target="_blank">次元饭</a></li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class="main">
+            <p>知道日报  06月30日</p>
+            <p>给大象戴一个可以直接报警的项圈就可以反盗猎？<br/><span>来自：玩物主义</span></p>
+            <div class="tu">
+            <div class="tu1"><img src="../img4/s3.jpg" width="100px" height="100px"/><div><a href="#" target="_self">癌症越来越多，是因为时代在进步？</a></div></div>
+            <div class="tu2"><img src="../img4/s2.jpg" width="100px" height="100px"/><div><a href="#" target="_self">跟造物者聊哲学，看《异形·契约》前你需要了解的！</a></div></div>
+            <div class="tu3"><img src="../img4/s1.jpg" width="100px" height="100px"/><div><a href="#" target="_self">跷二郎腿的6个可怕后果，吓得我赶紧坐直了</a></div></div>
+            </div>
+            <div class="right">
+                    <ul>
+                        <li><a href="#" target="_self">我要提问</a></li>
+                        <li><a href="#" target="_self">我来回答</a></li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="sec">
+           <div class="left"><a href="#" target="_self"><img src="../img4/tv.jpg"/></a>
+                <p><a href="#" target="_self" class="c">《一粒红尘》能否在众多现实题材剧中脱颖而出？</a></p>
+            <ul>
+                <li><a href="#" target="_self">《楚乔传》中赵丽颖有哪些值得期待？</a></li>
+                <li><a href="#" target="_self">《欢乐颂2》有哪些值得称赞的小细节？</a></li>
+                <li><a href="#" target="_self">《欢乐颂2》的穿帮镜头有哪些？</a></li>
+            </ul>
+            </div>
+            <div class="cen"><img src="../img4/hot-title.jpg"/><br/>
+                <a href="#" target="_self"><img src="../img4/yey.jpg" width="130px" height="130px"/></a>
+                <div class="cl">
+                    <p><a href="#" target="_self">怎么看待幼儿园爆炸中心理病人报复社会行为？</a></p>
+                   <span> 如此重大伤亡的爆炸案件，炸药竟是在出租屋自制的，这种犯罪方式是否太过于容易？社会的安定该如何维护？</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#" target="_self">101℃聚焦：过去24小时发生了哪些事儿？</a></li>
+                        <li><a href="#" target="_self">江苏丰县爆炸案告破伤员伤势如何？</a></li>
+                        <li><a href="#" target="_self">北大女硕士美国失联，绑架车牌号被查到了？</a></li>
+                        <li><a href="#" target="_self">传赵丽颖一人八替身，工作室如何发声？</a></li>
+                        <li><a href="#" target="_self">深夜食堂口碑反转，戚薇演技受好评？</a></li>
+                        <li><a href="#" target="_self">马来西亚军机失联调查结果公布？</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rig">
+                <ul> <p>公告</p>
+                    <li><a href="#" target="_self">知道非遗聚合页上线啦！</a></li>
+                    <li><a href="#" target="_self">【真相问答机】，揭穿流言！</a></li>
+                    <li><a href="#" target="_self">芝麻团用户见面会火热进行！</a></li>
+                    <li><a href="#" target="_self">【招募】知道日报开放作者申...</a></li>
+                    <li><a href="#" target="_self">帮助手册：如何使用知道</a></li>
+                </ul>
+                <div>
+                  <p>商城兑换</p>
+                    <a href="#" target="_self"><img src="../img4/shop.jpg" width="330px" height="180px"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="ft">
+            <div><p><img src="../img4/p1.png"/><a href="#" target="_self">经济金融</a></p>
+            <ul>
+                <li><a href="#" target="_self">经济</a></li>
+                <li><a href="#" target="_self">银行</a></li>
+                <li><a href="#" target="_self">基金</a></li>
+                <li><a href="#" target="_self">金融</a></li>
+                <li><a href="#" target="_self">证券</a></li>
+                <li><a href="#" target="_self">黄金</a></li>
+                <li><a href="#" target="_self">外汇</a></li>
+                <li><a href="#" target="_self">期货</a></li>
+            </ul>
+            </div>
+            <div><p><img src="../img4/p2.png"/><a href="#" target="_self">企业管理</a></p>
+                <ul>
+                    <li><a href="#" target="_self">企业管理</a></li>
+                    <li><a href="#" target="_self">人力资源</a></li>
+                    <li><a href="#" target="_self">财务</a></li>
+                    <li><a href="#" target="_self">市场营销</a></li>
+                    <li><a href="#" target="_self">创业</a></li>
+                    <li><a href="#" target="_self">融资</a></li>
+                </ul>
+            </div>
+            <div>
+                <p><img src="../img4/p3.png"/><a href="#" target="_self">法律法规</a></p>
+                <ul>
+                    <li><a href="#" target="_self">法律</a></li>
+                    <li><a href="#" target="_self">婚姻继承</a></li>
+                    <li><a href="#" target="_self">劳动人事</a></li>
+                    <li><a href="#" target="_self">交通事故</a></li>
+                    <li><a href="#" target="_self">医疗纠纷</a></li>
+                    <li><a href="#" target="_self">财产房产</a></li>
+                    <li><a href="#" target="_self">知识产权</a></li>
+                    <li><a href="#" target="_self">权益维护</a></li>
+                </ul>
+            </div>
+            <div><p><img src="../img4/p4.png"/><a href="#" target="_self">社会民生</a></p>
+                <ul>
+                    <li><a href="#" target="_self">军事</a></li>
+                    <li><a href="#" target="_self">宗教</a></li>
+                    <li><a href="#" target="_self">时事政治</a></li>
+                    <li><a href="#" target="_self">办公</a></li>
+                    <li><a href="#" target="_self">职业</a></li>
+                    <li><a href="#" target="_self">生活</a></li>
+                </ul>
+            </div>
+            </div>
+
+          <div class="fs"><img src="../img4/p5.png" width="1100px" height="100px"/></div>
+        </div>
+
+    <div class="fotmid">
+        <div>
+            <div><p><img src="../img4/h1.png"/><a href="#" target="_self">新手帮助</a></p>
+                <ul>
+                    <li><a href="#" target="_self">如何答题</a></li>
+                    <li><a href="#" target="_self">获取采纳</a></li>
+                    <li><a href="#" target="_self">使用财富值</a></li>
+                </ul>
+            </div>
+            <div><p><img src="../img4/h2.png"/><a href="#" target="_self">玩法介绍</a></p>
+            <ul>
+                <li><a href="#" target="_self">知道商城</a></li>
+                <li><a href="#" target="_self">知道团队</a></li>
+                <li><a href="#" target="_self">行家认证</a></li>
+                <li><a href="#" target="_self">高质量问答</a></li>
+            </ul></div>
+            <div><p><img src="../img4/h3.png"/><a href="#" target="_self">投诉建议</a></p>
+                <ul>
+                    <li><a href="#" target="_self">举报不良信息</a></li>
+                    <li><a href="#" target="_self">意见反馈</a></li>
+                    <li><a href="#" target="_self">投诉侵权信息</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dc"><p>京ICP证030173号-1   京网文【2013】0934-983号     &copy;2017 Baidu  <a href="#" target="_self"> 使用百度前必读</a>  |  <a href="#" target="_self"> 知道协议</a>  |  <a href="#" target="_self">百度知道品牌合作</a></p></div>
+    </div>
+    <div class="login" id="loginid">
+        <div class="login2">
+            <div class="login-top">
+                <img src="../img1/baidu_logo_48.png" height="30px" width="30px"/>
+                <span>登录百度账号</span>
+                <div class="cityClose loginClose" onclick="javascript:document.getElementById('loginid').style.display='none';"></div>
+            </div>
+            <form action="#" method="get" class="loginfrom" id="form1">
+                <div class="login1-from">
+                    <p class="form-p1"><img src="../img1/login-phone.jpg"/><a href="javascript:void(0);" onclick="phoneLogin()">手机快捷登录</a></p>
+                    <p class="form-p2">
+                        <label for="user1" id="userabel"></label>
+                        <input type="text" name="userName" value="" placeholder="手机/邮箱/用户名" id="user1" onfocus="userlables()" onblur="userlablesn
+()"/>
+                    </p>
+                    <p class="form-p2 form-p3">
+                        <label for="passw" id="passlabel"></label>
+                        <input type="password" name="password" value="" placeholder="密码" id="passw" onfocus="passlables()" onblur="passlablen()"/>
+                    </p>
+                    <p class="form-p4 form-p2">
+                        <input type="text" name="yzm" value="" placeholder="验证码"/>
+                        <img src="../img1/genimage.png"/>
+                        <a href="javascript:void(0)">换一张</a>
+                    </p>
+                    <p class="form-p5">
+                        <input type="checkbox" name="autologin" value="autol" checked id="auto"/>
+                        <label for="auto">下次自动登录</label>
+                        <a href="#" target="_blank">登录遇到问题</a>
+                    </p>
+                    <p class="form-p6">
+                        <input type="submit" name="submit" value="登录"/>
+                    </p>
+                    <p class="form-p7 form-p1">
+                        <a href="baidu-register.html" target="_blank">立即注册</a>
+                    </p>
+                </div>
+            </form>
+            <form action="#" method="get" class="loginfrom" id="form3">
+                <div class="login2-form">
+                    <p><span>手机扫描，安全登录</span></p>
+                    <p><img src="../img1/qrcode.png" width="134px" height="134px"/></p>
+                    <p>请使用<a href="#" target="_self">手机百度app</a>扫描登录</p>
+                </div>
+            </form>
+            <form action="#" method="get" class="loginfrom" id="form2">
+                <div class="login3-from">
+                    <p>短信登录</p>
+                    <p>验证即登录，未注册将自动创建百度账号</p>
+                    <p class="form-p2 login3-p2">
+                        <label for="tel" id="tels"></label>
+                        <input type="tel" name="telName" value="" placeholder="请输入手机号" id="tel" onfocus="tellabels()" onblur="tellabeln"/>
+                    </p>
+                    <p class="form-p4 form-p2 login3-p3">
+                        <input type="text" name="yzm" value="" placeholder="验证码"/>
+                        <a href="javascript:void(0)">发送动态密码</a>
+                    </p>
+                    <p class="form-p6">
+                        <input type="submit" name="submit" value="登录"/>
+                    </p>
+                    <p>
+                        <span>阅读并接受</span>
+                        <a href="#" target="_blank">《百度用户协议》</a>
+                        <a href="javascript:void(0)" onclick="account()">账号密码登录</a>
+                    </p>
+                </div>
+            </form>
+            <p class="cutlogin"><a href="javascript:void(0);" onclick="loginqh(this)"></a></p>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onscroll=function(){
+        var t=document.documentElement.scrollTop||document.body.scrollTop;
+        var d=document.getElementById("daohang");
+        if(t>=140){
+            d.style.position="fixed";
+            d.style.zIndex="99999";
+            d.style.top="0";
+        }else{
+            d.style.position="";
+            d.style.zIndex="";
+            d.style.top="";
+        }
+    }
+
+</script>
+</html>

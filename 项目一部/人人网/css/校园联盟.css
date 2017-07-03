@@ -1,0 +1,396 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+    height: auto;
+    outline: 1px solid black;
+}
+header{
+    width: 100%;
+    height:40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #cccccc;
+    opacity: 0.5;
+    filter: alpha(opacity=70);
+}
+.s{
+    float: right;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-right: 22%;
+}
+.s>a{
+    color: white;
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: auto;
+    /*outline: 1px solid black;*/
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 522px;
+}
+.s2{
+    position: relative;
+}
+.img1{
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 270px;
+    z-index: 1;
+}
+.img2{
+    width: 120px;
+    position: absolute;
+    top: 33px;
+    left: 450px;
+    z-index: 1;
+}
+.img3{
+    width: 120px;
+    position: absolute;
+    top: 33px;
+    left: 580px;
+    z-index: 1;
+}
+.img4{
+    width: 100px;
+    position: absolute;
+    top: 33px;
+    left: 700px;
+    z-index: 1;
+}
+.s3{
+    margin-top: -5px;
+    position: relative;
+}
+.img5{
+    width: 100%;
+}
+#img6{
+    width: 150px;
+    position: absolute;
+    top: 90px;
+    left: 34%;
+    display: block;
+}
+.img7{
+    width: 150px;
+    position: absolute;
+    top: 90px;
+    left: 53%;
+}
+#img8{
+    width: 100px;
+    position: absolute;
+    top: 130px;
+    left: 45%;
+    display: block;
+}
+.spm{
+    position: absolute;
+    top: 264px;
+    left: 460px;
+}
+.spm>video{
+    width: 250px;
+}
+form{
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    /*outline: 1px solid black;*/
+    position: absolute;
+    top: 0;
+    background: white;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+form>p{
+    width: 80%;
+    height: 100%;
+    /*outline: 1px solid red;*/
+    margin-left: 10%;
+    font-size: 14px;
+    color: #909090;
+}
+.sp{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #5db6e0;
+    font-weight: bold;
+    color: black;
+}
+.sp>a{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+.sp1{
+    display: inline-block;
+    margin-left: 80px;
+    width: 100px;
+    height: 20px;
+    text-align: right;
+    line-height: 40px;
+    /*outline: 1px solid black;*/
+}
+input[name=user]{
+    font-size: 13px;
+    text-indent: 10px;
+    margin-top: 20px;
+}
+.a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #909090;
+}
+.a1{
+    font-size: 12px;
+    text-decoration: none;
+    color: #909090;
+}
+.a1>img{
+   width: 80px;
+}
+input[name=yan]{
+    width: 100px;
+    margin-bottom: -5px;
+}
+.sp2{
+    display: inline-block;
+    margin-top: -20px;
+}
+input[type=checkbox]{
+    margin-top: 15px;
+    margin-left: 185px;
+}
+input[type=submit]{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-left: 184px;
+    border: none;
+    background: #5db6e0;
+    color: white;
+}
+.sp3{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px dashed #c1c1c1;
+    margin-top: 10px;
+    text-align: center;
+}
+.sp3>a>img{
+    width: 20px;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+.sp3>span{
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+#s4{
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-left: 20%;
+    width: 60%;
+}
+.sp4{
+    /*outline: 2px solid black;*/
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1;
+}
+.sp4>p:nth-of-type(1)>img{
+    width: 100%;
+}
+.sp4>p:nth-of-type(2){
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#show{
+    position: absolute;
+    top: 80px;
+    display: block;
+}
+#show1{
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+.spn{
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.spn1>span{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.sp4>a{
+    position: absolute;
+    bottom: 80px;
+    ext-decoration: none;
+    margin-left: 30px;
+    color: #f0e100;
+}
+.sp4>a:nth-of-type(1){
+    position: absolute;
+    left: 100px;
+}
+#spn2,#spn3,#spn4,#spn5,#spn6,#spn7,#spn8,#spn9,#spn10,#spn11,#spn12,#spn13,#spn14,#spn15{
+    margin-left: 0;
+}
+#imga{
+    position: absolute;
+    top: 230px;
+    right: 400px;
+}
+#imga>img:nth-of-type(1){
+    width: 180px;
+}
+#imga>img:nth-of-type(2){
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+#imga1{
+    position: absolute;
+    top: 360px;
+    right: 400px;
+}
+#imga1>img:nth-of-type(1){
+    width: 180px;
+}
+#imga1>img:nth-of-type(2){
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+.imag{
+    position: absolute;
+    bottom: 250px;
+    left: 430px;
+}
+.imag>img{
+    width: 120px;
+}
+.div1{
+    position: absolute;
+    top:1076px;
+    right: 425px;
+    width: 500px;
+    height: 280px;
+    overflow: hidden;
+    /*outline: 1px solid black;*/
+}
+.ul{
+    list-style: none;
+    width: 2870px;
+    height: 190px;
+    /*position: relative;*/
+}
+.ul>li{
+    float: left;
+}
+.ul>li>img{
+    width:500px;
+    /*height: 200px;*/
+}
+.s7{
+    position: absolute;
+    top:1320px;
+    right: 600px;
+    font-size: 20px;
+    color: white;
+}
+.ul>li>p{
+    position: absolute;
+    top:250px;
+    right: 20px;
+    color: white;
+    font-size: 18px;
+}
+.s7>img:nth-of-type(1){
+    position: absolute;
+    right: 200px;
+    z-index: 5;
+}
+.s7>img:nth-of-type(2){
+    position: absolute;
+    z-index: 5;
+}
+.div2{
+    position: relative;
+}
+.p1{
+    margin-top: -5px;
+}
+.p1>img{
+    width: 100%;
+}
+.p2>img{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    width: 150px;
+}
+#div3{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 400px;
+    display: none;
+}
+#div3>p:nth-of-type(1)>img{
+    width: 400px;
+}
+#div3>p:nth-of-type(2){
+    position: absolute;
+    top: 20px;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 30px;
+    /*outline: 1px solid white;*/
+}
+#div3>p:nth-of-type(2)>span{
+    float: right;
+    margin-right: 30px;
+}
+.p5{
+    font-size: 14px;
+    position: absolute;
+    top: 100px;
+    color: white;
+    width: 360px;
+    margin-left: 20px;
+    line-height: 25px;
+}

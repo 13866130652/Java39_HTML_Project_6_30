@@ -1,0 +1,440 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/***********************ͷ��**************************/
+header{
+	margin: 0 auto;
+	height: 35px;
+	line-height: 35px;
+	border-top: 2px solid #51AFEF;
+	border-bottom: 1px solid #E6E6E6;
+	background-color: rgb(245,245,245);
+}
+.firstLine{
+	width: 1050px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.homeAge{
+	float: left;
+}
+.entry{
+	float: right;
+}
+.homeAge a,.entry a{
+	text-decoration: none;
+	color: #8c8c8c;
+	font: 13px Tahoma,'Microsoft Yahei','Simsun';
+	padding-right: 4px;
+}
+
+.entry span{
+	color: #8c8c8c;
+}
+#search{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;/*清除浮动*/
+	height: 105px;
+}
+.searimg{
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+form{
+	margin-top: 40px;
+	float: right;
+}
+form img{
+	vertical-align:bottom;
+}
+form input{
+	width: 300px;
+	height: 33px;
+	outline: medium;/*去掉点击文本框出现双层框的效果*/
+	border: 2px solid #E6E6E6;
+	color: #8c8c8c;
+	font-family: SimSun,"宋体";
+}
+select{
+	margin-left: -8px;
+	width: 60px;
+	height: 33px;
+	border: 2px solid #E6E6E6;
+	
+}
+#imgButton{
+	width: 70px;
+	margin-bottom: -11px;
+	margin-left: -6px;
+	border: none;
+}
+nav{
+	background: #1e6dc3;
+	height: 43px;
+}
+.nav_ul{
+	list-style: none;
+	margin: 0 auto;
+	height: 43px;
+	width: 1300px;
+}
+.nav_ul li{
+	display: inline-block;
+	height: 43px;
+}
+.c{
+	margin-left: 205px;
+}
+.b{
+	display: inline-block;
+	height: 43px;
+	line-height: 43px;
+	width: 106px;
+	margin-right: -3px;
+	font-weight: bolder;
+	text-align: center;
+}
+.b a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+.a{
+	background-color: rgb(18,78,138);
+}
+.b:hover{
+	background-color: rgb(18,78,138);
+}
+
+section{
+    width: 1000px;
+    margin: 0px auto;
+}
+.sectionFirst{
+	width: 1000px;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 40px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.xue{
+	display: inline-block;
+	margin-left: -5px;
+	text-decoration: none;
+	color: #333;
+	font-size: 13px;
+	background-color: white;
+	position: relative;
+	bottom: 4px;
+}
+.xue:hover{
+	text-decoration: underline;
+	color: rgb(30,109,195);
+}
+footer{
+    width: 1000px;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+.flag10 p{
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+.flag11 p{
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+.flag11 p img{
+    position: relative;
+    top: 3px;
+}
+/***********************�в�**************************/
+section{
+    width: 1000px;
+    height: 263px;
+    margin: 0px auto;
+}
+/***********************�в�����**************************/
+.box1 img{
+    float: left;
+    width: 990px;
+}
+.box {
+    width: 990px;
+    height: 260px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 4px;
+}
+.box a{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: cadetblue;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    z-index: 1;
+    border: 2px solid white
+}
+.a1 {
+    right:440px;
+    bottom: 5px;
+}
+.a2 {
+    right: 465px;
+    bottom: 5px;
+}
+.a3 {
+    right: 490px;
+    bottom: 5px;
+}
+.a4 {
+    right: 515px;
+    bottom: 5px;
+}
+.box1 {
+    width: 3965px;
+    position: absolute;
+    /*border: 1px solid red;*/
+}
+/* ���� ͼƬ�Ķ���Ч��*/
+.play {
+    animation: ma 5s linear infinite alternate;
+    /*���������move ���ʱ��5s �������ٽ���  �����ӳ�û��  �������Ŵ�������  �������򲥷�*/
+    /*animation: name duration timing-function delay iteration-count direction;*/
+}
+@keyframes ma {
+    0%, 20% {
+        margin-left: 0px;
+    }
+    25%, 45% {
+        margin-left: -990px;
+    }
+    50%, 70% {
+        margin-left: -1980px;
+    }
+    75%, 100% {
+        margin-left: -2970px;
+    }
+}
+.num:hover {
+    animation-play-state: paused;
+}
+.a1:hover~ .box1{
+    animation:ma1 0.5s ease-out forwards;
+}
+.a2:hover~ .box1{
+    animation:ma2 0.5s ease-out forwards;
+}
+.a3:hover~ .box1{
+    animation:ma3 0.5s ease-out forwards;
+}
+.a4:hover~ .box1{
+    animation:ma4 0.5s ease-out forwards;
+}
+@keyframes ma1 {
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes ma2 {
+    100% {
+        margin-left: -990px;
+    }
+}
+@keyframes ma3 {
+    100% {
+        margin-left: -1980px;
+    }
+}
+@keyframes ma4 {
+    100% {
+        margin-left: -2970px;
+    }
+}
+/***********************�в�**************************/
+main{
+    width: 1000px;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+.flag10{
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+}
+.flag10 div:nth-of-type(1){
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 3px solid deepskyblue;
+}
+.flag10 div:nth-of-type(2){
+    float: right;
+}
+.flag10 div:nth-of-type(2) a{
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+}
+.flag10 div:nth-of-type(3){
+    clear: both;
+}
+.flag11{
+    margin-left: 3px;
+    padding-top: 30px;
+    /*border-top: 1px solid gray;*/
+}
+.flag11 a{
+    margin-left: 12px;
+}
+.flag12 a{
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid gray;
+    color: gray;
+    font-weight: bold;
+}
+.flag12 a:hover{
+    color: black;
+    border: 2px solid black;
+}
+.flag13{
+    height: 280px;
+    width: 230px;
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+    float: left;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.flag13:hover {
+    background-color: white;
+    border-color: deepskyblue;
+    height: 278px;
+    width: 227px;
+}
+.flag13 p:nth-of-type(1){
+    text-align: center;
+    font-size: 17px;
+}
+.flag13 p:nth-of-type(2){
+    text-align: center;
+    font-size: 20px;
+    color: deepskyblue;
+}
+.flag13 p:nth-of-type(3){
+    text-align: center;
+    font-size: 17px;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+.flag13 p:nth-of-type(4){
+    text-align: center;
+    font-size: 17px;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin-left: 37px;
+    margin-top: 20px;
+}
+.flag13 p:nth-of-type(4) a{
+    text-decoration: none;
+    color: black;
+}
+.flag13 p:nth-of-type(4):hover{
+    background-color: deepskyblue;
+}
+.flag13 p:nth-of-type(4) a:hover{
+    color: white;
+}
+.flag13 p{
+    line-height: 50px;
+}
+.flag14{
+    clear: both;
+}
+.flag15{
+    margin-top: 20px;
+}
+.flag15 a{
+    color: black;
+    text-decoration: none;
+}
+.flag16{
+    margin-top: 25px;
+    border-bottom: 1px solid gray;
+}
+.flag16 div:nth-of-type(1){
+    height: 25px;
+    line-height: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    background-color: deepskyblue;
+}
+.flag16 div:nth-of-type(3){
+    color: gray;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 60px;
+}
+.flag16 span{
+    position: relative;
+    top: -30px;
+}
+.flag16 span:nth-of-type(1){
+    color: deepskyblue;
+}
+.flag17{
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+.flag17:hover{
+    background-color: #e5eecc;
+}
+.flag17 a{
+    color: gray;
+    text-decoration: none;
+}
+.flag17 a:hover{
+    color: black;
+}
+.flag18{
+    border-bottom: 1px solid gray;
+}
+.image{
+    position: fixed;
+    left: 1245px;
+    bottom: 130px;
+}
+/***********************β��**************************/
+.flag21{
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+}

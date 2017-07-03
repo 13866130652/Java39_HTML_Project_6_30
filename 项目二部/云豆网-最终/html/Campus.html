@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>活跃校区</title>
+		<link rel="stylesheet" type="text/css" href="../css/campus.css"/>
+		<script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+		<script src="../js/campus.js" type="text/javascript"></script>
+	</head>
+	<body onload="showpic()">
+		<header>
+			<!--头部,设置,登录-->
+			<div class="firstLine">
+				<p class="homeAge">
+					<a  title="设置首页" id="sethomepage" href="#tubiao">设为首页</a>
+					<a  title="收藏本站" id="addThis" href="javascript:void(0);">收藏本站</a>
+				</p>
+				<p class="entry">
+					<a href="Login.html" title="">登录</a>
+					<span>丨</span>
+					<a href="Register.html" title="">注册</a>
+				</p>
+			</div>
+		</header>
+		<div id="search">
+			<!--form表单搜索框-->
+			<p class="searimg">
+				<img src="../images/logo-yds.gif" />
+			</p>
+			<form>
+				<img src="../images/search.png" />
+				<input type="search" value="请输入搜索内容" id="uSearch"/>
+				<select >
+					<option value="post" ><a class="selects" href="#">帖子</a></option>
+					<option value="user" ><a class="selects" href="#">用户</a></option>
+				</select>
+				<input type="image" name="imgButton" id="imgButton" value="sear" src="../images/h_btn_srch.gif" />
+			</form>
+		</div>
+		<nav class="nav">
+			<!--导航栏-->
+			<ul class="nav_ul">
+				<li id="mn_portal" class="b c" ><a href="HelpCenter.html" target="_blank" title="Portal"  >首   页</a></li>
+				<li id="mn_Nd20f" class="b"><a href="http://www.kgc.cn/"  target="_blank"  >课工场</a></li>
+				<li id="mn_forum" class="b"  ><a href="Forum.html"  title="BBS" target="_blank" >学员论坛</a></li>
+				<li id="mn_N1b30" class="b a"><a href="Campus.html"  target="_blank" >活跃校区</a></li>
+				<li id="mn_N7524" class="b"><a href="Interview.html"  target="_blank"  >面试第一站</a></li>
+				<li id="mn_N7b6a" class="b"><a href="http://ask.bdqn.cn"  target="_blank" >互动问答</a></li>
+				<li id="mn_home"  class="b"><a href="Schoolmate.html"  title="Space" target="_blank" >同学圈子</a></li>
+				<li id="mn_N2d63" class="b"><a href="Download.html" target="_blank">客户端下载</a></li>
+				<li id="mn_N5057" class="b"><a href="HelpCenter.html"  target="_blank">帮助中心</a></li>
+			</ul>
+		</nav>
+		<section>
+			<p class="sectionFirst">
+				<a href="Homepage.html" >
+					<img src="../images/小屋1.png" />
+				</a>
+				<a href="Forum.html" class="xue">学员论坛</a>
+				<img src="../images/pt_item.png" class="simg"/>
+				<span>活跃校区</span>
+			</p>
+			<!--推荐专区-->
+			<div id="recommend">
+				<!--专区左侧-->
+				<div class="re-left">
+					<a href="#" class="a1 ra">
+						<span class="s1 ss"></span>
+					</a>
+					<a href="#" class="a2 ra">
+						<span class="s2 ss"></span>
+					</a>
+					<ul class="left-ul">
+						<li>
+							<a href="http://home.bdqn.cn/forum.php?mod=viewthread&tid=100539&fromuid=162148" title="北大青鸟武汉宏鹏校区“四月周末大讲堂”活动报名开始"><img src="../images/001.jpg" width="490" height="276" alt="北大青鸟武汉宏鹏校区“四月周末大讲堂”活动报名开始"></a>
+						</li>
+						<li>
+							<a href="http://home.bdqn.cn/thread-85397-1-1.html" title="我在这里，北大青鸟广州车陂校区"><img src="../images/002.jpg" width="490" height="276" alt="我在这里，北大青鸟广州车陂校区"></a>
+						</li>
+					</ul>
+				</div>
+				<!--专区右侧-->
+				<div class="re-right">
+					<p class="warm">
+						版主推荐
+					</p>
+					<ul class="right-ul">
+						<li>
+						<a href="http://home.bdqn.cn/thread-102874-1-1.html" target="_blank">翔天信鸽2017年262班家长交流会</a>
+						<i>2017-06-06</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-101723-1-1.html" target="_blank">军校生活历练了我，郑州北大青鸟成就了我</a>
+						<i>2017-06-05</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/forum.php?mod=viewthread&tid=100539&fromuid=162148" target="_blank">武汉宏鹏“四月周末大讲堂”活动报名开始</a>
+						<i>2017-04-05</i>
+						</li>
+						<li>
+						<a href="thread-99000-1-1.html" target="_blank">春天里，北大青鸟翔天信鸽和老乡有个约会</a>
+						<i>2017-02-23</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-99000-1-1.html" target="_blank">程序猿：别被病魔盯上了！</a>
+						<i>2017-03-16</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-96728-1-1.html" target="_blank">零基础怎样能学好java软件开发技术</a>
+						<i>2017-03-16</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-78557-1-1.html" target="_blank">广州网耀 Java软件开发班项目设计答辩会</a>
+						<i>2016-01-19</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-99681-1-1.html" target="_blank">浅谈VR、AR、MR</a>
+						<i>2017-03-16</i>
+						</li>
+						<li>
+						<a href="http://home.bdqn.cn/thread-99747-1-1.html" target="_blank">九尾猫神IT公司下凡记</a>
+						<i>2017-03-14</i>
+						</li>
+						<li>
+						<a href="thread-99875-1-1.html" target="_blank">武汉课工场：web前端学习css小技巧</a>
+						<i>2017-03-16</i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="campus">
+				<div class="collection">
+					你还没有收藏校区~
+				</div>
+				<div class="ranking">
+					<h3>活跃校区排名</h3>
+					<!--第一部分-->
+					<ul class="first-ul">
+						<!--第一部分的第一个-->
+						<li class="p1 n1">
+							<a href="#">
+							<img src="../images/201.jpg" />
+							</a>
+							<div class="school1">
+								<p class="name1">
+									<a href="#" class="text">
+									<span >1</span>
+									天津蓝白金
+									</a>
+								</p>
+								<p class="mess1">
+									主题:3082, 帖数:2万 |  <a href="#">最后发表: 昨天 14:47</a>
+								</p>
+							</div>
+						</li>
+						<li class="p1 n2">
+							<a href="#">
+							<img src="../images/202.jpg" />
+							</a>
+							<div class="school1">
+								<p class="name1">
+									<a href="#" class="text">
+									<span >2</span>
+									北京北大公学
+									</a>
+								</p>
+								<p class="mess1">
+									主题:1454, 帖数:2万 |  <a href="#">最后发表: 4 天前</a>
+								</p>
+							</div>
+						</li>
+						<li class="p1 n3">
+							<a href="#">
+							<img src="../images/203.jpg" />
+							</a>
+							<div class="school1">
+								<p class="name1">
+									<a href="#" class="text">
+									<span >3</span>
+									北京唐城
+									</a>
+								</p>
+								<p class="mess1">
+									主题:4017, 帖数:1万 |  <a href="#">最后发表: 2017-4-13 02:05</a>
+								</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="second-ul">
+						<!--第二部分的第四个-->
+						<li class="p2 n4">
+							<a href="#">
+							<img src="../images/204.png" />
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >4</span>
+									武汉宏鹏
+									</a>
+								</p>
+								<p class="mess2">
+									主题:1263, 帖数:1万<br />
+									<a href="#">最后发表: 前天 14:49</a>
+								</p>
+							</div>
+						</li>
+						<li class="p2 n5">
+							<a href="#">
+							<img src="../images/205.png" />
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >5</span>
+									洛阳融科
+									</a>
+								</p>
+								<p class="mess2">
+									主题:1454, 帖数:2万<br />
+									<a href="#">最后发表: 2017-1-11 09:45</a>
+								</p>
+							</div>
+						</li>
+						<li class="p2 n6">
+							<a href="#">
+							<img src="../images/206.png" />
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >6</span>
+									郑州翔天信鸽
+									</a>
+								</p>
+								<p class="mess2">
+									主题:908, 帖数:2906<br />
+									<a href="#">最后发表: 昨天 19:06</a>
+								</p>
+							</div>
+						</li>
+						<li class="p2 n7">
+							<a href="#">
+							<img src="../images/207.png" />
+							</a>
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >7</span>
+									郑州职英
+									</a>
+								</p>
+								<p class="mess2">
+									主题:398, 帖数:1936<br />
+									<a href="#">最后发表: 3 天前</a>
+								</p>
+							</div>
+						</li>
+						<li class="p2 n8">
+							<a href="#">
+							<img src="../images/208.png" />
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >8</span>
+									长沙科泰
+									</a>
+								</p>
+								<p class="mess2">
+									主题:259, 帖数:1024<br />
+									<a href="#">最后发表: 2017-4-24 11:53</a>
+								</p>
+							</div>
+						</li>
+						<li class="p2 n9">
+							<a href="#">
+							<img src="../images/209.png" />
+							</a>
+							<div class="school2">
+								<p class="name2">
+									<a href="#" class="text">
+									<span >9</span>
+									株洲健坤
+									</a>
+								</p>
+								<p class="mess2">
+									主题:171, 帖数:582<br />
+									<a href="#">最后发表: 2017-3-5 23:07</a>
+								</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="third-ul">
+						<!--第一部分的第一个-->
+						<li class="p3 n10">
+							<a href="#">
+							<img src="../images/210.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >10</span>
+									中关村校区
+									</a>
+								</p>
+								<p class="mess3">
+									主题:3368, 帖数:7272<br />
+									<a href="#">最后发表: 2017-6-3 16:53</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n11">
+							<a href="#">
+							<img src="../images/211.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >11</span>
+									泰安深度
+									</a>
+								</p>
+								<p class="mess3">
+									主题:1412, 帖数:2122<br />
+									<a href="#">最后发表: 2017-5-31 14:32</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n12">
+							<a href="#">
+							<img src="../images/212.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >12</span>
+									千硕徐东
+									</a>
+								</p>
+								<p class="mess3">
+									主题:604, 帖数:1422<br />
+									<a href="#">最后发表: 前天 15:13</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n13">
+							<a href="#">
+							<img src="../images/213.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >13</span>
+									郑州华睿
+									</a>
+								</p>
+								<p class="mess3">
+									主题:1307, 帖数:1338<br />
+									<a href="#">最后发表: 6 天前</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n14">
+							<a href="#">
+							<img src="../images/214.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >14</span>
+									北京华腾
+									</a>
+								</p>
+								<p class="mess3">
+									主题:611, 帖数:1061<br />
+									<a href="#">最后发表: 前天 14:52</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n15">
+							<a href="#">
+							<img src="../images/215.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >15</span>
+									福州新生代
+									</a>
+								</p>
+								<p class="mess3">
+									主题:788, 帖数:830<br />
+									<a href="#">最后发表: 2016-8-4 20:28</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n16">
+							<a href="#">
+							<img src="../images/216.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >16</span>
+									杭州文青
+									</a>
+								</p>
+								<p class="mess3">
+									主题:521, 帖数:823<br />
+									<a href="#">最后发表: 2017-6-3 18:56</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n17">
+							<a href="#">
+							<img src="../images/217.png" />
+							</a>
+							<div class="school3">
+								<p class="name3">
+									<a href="#" class="text">
+									<span >17</span>
+									广州网耀
+									</a>
+								</p>
+								<p class="mess3">
+									主题:405, 帖数:800<br />
+									<a href="#">最后发表: 2017-6-1 14:22</a>
+								</p>
+							</div>
+						</li>
+						<li class="p3 n18">
+							<a href="#">
+					        <img src="../images/218.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >18</span>
+					                   	 盐城思腾
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:615, 帖数:628<br />
+					                <a href="#">最后发表: 5 天前</a>
+					            </p>
+					        </div>
+					    </li>
+					    <li class="p3 n19">
+					    	<a href="#">
+					        <img src="../images/219.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >19</span>
+					                    	深圳嘉华
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:370, 帖数:490<br />
+					                <a href="#">最后发表: 2017-6-6 16:55</a>
+					            </p>
+					        </div>
+					    </li>
+					    <li class="p3 n20">
+					    	<a href="#">
+					        <img src="../images/220.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >20</span>
+					                    	北京智创英杰
+					                </a>
+					            </p>
+					            <p class="mess3">
+					              	  主题:275, 帖数:438<br />
+					                <a href="#">最后发表: 2016-11-24 13:34</a>
+					            </p>
+					        </div>
+					    </li>
+					    <li class="p3 n21">
+					    	<a href="#">
+					        <img src="../images/221.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >21</span>
+					                    	长沙实力
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:347, 帖数:411<br />
+					                <a href="#">最后发表: 2017-5-18 09:50</a>
+					            </p>
+					        </div>
+					    </li>
+					    <li class="p3 n22">
+					    	<a href="#">
+					        <img src="../images/222.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >22</span>
+					                    	深圳中青
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:249, 帖数:259<br />
+					                <a href="#">最后发表: 2017-3-14 13:14</a>
+					            </p>
+					        </div>
+					    </li>
+					    <li class="p3 n23">
+					    	<a href="#">
+					        <img src="../images/223.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >23</span>
+					                    	日照智软
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:202, 帖数:238<br />
+					                <a href="#">最后发表: 2016-8-5 15:31</a>
+					            </p>
+					        </div>
+					   </li>
+					    <li class="p3 n24">
+					    	<a href="#">
+					        <img src="../images/224.png" />
+					        </a>
+					        <div class="school3">
+					            <p class="name3">
+					                <a href="#" class="text">
+					                    <span >24</span>
+					                    	武汉一代人
+					                </a>
+					            </p>
+					            <p class="mess3">
+					                	主题:188, 帖数:223<br />
+					                <a href="#">最后发表: 2017-4-8 15:02</a>
+					            </p>
+					        </div>
+					    </li>
+					</ul>
+				</div>
+				
+				<p class="newPost">
+					每日新帖
+				</p>
+			</div>
+		</section>
+		<!--固定定位返回顶部-->
+			<p id="show" class="sho" >
+			<a href="#">
+				<img src="../images/scrolltop.png" class="pic" />
+			</a>
+			</p>
+		
+		<footer>
+			 <div class="f-div1">
+        		<a href="forum.php?mobile=yes" >手机版社区</a> &nbsp;|&nbsp; <a href="HelpCenter.html" >帮助中心</a> &nbsp;|&nbsp; <a href="mailto:YL003@bdqn.cn" >联系我们</a> &nbsp;|&nbsp; <a href="http://www.bdqn.cn/sitemap" target="_blank" >网站地图</a> &nbsp;| &nbsp;<a title="" href="http://www.bdqn.cn" target="_blank"> 北大青鸟官方网站</a>
+   			 </div>
+		    <div class="f-div2">
+		        <p>Copyright 1999-2017 Beijing Aptech Beida Jade Bird Information Technology Co.,Ltd</p>
+		
+		        <p>北大青鸟IT教育 北京阿博泰克北大青鸟信息技术有限公司 版权所有</p>
+		
+		        <p class="last_line">
+		            <span><a href="http://www.miibeian.gov.cn" target="_blank">京ICP备11045574号-3  京公网安备11010802013845号</a></span>
+		            <a target="_blank" class="offset5"
+		               href="https://search.szfw.org/cert/l/CX20120920001700001750"
+		               id="___szfw_logo___">
+		                <img src="../images/footer_img.png"/>
+		            </a>
+		        </p>
+		
+		    </div>
+
+		</footer>
+	</body>
+</html>

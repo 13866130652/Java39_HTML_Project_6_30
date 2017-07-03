@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客服中心</title>
+    <link href="../css2/Demo2.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="..\img\favicon-rr.ico" />
+</head>
+<body>
+    <div class="box">
+        <herder>
+            <div class="header1 clearfix">
+                <div class="header1-1">
+                    <a href="http://www.renren.com/" target="_blank"><img src="../img/logo.png" title="人人网 renren.com - 人人网校内是一个真实的社交网络，联系朋友，一起玩游戏"/></a>
+                    <ul class="u1">
+                        <li class="l2"><a href="#" target="_self" onclick="show1();" ondblclick="FormDisP()">更多</a></li>
+                        <li><a title="给我们提建议" href="http://support.renren.com/link/suggest">给我们提建议</a></li>
+                        <li><a title="帮助" href="http://support.renren.com/helpcenter">帮助</a></li>
+                        <li><a title="登录" href="../../Html/Homepage.html">登录</a></li>
+                        <li><a title="注册" href="../../Html/注册.html">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header2 clearfix">
+                    <div class="header2-1">
+                        <a href="http://help.renren.com/helpcenter/" target="_self"><img src="../img/logo1.png"/></a>
+                        <p><a href="#http://help.renren.com/helpcenter/getNoticeById?noticeId=1000074" target="_blank"><span class="span1">公告：</span>&nbsp;客服电话工作时间调整</a></p>
+                        <form action="#" method="post">
+                            <input type="text" name="text" placeholder="在此输入问题"/>
+                            <input type="image" src="../img/ab.png" value="imgButton"/>
+                        </form>
+                    </div>
+            </div>
+        </herder>
+        <section>
+            <div id="box1">
+                <a href="http://pay.renren.com/web/lifepay" target="_blank"><img src="../img/banner1.png" id="image" onclick="show()"/></a>
+                <a href="" onmouseover="stop(1)" onmouseout="ch()" id="a1" class="a"></a>
+                <a href="" onmouseover="stop(2)" onmouseout="ch()" id="a2" class="a"></a>
+                <a href="" onmouseover="stop(3)" onmouseout="ch()" id="a3" class="a"></a>
+                <span class="span2" onmouseover="stop2()" onmouseout="start2()" onclick="xia()">&lt;</span>
+                <span class="span2 span3" onmouseover="stop2()" onmouseout="start2()" onclick="shang()">&gt;</span>
+            </div>
+            <script>
+            var i=0;
+            var timeout;
+            var z=0;
+            var flag=false;
+            var arr1=["a1","a2","a3"];
+            var arr=["../img/banner1.png",
+                "../img/banner2.png",
+                "../img/banner4.png"];
+            //获得对应的a标记，同时设置其背景颜色
+            function show() {
+                var arr=document.getElementsByClassName("a");
+                for(var j=0;j<arr.length;j++){
+                    if(i==j){
+                        arr[j].style.backgroundColor="white";
+                    }else{
+                        arr[j].style.backgroundColor="grey";
+                    }
+                }
+            }
+
+            //实现图片的轮播效果
+            function change() {
+                if(i==3){
+                    i=0;
+                }
+                var img=document.getElementById("image");
+                var arr=["../img/banner1.png",
+                    "../img/banner2.png",
+                    "../img/banner4.png"];
+                img.src=arr[i];
+                show();
+                i++;
+            }
+
+            var num=0;
+            //循环调用某函数
+            function ch() {
+                num=setInterval("change()",2000);
+            }
+            ch();
+
+            //当鼠标移入到某a标记时，显示对应的图片，同时改变其背景颜色
+            function stop(n) {
+                //停止自定义的循环操作
+                clearInterval(num);
+                var img=document.getElementById("image");
+                var arr=["../img/banner1.png",
+                    "../img/banner2.png",
+                    "../img/banner4.png"];
+                img.src=arr[n-1];
+                var arr=document.getElementsByClassName("a");
+                for(var j=0;j<arr.length;j++){
+                    if(n==j+1){
+                        arr[j].style.backgroundColor="white";
+                    }
+                    arr[j].style.backgroundColor="grey";
+                }
+            }
+            function stop2(){
+                z=i;
+                clearInterval(timeout);
+            }
+            function start2(){
+                if(flag){
+                    i=z;
+                    flag=false;
+                }
+                ch();
+            }
+            function xia(){
+                z--;
+                if(z==-1){
+                    z=3;
+                }
+                for(var y=0;y<arr1.length;y++){
+                    if(y!=z){
+                        document.getElementById(arr1[y]).style.backgroundColor="gray";
+                    }
+                }
+                document.getElementById(arr1[z]).style.backgroundColor="blue";
+                document.getElementById("image").src=arr[z];
+                flag=true;
+                return flag;
+            }
+            function shang(){
+                if(z==4){
+                    z=0;
+                }
+                for(var y=0;y<arr1.length;y++){
+                    if(y!=z){
+                        document.getElementById(arr1[y]).style.backgroundColor="gray";
+                    }
+                }
+                document.getElementById(arr1[z]).style.backgroundColor="blue";
+                document.getElementById("image").src=arr[z];
+                z++;
+                flag=true;
+                return flag;
+            }
+
+            //显示表格
+            function show1(){
+                var uu=document.getElementById("uu2");
+                uu.style.display="block";
+//                    alert(2);
+            }
+            //表格隐藏
+            function FormDisP() {
+                var table=document.getElementById("uu2");
+                table.style.display="none";
+            }
+            </script>
+        </section>
+        <section>
+            <div class="section1">
+                <div class="section1-1">
+                    <div class="div1 div1-1">
+                        <h5>帐号申诉</h5>
+                        <span class="menu_content">
+                            <a href="https://safe.renren.com/security/account">手机绑定</a>
+                            <span>|</span>
+                            <a href="https://safe.renren.com/security/protect">密保问题</a>
+                            <span>|</span>
+                            <a href="https://safe.renren.com/appeal">修改帐号</a>
+                            <span>|</span>
+                            <a href="https://safe.renren.com/security/account">找回密码</a>
+                        </span>
+                    </div>
+                    <div class="div2 div1-1">
+                        <h5>帮助中心</h5>
+                        <span class="menu_content">
+                            <a href="#">帐号信息</a>
+                            <span>|</span>
+                            <a href="#">网站功能</a>
+                            <span>|</span>
+                            <a href="#">游戏应用</a>
+                            <span>|</span>
+                            <a href="#">帐号安全</a><br>
+                            <div class="a2">
+                                <a href="#" class="a1">手机用户</a>
+                                <span>|</span>
+                                <a href="#">增值服务</a>
+                                <span>|</span>
+                                <a href="#">人人逛街</a>
+                                <span>|</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="div3 div1-1">
+                            <h5>在线客服</h5>
+                        <span class="menu_content">
+                            <a href="http://chat16.live800.com/live800/chatClient/chatbox.jsp?companyID=94732&amp;configID=360&amp;jid=9777286733&amp;skillId=3214" style="display:none;">会员专线客服</a>
+                            <a href="http://chat16.live800.com/live800/chatClient/chatbox.jsp?companyID=94732&amp;configID=360&amp;jid=9777286733&amp;skillId=3214">人人豆充值客服</a>
+                            <span>|</span>
+                            <a data="true" class="help_icon1" href="javascript:;">会员专线客服</a>
+                        </span>
+                    </div>
+                    <div class="div4 div1-1">
+                        <h5>我要提问</h5>
+                        <span class="menu_content">
+                            <a class=" index-question" href="http://help.renren.com/helpcenter/question" target="_blank">提交问题</a>
+                            <span>|</span>
+                            <a href="javascript:" class=" index-suggestion">建议反馈</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="section1-2">
+                    <p>4000-80-3580 <span>（周一到周日9:00--18:00）</span></p>
+                    <h4>官方公共主页</h4>
+                    <ul class="u2 clearfix">
+                        <li>
+                            <a href="http://page.renren.com/renren" target="">
+                                <img src="../img/page1.jpg" class="img2"/>
+                                <p>人人网</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://page.renren.com/admin" target="">
+                                <img src="../img/page2.jpg" class="img2"/>
+                                <p>管理员</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://page.renren.com/admin_hd" target="">
+                                <img src="../img/page3.jpg" class="img2"/>
+                                <p class="p1">活动管理员</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://page.renren.com/help" target="">
+                                <img src="../img/page4.jpg" class="img2"/>
+                                <p class="p1">公共主页帮助</p>
+                            </a>
+                        </li>
+                    </ul><br>
+                    <h3>常见问题</h3>
+                    <ul class="u4">
+                        <li><a href="#http://help.renren.com/support/faq/getFaqAll?menuId:'0000'" target="_blank">登录密码忘记怎么办？</a></li>
+                        <li><a href="#http://help.renren.com/support/faq/getFaqAll?menuId:'0000'" target="_blank">为什么我无法登录？</a></li>
+                        <li><a href="#http://help.renren.com/support/faq/getFaqAll?menuId:'0000'" target="_blank">帐号被冻结了，怎么解冻帐号？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer1">
+                    <span class="sp">
+                        人人网<span title="revision$revxxx$; YZSJHL37-225.opi.com">©</span>2017
+                    </span>
+                    <ul class="u3">
+                        <li><a href="http://www.renren-inc.com/zh/product/renren.html" target="_blank">关于我们&nbsp;<span>|</span></a></li>
+                        <li><a href="http://wan.renren.com" target="_blank">人人游戏&nbsp;<span>|</span></a></li>
+                        <li><a href="http://www.jingwei.com" target="_blank">经纬网&nbsp;<span>|</span></a></li>
+                        <li><a href="http://www.56.com" target="_blank">56网&nbsp;<span>|</span></a></li>
+                        <li><a href="http://mobile.renren.com/mobilelink.do?psf=40002" target="_blank">手机应用&nbsp;<span>|</span></a></li>
+                        <li><a href="http://page.renren.com/register/regGuide/" target="_blank">公共主页&nbsp;<span>|</span></a></li>
+                        <li><a href="http://dev.renren.com" target="_blank">开放平台&nbsp;<span>|</span></a></li>
+                        <li><a href="http://bolt.jebe.renren.com/introduce.htm" target="_blank">自助广告&nbsp;<span>|</span></a></li>
+                        <li><a href="http://page.renren.com/marketing/index" target="_blank">品牌营销&nbsp;<span>|</span></a></li>
+                        <li><a href="http://ir.renren-inc.com/phoenix.zhtml?c=244796&amp;p=irol-irhome" target="_blank">About Us&nbsp;<span>|</span></a></li>
+                        <li><a href="http://www.renren-inc.com/zh/" target="_blank">人人集团&nbsp;<span>|</span></a></li>
+                        <li><a href="http://www.renren-inc.com/zh/hr/" target="_blank">招聘&nbsp;<span>|</span></a></li>
+                        <li><a href="http://support.renren.com/helpcenter" target="_blank">客服帮助&nbsp;<span>|</span></a></li>
+                        <li><a href="http://www.renren.com/siteinfo/privacy" target="_blank">隐私</a></li>
+                    </ul>
+                </div>
+                <div class="footer2" id="there">
+                        <p class="company-name"><span>北京千橡网景科技发展有限公司：</span>
+                            <span>文网文[2009]169号</span><span class="dot">·</span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证090254号</a><span class="dot">·</span><span>京公网安备110000000009号</span><span class="dot">·</span><span>甲测资字11002066</span>
+                        </p>
+                        <p class="company-name1"><span>文化部监督电子邮箱：wlwh@vip.sina.com</span><span class="dot">·</span><a href="http://a.xnimg.cn/n/core/res/certificate.jpg" target="_blank">互联网药品信息服务资格证</a><span class="dot">·</span><a href="http://py.qianlong.com" target="_blank">北京地区网站联合辟谣平台</a></p>
+                        <p class="special-add"><span>文明办网文明上网举报电话：4000803580 举报邮箱：admin@renren-inc.com</span>&nbsp;&nbsp;&nbsp;<a href="http://www.bjjubao.org/" target="_blank"><img src="http://s.xnimg.cn/imgpro/civilization/bljubao.gif" width="25" height="24" class="imges">北京互联网举报中心
+                        </a>&nbsp;&nbsp;&nbsp;<a href="http://www.bj.cyberpolice.cn/index.jsp" target="_blank"><img src="http://s.xnimg.cn/imgpro/civilization/c_2.jpg" width="25" height="24" class="imges">网络110报警服务</a>&nbsp;&nbsp;&nbsp;<a href="http://www.bjwhzf.gov.cn/accuse.do" target="_blank"><img src="http://s.xnimg.cn/imgpro/civilization/c_3.jpg" width="25" height="24" class="imges">北京文化市场举报热线</a>
+                        </p>
+                </div>
+            </div>
+        </footer>
+        <!--固定标记：-->
+        <div class="fixed-div">
+            <ul>
+                <li class="" onclick="document.getElementById('there').scrollIntoView()">
+                    <button>Btm</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ddv">
+        <ul class="uu1" id="uu2">
+            <li class="la1"><a href="http://share.renren.com">分享</a></li>
+            <li><a href="http://app.renren.com">应用程序</a></li>
+            <li><a href="http://page.renren.com">公共主页</a></li>
+            <li><a href="http://life.renren.com">人人生活</a></li>
+            <li><a href="http://xiaozu.renren.com/">人人小组</a></li>
+            <li><a href="http://name.renren.com">同名同姓</a></li>
+            <li><a href="http://school.renren.com/allpages.html">校园百科</a></li>
+            <li><a href="http://school.renren.com/daxue/">大学百科</a></li>
+            <li><a href="http://life.renren.com/hot">人人热点</a></li>
+            <li><a href="http://zhan.renren.com/">人人小站</a></li>
+            <li><a href="http://j.renren.com/">人人逛街</a></li>
+            <li><a href="http://xiaozhao.renren.com/">人人校招</a></li>
+        </ul>
+    </div>
+</body>
+</html>

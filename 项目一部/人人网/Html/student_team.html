@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>社会人_聚集全国社会团体</title>
+		<link rel="stylesheet" href="../css/student_team.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="..\img\favicon-rr.ico" />
+	</head>
+
+	<body>
+		<!--顶部登陆注册-->
+		<div class="load">
+			<div class="load-d1">
+				<div class="load-d1-d1">
+					<a href="#"><img src="../img/C_logo_x.png" /></a>
+				</div>
+				<div class="load-d1-d2">
+					<a href="#">请选择学校</a>
+				</div>
+				<ul>
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">社团活动</a>
+					</li>
+					<li id="myTeam">
+						<a href="#" class="myTeam-a">我的社团
+							<div id="myTeam-icon"></div>
+						</a>
+					</li>
+					<li id="login">
+						<a href="#" onclick="loadDisplay()">登陆</a>
+					</li>
+					<li id="line1">/</li>
+					<li id="zhuce">
+						<a href="#">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部搜索-->
+		<div class="search">
+			<a href="#" class="search-a"></a>
+			<div class="search-d1">
+				<form action="#" method="post">
+					<input type="text" id="plh1" name="search" placeholder="10000个社团陪你玩" />
+					<input type="submit" value="" />
+					<a href="#" class="search1">
+						<span class="search1-icon">+</span>
+						<span class="search1-test">创建一个社团</span>
+					</a>
+					<a href="#" class="search2">
+						<span class="search1-icon">+</span>
+						<span class="search1-test">发布一个新活动</span>
+					</a>
+				</form>
+			</div>
+			<div class="search-d4" onmousemove="changeImg()" onmouseout="changeImgBack()">
+				<a href="#">
+					<img src="../img/look_03.png" id="search4-img" />
+				</a>
+			</div>
+		</div>
+		<!--顶部活动通知-->
+		<div class="activity">
+			<div class="activity-d1">
+				<a href="校园联盟.html">
+					<img src="../img/noticeHorn.png" /> 百校联盟“万”影摄影大赛
+				</a>
+			</div>
+		</div>
+		<!--中间，底部-->
+		<div class="middle">
+			<!--中间社会头条-->
+			<div class="toutiao">
+				<div class="toutiao-img1"></div><span class="toutiao-sp1">社会头条</span>
+				<div class="zong">
+					<div class="biankuang">
+						<div class="toutiao-img2">
+							<a href="#" class="toutiao-img2-a">
+								<img src="../img/original_wKRB_51e100016e031e80.jpg" />
+								<p class="p1"></p>
+								<p class="p2">2016华为校园招聘</p>
+							</a>
+						</div>
+						<div class="toutiao-img3">
+							<a href="#" class="toutiao-img2-a">
+								<img src="../img/original_rkIM_1e4c00021c85118c.jpg" />
+								<p class="p1"></p>
+								<p class="p2">我的2014星空摄影之旅</p>
+							</a>
+						</div>
+						<div class="toutiao-img4">
+							<a href="#" class="toutiao-img2-a">
+								<img src="../img/original_2LWs_186a0000180c1e84.jpg" />
+								<p class="p1"></p>
+								<p class="p2">公共财政与社会保障论坛辩论赛</p>
+							</a>
+						</div>
+						<div class="toutiao-img5">
+							<a href="#" class="toutiao-img2-a">
+								<img src="../img/large_q3nb_1e8e00018043118c.jpg" />
+								<p class="p1"></p>
+								<p class="p2">三月DIY手工专场~快来！动起手，活动脑~</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul class="toutiao-ul">
+					<li>
+						<span class="first">1</span>
+						<a href="#">2016华为校园招聘</a>
+						<a href="#" id="toutiao-ul-a2"> 社团人合作方</a>
+					</li>
+					<li>
+						<span class="second">2</span>
+						<a href="#">我的2014星空摄影之旅</a>
+						<a href="#" id="toutiao-ul-a2"> 华电星野天文社</a>
+					</li>
+					<li>
+						<span class="third">3</span>
+						<a href="#">公共财政与社会保障论坛辩论赛</a>
+						<a href="#" id="toutiao-ul-a2"> 首经贸社保学社</a>
+					</li>
+					<li>
+						<span class="four">4</span>
+						<a href="#">公共财政与社会保障论坛辩论赛</a>
+						<a href="#" id="toutiao-ul-a2"> 社团人官方团队</a>
+					</li>
+				</ul>
+				<div class="toutiao-img6">
+					<a href="#">
+						<img src="../img/headlineBtn.png" />
+					</a>
+				</div>
+				<!--左侧快-->
+				<div class="left-div">
+					<div class="left-d1">
+						<a href="#" class="left-ul-a1"></a>
+						<div class="ddd">
+							<span>用微信客户端扫描</span>
+							<img src="../img/weixin_erweima.jpg" />
+						</div>
+					</div>
+
+					<div class="left-d2">
+						<a href="#" class="left-ul-a2"></a>
+					</div>
+
+					<div class="left-d3">
+						<a href="#" class="left-ul-a3"></a>
+						<div class="ddd3">
+							<span>用人人客户端扫描</span>
+							<img src="../img/weixin_erweima.jpg" />
+						</div>
+					</div>
+
+					<div class="left-d4">
+						<a href="#" class="left-ul-a4"></a>
+					</div>
+
+					<div class="left-d5">
+						<a href="#" class="left-ul-a5"></a>
+						<div class="ddd5">
+							<span>st.bsn@renren–inc.com</span>
+						</div>
+					</div>
+
+					<div class="left-d6">
+						<a href="#" class="left-ul-a6"></a>
+						<div class="ddd6">
+							<span>点击进行在线咨询</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--中间企业赞助任务-->
+			<div class="task">
+				<div class="task-img1"></div><span class="task-sp1">企业赞助任务</span>
+				<div class="task-d1">
+					<!--1-->
+					<a href="#" class="task-d1-a">
+						<div class="task-d1-div1 task1">
+							<img src="../img/original_sJgI_825a000126e11e7f.jpg" />
+						</div>
+						<div class="task-d1-div2">
+							<span id="task-sp1">“音为青春”中国大学音乐超级联赛</span>
+							<img src="../img/publisherIcon.png" /><span id="task-sp2">发布者-中国移动咪咕音乐</span>
+							<span class="task-sp3" id="task-span3">赞助总金额</span><span id="task-sp4">￥50,000</span>
+							<span class="task-sp3" id="task-span4">预计承接社团</span><span id="task-sp5">5个</span>
+							<span class="task-sp3" id="task-span5">已申请社团</span><span id="task-sp5">10个</span>
+						</div>
+					</a>
+					<!--2-->
+					<a href="#" class="task-d1-a task2">
+						<div class="task-d1-div1">
+							<img src="../img/original_15H3_ec7800031f0e1e80.jpg" />
+						</div>
+						<div class="task-d1-div2">
+							<span id="task-sp1">蒙牛校园全明星~早间青春SHOW</span>
+							<img src="../img/publisherIcon.png" /><span id="task-sp2">发布者-蒙牛早餐奶</span>
+							<span class="task-sp3" id="task-span3">赞助总金额</span><span id="task-sp4">￥14,000</span>
+							<span class="task-sp3" id="task-span4">预计承接社团</span><span id="task-sp5">14个</span>
+							<span class="task-sp3" id="task-span5">已申请社团</span><span id="task-sp5">18个</span>
+						</div>
+					</a>
+					<!--3-->
+					<a href="#" class="task-d1-a task3">
+						<div class="task-d1-div1">
+							<img src="../img/original_5NrV_1d8d0000fa411e84.jpg" />
+						</div>
+						<div class="task-d1-div2">
+							<span id="task-sp1">“万”影摄影大赛，万元奖金等你拿</span>
+							<img src="../img/publisherIcon.png" /><span id="task-sp2">发布者-万达电影网</span>
+							<span class="task-sp3" id="task-span3">赞助总金额</span><span id="task-sp4">￥600,000</span>
+							<span class="task-sp3" id="task-span4">预计承接社团</span><span id="task-sp5">1500个</span>
+							<span class="task-sp3" id="task-span5">已申请社团</span><span id="task-sp5">1539个</span>
+						</div>
+					</a>
+					<!--4-->
+					<a href="#" class="task-d1-a task4">
+						<div class="task-d1-div1">
+							<img src="../img/original_A6rB_e7e60000a4341e80.png" />
+						</div>
+						<div class="task-d1-div2">
+							<span id="task-sp1">雪花啤酒勇闯天涯户外运动社团活动</span>
+							<img src="../img/publisherIcon.png" /><span id="task-sp2">发布者-华润雪花啤酒有限公司天津分公司</span>
+							<span class="task-sp3" id="task-span3">赞助总金额</span><span id="task-sp4">￥15,000</span>
+							<span class="task-sp3" id="task-span4">预计承接社团</span><span id="task-sp5">30个</span>
+							<span class="task-sp3" id="task-span5">已申请社团</span><span id="task-sp5">27个</span>
+						</div>
+					</a>
+					<a href="#" class="more"><span>查看更多&nbsp;&nbsp;</span><span>›</span></a>
+				</div>
+			</div>
+			<!--中间热门团体-->
+			<div class="team">
+				<div class="toutiao-img1"></div><span class="toutiao-sp1">热门社团</span>
+				<!--a-->
+				<!--1-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_OsmO_104500001ab71190.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" target="_self" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">河北工程大学兼职联盟</a>
+				</div>
+				<!--2-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_1nPV_6b0900002093118c.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">西南大学青年志愿者</a>
+				</div>
+				<!--3-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_GWKu_6ea700004aac1190.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">湖南一师守望支教社</a>
+				</div>
+				<!--4-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_MF7V_27ff00001e5f1191.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">曲阜师范大学史苑学社</a>
+				</div>
+				<!--5-->
+				<div class="team-1" id="team-left">
+					<div class="team-d">
+						<img src="../img/main_3OyK_186200003bed118c.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">聊城大学土木建筑学会</a>
+				</div>
+				<!--b-->
+				<!--1-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_MTPP_497d00001d46125d.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">山东大学学生演讲协会</a>
+				</div>
+				<!--2-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_1xPK_4c1800000c11125d.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">潍科民族舞社团</a>
+				</div>
+				<!--3-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/down-qr.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">大学生沂蒙情协会</a>
+				</div>
+				<!--4-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_5P1s_25d2000079ec118c.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">北农兼职大本营</a>
+				</div>
+				<!--5-->
+				<div class="team-1" id="team-left">
+					<div class="team-d">
+						<img src="../img/main_Bd69_76cb0000005d7a01.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">千橡羽毛球社</a>
+				</div>
+				<!--c-->
+				<!--1-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_W7YC_33ef0002396a125d.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">社团人官方团队</a>
+				</div>
+				<!--2-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_ZDPp_43fb00006661125f.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">黑大国际文化交流协会</a>
+				</div>
+				<!--3-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_0rDm_178600015f851190.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">湖南城市学院未央剧社</a>
+				</div>
+				<!--4-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_qqn7_43eb000022d0125f.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">大学生民族风社团</a>
+				</div>
+				<!--5-->
+				<div class="team-1" id="team-left">
+					<div class="team-d">
+						<img src="../img/main_s7lz_248b000029bd125f.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">潍坊科技学院创业协会</a>
+				</div>
+				<!--d-->
+				<!--1-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_mFJ7_03ca000014931190.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">泰山学院人人社团</a>
+				</div>
+				<!--2-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_QhDo_1e46000087441190.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">天农水利学生会</a>
+				</div>
+				<!--3-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_HDBM_265700007371118c.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">爱拍生活协会</a>
+				</div>
+				<!--4-->
+				<div class="team-1">
+					<div class="team-d">
+						<img src="../img/main_G9on_4c38000209ee125d.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">泰院摄影爱好者协会</a>
+				</div>
+				<!--5-->
+				<div class="team-1" id="team-left">
+					<div class="team-d">
+						<img src="../img/main_AJfy_142100026fbb1191.jpg" class="team-img1" />
+						<img src="../img/C_imgBorder1.png" class="team-img2" />
+						<div class="overlay">
+						</div>
+						<img src="../img/C_imgMask.png" class="team-img2" />
+						<p class="team-test">社团详情</p>
+						<a href="#" class="team-button" onclick="loadDisplay()"></a>
+					</div>
+					<a href="#" class="team-test2">Mad Man</a>
+				</div>
+				<a href="#" class="more"><span>查看更多热门社团&nbsp;&nbsp;</span><span>›</span></a>
+			</div>
+			<!--底部-->
+			<div class="foot">
+				<div class="foot-wrapper">
+					<p>
+						<strong>玩转人人</strong>
+						<a href="http://page.renren.com/register/regGuide/" target="_blank">公共主页</a>
+						<a href="http://public.renren.com/" target="_blank">公共账号</a>
+						<a href="http://support.renren.com/helpcenter" target="_blank">客服帮助</a>
+						<a href="http://www.renren.com/siteinfo/privacy" target="_blank">隐私</a>
+					</p>
+					<p>
+						<strong>商务合作</strong>
+						<a href="http://page.renren.com/marketing/index" target="_blank">品牌营销</a>
+						<a href="http://bolt.jebe.renren.com/introduce.htm" class="l-2" target="_blank">中小企业<br />自助广告</a>
+						<a href="http://dev.renren.com/" target="_blank">开放平台</a>
+					</p>
+					<p>
+						<strong>公司信息</strong>
+						<a href="http://www.renren-inc.com/zh/product/renren.html" target="_blank">关于我们</a>
+						<a href="http://page.renren.com/gongyi" target="_blank">人人公益</a>
+						<a href="http://caihong.56.com/" target="_blank">彩虹计划</a>
+						<a href="http://www.renren-inc.com/zh/hr/" target="_blank">招聘</a>
+					</p>
+					<p>
+						<strong>友情链接</strong>
+						<a href="http://www.jingwei.com/" target="_blank">经纬网</a>
+						<a href="http://wan.renren.com/" target="_blank">人人游戏</a>
+						<a href="http://www.56.com/" target="_blank">56网</a>
+					</p>
+					<p>
+						<strong>人人移动客户端下载</strong>
+						<a href="http://mobile.renren.com/showClient?v=platform_rr&psf=42064" target="_blank">iPhone/Android</a>
+						<a href="http://mobile.renren.com/showClient?v=platform_hd&psf=42067" target="_blank">iPad客户端</a>
+						<a href="http://mobile.renren.com" target="_blank">其他人人产品</a>
+					</p>
+					<p id="copyright-info">
+						<span>京网文[2013]0136-030号</span>
+						<span>京ICP证090254</span>
+						<span>人人网&copy;2014</span>
+						<span><a href="#nogo" id="lawInfo">法律声明</a></span>
+					</p>
+				</div>
+				<!--左侧二维码-->
+				<div class="weixin_code">
+					<span>官方微信号</span>
+					<img src="../img/weixin_erweima.jpg" />
+				</div>
+			</div>
+			
+			<!--登陆页面-->
+			<div id="load-kuangDisplay">
+				<div id="loadPage"></div>
+				<div class="load-kuang">
+					<div class="load-kuang-d1">
+						<span>登录人人</span>
+						<span id="closeLoad" onclick="closeLoad()"></span>
+					</div>	
+					<form action="" method="post">
+						<input type="text" name="user" id="userName" placeholder="用户邮箱/手机账号/用户名" />
+						<br />
+						<input type="password" name="password" id="passNum" placeholder="请输入密码" />
+						<br />
+						<input type="submit" id="sub" value="登陆"/>
+						<a href="#">忘记密码</a>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#">注册账户</a>
+					</form>
+				</div>
+			</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="../js/student_team.js"></script>

@@ -1,0 +1,377 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #F1F4F5;
+}
+.all{
+	/*border: 1px solid black;*/
+	width: 980px;
+	height: 1044px;
+	margin: auto;
+}
+/*头部*/
+.head{
+	/*outline: 1px solid red;*/
+	width: 980px;
+	height: 73px;
+}
+.logo{
+	/*outline: 1px solid blue;*/
+	width: 179px;
+	height: 43px;
+	margin-top: 15px;
+	float: left;
+	vertical-align: middle;
+}
+.logo img{
+	width: 179px;
+	height: 43px;
+}
+.studentTeam{
+	/*outline: 1px solid blue;*/
+	margin-top: 15px;
+	float: right;
+	vertical-align: middle;
+	text-align: right;
+}
+.studentTeam a{
+	line-height: 43px;
+	font-size: 12px;
+	color: darkgrey;
+	text-decoration: none;
+	margin-right: 15px;
+}
+.studentTeam a:hover{
+	color: dodgerblue;
+}
+#head-st{
+	/*outline: 1px solid red;*/
+	display: block;
+	float: left;
+	width: 140px;
+	background: url(../img/st-btn1.png) 5px 5px no-repeat;
+	font-weight: bold;
+	color: #48B770;
+	margin-right: 25px;
+}
+
+/*腰部*/
+.bodys{
+	/*outline: 1px solid blue;*/
+	width: 980px;
+	height: 630px;
+}
+.login{
+	border: 1px solid gainsboro;
+	width: 360px;
+	height: 523px;
+	background: white;
+	box-shadow: 2px 3px 1px gainsboro;
+	float: left;
+}
+.photo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 20px auto;
+	overflow: hidden;
+	display: block;
+}
+#prove{
+	display: none;
+	width: 300px;
+	height: 30px;
+	font-size: 12px;
+	color: red;
+	line-height: 30px;
+	text-align: center;
+	background: #FFE3D6;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: -30px;
+	margin-left: 30px;
+	position: absolute;
+	z-index: 1;
+	
+}
+.login-info{
+	/*outline: 1px solid blue;*/
+	height: 208px;
+	width: 300px;
+	margin: auto;
+}
+.ip1,.ip2{
+	border: 1px solid #ADB6C9;
+	width: 300px;
+	height: 48px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: grey;
+	border-radius: 5px;
+	padding-left: 20px;
+}
+.ip3{
+	border: 1px solid #ADB6C9;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+.checkbox-span{
+	font-size: 14px;
+	color: gray;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.forgotpass{
+	font-size: 14px;
+	color: darkgray;
+	display: inline-block;
+	float: right;
+	margin-top: 3px;
+	text-decoration: none;
+}
+.forgotpass:hover{
+	color: dodgerblue;
+}
+.zhuce{
+	/*border: 1px solid red;*/
+	display: inline-block;
+	width: 140px;
+	line-height: 47px;
+	margin-top: 20px;
+	text-align: center;
+	background: #77AF5C;
+	color: white;
+	font-size: 22px;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+.zhuce:hover{
+	opacity: 0.8;
+}
+.ip4{
+	width: 140px;
+	line-height: 47px;
+	text-align: center;
+	background: #3E94D7;
+	color: white;
+	font-size: 22px;
+	font-family: "微软雅黑";
+	border: none;
+	float: right;
+	margin-top: 20px;
+	cursor: pointer; 
+}
+.ip4:hover{
+	border-right: 2px solid #3E94D7;
+}
+.third-others{
+	/*border: 1px solid gainsboro;*/
+	height: 80px;
+	width: 300px;
+	margin:auto;
+	margin-top: 30px;
+}
+.third-others-sp1{
+	border-bottom: 1px solid gainsboro;
+	width: 110px;
+	height: 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.third-others-sp2{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 10px;
+	color: darkgray;
+}
+#third-others-sp3{
+	margin-left: 0px;
+}
+.third-others a{
+	text-decoration: none;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	/*border: 1px solid gainsboro;*/
+	text-align: center;
+	border-radius:50%;
+	margin-top: 20px;
+	margin-right:60px;
+}
+.weixin-load{
+	margin-left:40px;
+}
+#weibo-load{
+	margin-right:0px;
+}
+.third-others img{
+	width: 30px;
+}
+.others{
+	/*border:1px solid red;*/
+	width: 358px;
+	height: 54px;
+	margin: auto;
+	margin-top: 8px;
+	background: #F8F8F8;
+	position: relative;
+}
+.others span{
+	display: inline-block;
+	line-height: 54px;
+	color: grey;
+	font-size: 12px;
+	margin-left: 60px;
+	float: left;
+}
+
+.uc,.qihu,.baidu{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.others a{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.uc{
+	background: url(../img/loginbox_v1.png) -217px -12px no-repeat;
+}
+.uc:hover{
+	background: url(../img/loginbox_v1.png) -42px -216px no-repeat;
+}
+.qihu{
+	background: url(../img/loginbox_v1.png) -260px -12px no-repeat;
+}
+.qihu:hover{
+	background: url(../img/loginbox_v1.png) -85px -216px no-repeat;
+}
+.baidu{
+	background: url(../img/loginbox_v1.png) -303px -12px no-repeat;
+}
+.baidu:hover{
+	background: url(../img/loginbox_v1.png) -128px -216px no-repeat;
+}
+/*右侧*/
+.right{
+	width: 585px;
+	height: 200px;
+	float: left;
+	margin-left: 20px;
+}
+.right a{
+	display: block;
+	width: 145px;
+	height: 150px;
+}
+.right-img1{
+	cursor: pointer;
+	background: url(../img/qrcode1-t.jpg) no-repeat;
+}
+.right-img2{
+	background: url(../img/phone1-t.jpg) no-repeat;
+}
+.right-img3{
+	background: url(../img/pad1-t.jpg) no-repeat;
+}
+.right-img4{
+	background: url(../img/other1-t.jpg) no-repeat;
+}
+
+.rightPicture{
+	float: left;
+	width: 145px;
+	height: 150px;
+}
+.rightPicture img{
+	width: 145px;
+}
+.rightPicture img:hover{
+	box-shadow: 0px 25px 45px -28px dodgerblue;
+}
+/*客户端下载码*/
+#idCode{
+	border: 1px solid gainsboro;
+	position: absolute;
+	width: 190px;
+	height: 186px;
+	top: 60px;
+	left: 545px;
+	background: #F8F8F8;
+	box-shadow: 0px 0px 15px 8px gainsboro;
+	display: none;
+	z-index: 3;
+	
+}
+#idCode img{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+#idCode p{
+	text-align: center;
+	font-size: 12px;
+	color: gray;
+}
+
+
+
+
+/*脚部*/
+.foot{
+	/*outline: 1px solid yellowgreen;*/
+	width: 980px;
+	height: 341px;
+	position: relative;
+}
+.foot p{
+	/*outline: 1px solid red;*/
+	float: left;
+	color: #666666;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+strong{
+	display: block;
+}
+.foot a{
+	display: block;
+	color: #666666;
+	text-decoration: none;
+	line-height: 15px;
+}
+.foot a:hover{
+	color: dodgerblue;
+	text-decoration: underline;
+}
+#copyright-info{
+	margin-right: 0px;
+	margin-left: 225px;
+}
+#copyright-info span{
+	display: block;
+	text-align: right;
+}
+.foot-img1{
+	height: 22px;
+	float: left; 
+	margin-left: 78px;
+	position: relative;
+	top: -4px;
+}
+.foot-img2{
+	height: 28px;
+	float: left; 
+	margin-left: 60px;
+	position: relative;
+	top: -5px;
+}

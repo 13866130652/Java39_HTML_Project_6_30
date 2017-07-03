@@ -1,0 +1,209 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1200px;
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+}
+section{
+    width: 1200px;
+    height:720px;
+    /*border: 1px solid red;*/
+}
+footer{
+    width: 1200px;
+}
+
+
+/*网页头部div1*/
+.h-div1{
+    float: left;
+    margin-left: 150px;
+}
+
+/*网页头部div2*/
+.h-div2{
+    float: right;
+    margin-right: 150px;
+}
+header a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: 宋体;
+    line-height: 30px;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+.s-div1{
+    width: 1200px;
+    height: 100px;
+    padding-top: 21px;
+    /*border: 1px solid red;*/
+    padding-left: 200px;
+}
+.s-div2{
+    width: 1200px;
+    height: 600px;
+    background: url("../images/bac-zhuce.jpg") no-repeat;
+    background-position: -450px;
+    position: relative;
+}
+
+
+/*网页主体s-div2-div*/
+.s-div2-div{
+    width: 300px;
+    height: 450px;
+    background: url("../images/icp.gif") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 200px;
+}
+
+/*网页主体手机注册*/
+.s-div2-div2-div1{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 70px;
+    left: 200px;
+    background-color: white;
+}
+/*网页主体手机注册*/
+.s-div2-div1-div1-a{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+
+    left: 200px;
+    background-color: white;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*网页主体邮箱注册*/
+.s-div2-div1-div2-a{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 325px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.s-div2-div2-div2{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    top: 70px;
+    left: 800px;
+    border-left: 1px dashed gray;
+    background-color: white;
+}
+
+
+iframe{
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    border: 0;
+}
+
+.s-div2-div2-div2-a{
+    display: block;
+    width: 200px;
+    height: 36px;
+    background-color: #71b6eb;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.s-div2-div2-div2-a:hover{
+    background-color: lightskyblue;
+}
+
+
+
+
+/*网页底部div1*/
+.f-div1{
+    margin: 0 auto;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid red;*/
+    line-height: 50px;
+    /*padding-top: 30px;*/
+    /*margin-top: 30px;*/
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a*/
+
+.f-div1 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a:hover*/
+.f-div1 a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 12px;
+}
+.f-div2{
+    margin: 0 auto;
+    width: 600px;
+    /*height: 50px;*/
+    text-align: center;
+    /*border: 1px solid red;*/
+    /*line-height: 50px;*/
+    color: gray;
+    font-size: 12px;
+}
+
+/*网页底部div1 a*/
+
+.f-div2 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+/*网页底部div1 a:hover*/
+.f-div2 a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 12px;
+}

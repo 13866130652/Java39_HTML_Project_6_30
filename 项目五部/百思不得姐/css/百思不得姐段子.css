@@ -1,0 +1,371 @@
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F5F5F5;
+}
+
+header {
+	height: 60px;
+	background-color: #e50541;
+}
+
+header .header1,
+.header2 {
+	float: left;
+}
+
+header .header1 {
+	margin-left: 10%;
+}
+
+header .header2 {
+	width: 100px;
+	margin-left: 25%;
+}
+
+header .header1 ul {
+	display: inline-block;
+	list-style: none;
+}
+
+header .header1 ul li {
+	float: left;
+	height: 30px;
+	width: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+header .header1 img {
+	vertical-align: middle;
+}
+
+header .header2 a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	width: 40px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+header .header1 a {
+	display: inline-block;
+	height: 55px;
+	width: 60px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+header .header1 a:hover {
+	background: brown;
+}
+
+
+/*--------------------------------------------------section-------------------------------------------*/
+
+section {
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+}
+
+section li {
+	list-style: none;
+}
+
+section .section1 {
+	width: 44%;
+	height: auto;
+	float: left;
+	margin-left: 17%;
+	background-color: white;
+}
+
+section .section2 {
+	margin-left: 1%;
+	width: 24%;
+	float: left;
+}
+
+section .section3 {
+	clear: left;
+}
+
+section .section1 iframe {
+	/*overflow: scroll;*/
+	height: 500px;
+	width: 100%;
+}
+
+section .img {
+	display: inline-block;
+	width: 135px;
+	height: 100px;
+	margin-left: 5px;
+	/*padding: 5px;*/
+}
+
+section .img img {
+	display: inline-block;
+	width: 135px;
+	height: 88px;
+}
+
+section .wenzi {
+	display: inline-block;
+	width: 135px;
+	height: 40px;
+	overflow: hidden;
+	margin-left: 5px;
+	/*padding: 5px;*/
+}
+
+section .section1 .sd1 li {
+	float: left;
+	height: 40px;
+}
+
+section .section1 .sd1 li a {
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	/*color: black;*/
+	text-decoration: none;
+}
+
+.jing {
+	color: red;
+}
+
+.chuan {
+	color: black;
+}
+
+section .section1 .sd1 li a:visited {
+	color: orangered;
+}
+
+section .section1 .sd1 li a:hover {
+	color: orangered;
+}
+
+section .st21 {
+	width: 295px;
+	height: 60px;
+	margin: 10px auto;
+	background: white;
+	/*border: 1px solid black;*/
+	/*overflow: hidden;*/
+}
+
+section .st21 li {
+	float: left;
+}
+
+section .st21 .tui {
+	height: 60px;
+	width: 19px;
+	font-size: 10px;
+	background-color: orangered;
+}
+
+section .st21 .tui a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+section .st21 .zhe {
+	width: 211px;
+	height: 60px;
+}
+
+section .st21 .zhe a {
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+section .st21 .aaimg {
+	height: 60px;
+	width: 60px;
+}
+
+section .section2 .fatie {
+	margin: 10px auto;
+	width: 290px;
+	height: 70px;
+}
+
+section .section2 .erweima {
+	background-color: white;
+	/*border: 1px solid red;*/
+	width: 290px;
+	height: 280px;
+	text-align: center;
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+section .section2 .erweima .erw {
+	display: inline-block;
+	text-align: center;
+	margin: 5px auto;
+	width: 290px;
+}
+
+section .section2 .doukan {
+	width: 290px;
+	margin: 10px auto;
+	background-color: white;
+}
+
+section .section2 .doukan .wenzi {
+	color: #000000;
+	text-decoration: none;
+}
+
+section .section2 .biaoqian {
+	width: 290px;
+	line-height: 25px;
+	overflow: hidden;
+	margin: 10px auto;
+	background: white;
+}
+
+section .section2 .biaoqian p {
+	width: 290px;
+}
+
+section .section2 .biaoqian p a {
+	display: inline-block;
+	margin-left: 140px;
+	text-decoration: none;
+	font-size: 14px;
+	color: gray;
+}
+
+section .section2 .biaoqian li {
+	float: left;
+	margin-right: 14px;
+}
+
+section .section2 .biaoqian li a {
+	color: black;
+	text-decoration: none;
+}
+
+section .section2 .biaoqian a:hover {
+	color: orangered;
+}
+
+section .section2 .remen {
+	width: 290px;
+	margin: 10px auto;
+	background-color: white;
+}
+
+section .section2 .remen a {
+	color: black;
+	text-decoration: none;
+}
+
+section .section2 .remen a:hover {
+	color: orangered;
+}
+
+
+/*-------------------------------------------------------foooter-----------------------------------------*/
+
+footer {
+	width: 100%;
+	height: 200px;
+}
+
+footer .footer {
+	width: 67%;
+	height: 200px;
+	border: 1px solid black;
+	margin: 0px auto;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer table,
+p {
+	float: left;
+}
+
+footer .ferwima img {
+	display: block;
+}
+
+footer td {
+	font-size: 14px;
+	padding-right: 15px;
+	vertical-align: top;
+	line-height: 25px;
+}
+
+footer .guanyubai h2 {
+	margin-top: -20px;
+}
+
+footer .footer a {
+	color: black;
+	text-decoration: none;
+}
+
+footer .footer a:hover {
+	color: orangered;
+}
+
+footer .footer .zuihou {
+	border: 1px gray;
+	border-right-style: solid;
+}
+
+footer .footer p {
+	margin-left: 20px;
+}
+
+footer .footer .ferwima {
+	margin-right: 20px;
+	border: 1px solid black;
+}
+
+footer .footer .ferwima span {
+	display: inline-block;
+	text-align: center;
+	margin-left: 13px;
+}
+
+footer .footer .zui {
+	margin-left: 680px;
+}
+
+footer .footer .zui li a {
+	font-size: 14px;
+}
+
+footer .footer .zui li {
+	height: 30px;
+}
+
+footer .footer h3 {
+	color: gray;
+}

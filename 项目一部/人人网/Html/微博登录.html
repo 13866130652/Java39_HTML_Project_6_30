@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网站连接-人人网页版</title>
+    <link href="../css/微博登录.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="..\img\favicon-rr.ico" />
+    <script src="../js/ceng.js"></script>
+</head>
+<body>
+<header id="ee">
+    <p class="s clearfix">
+        <img src="../images/2.png"/>
+        <span class="f">
+        <span>
+            <a href="#" target="_self" onclick="deng()">二维码登录</a>
+        </span>
+        <span class="sh">|</span>
+        <span><a href="http://weibo.com/signup/signup.php?from=zw&appsrc=56pzCV&backurl=https%3A%2F%2Fapi.weibo.com%2F2%2Foauth2%2Fauthorize%3Fclient_id%3D3166095153%26response_type%3Dcode%26display%3Ddefault%26redirect_uri%3Dhttp%253A%252F%252Fwww.renren.com%252Fapi%252Fcallback%26from%3D%26with_cookie%3D" target="_blank"> 注册</a></span>
+        </span>
+    </p>
+</header>
+<div class="div1" id="dd">
+    <p class="bac"></p>
+    <p class="s clearfix">
+        <img src="../images/2.png"/>
+        <span class="f">
+        <span>
+            <a href="#" target="_self">普通登录</a>
+        </span>
+        <span class="sh">|</span>
+        <span><a href="http://weibo.com/signup/signup.php?from=zw&appsrc=56pzCV&backurl=https%3A%2F%2Fapi.weibo.com%2F2%2Foauth2%2Fauthorize%3Fclient_id%3D3166095153%26response_type%3Dcode%26display%3Ddefault%26redirect_uri%3Dhttp%253A%252F%252Fwww.renren.com%252Fapi%252Fcallback%26from%3D%26with_cookie%3D" target="_blank"> 注册</a></span>
+        </span>
+    </p>
+    <p class="back">
+        <span>用微博账号安全登录</span><br/>
+        <img src="../images/5.png"/><br/>
+        <span class="back1">
+                <span>使用微博客户端扫描二维码</span><br/>
+                <span>提示：为保障帐号安全，请认准本页URL地址必须以 api.weibo.com 开头</span>
+        </span><br/>
+        <a href="#" target="_self" onclick="lu()"><img src="../images/6.png"/></a>
+    </p>
+    <p class="han2">提示：为保障帐号安全，请认准本页URL地址必须以 api.weibo.com 开头</p>
+</div>
+<section onclick="deng()" id="mei">
+    <form action="#" method="post">
+        <p class="s1">
+            <span>使用你的微博账号访问 </span>
+            <a href="http://www.renren.com" target="_blank">人人网页版</a>
+            <span>，并同时登录微博</span>
+        </p>
+        <span class="han">账号：</span>
+        <input type="text" name="username" placeholder="请使用微博账号登录"/><br/>
+        <span class="han">密码：</span>
+        <input type="password" name="pass" placeholder="请输入密码"/>
+        <p class="bor"></p>
+        <input type="submit" name="submit" value="登录"/>
+        <input type="reset" name="reset" value="取消" disabled/>
+    </form>
+</section>
+<footer onclick="deng()" id="y">
+    <p class="han1">提示：为保障帐号安全，请认准本页URL地址必须以 api.weibo.com 开头</p>
+</footer>
+</body>
+</html>
